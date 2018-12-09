@@ -1,0 +1,43 @@
+div.shadow.p-3.mb-3.bg-white.rounded {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    img {
+        max-width: 175px;
+        justify-content: center;
+        align-content: center;
+    }
+    a {
+        color: #333;
+        min-width: 125px;
+        &:hover {
+            color: #333;
+            text-decoration: none;
+        }
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    right: 5px;
+}
+
+@media only screen and (max-width: 860px) {
+    nav {
+        a {
+        display: none;
+        }
+        img {
+            right: -5px;
+        }
+    }
+}

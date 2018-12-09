@@ -1,0 +1,53 @@
+button {
+    background-color: #fff;
+    position: absolute;
+    margin: 27px 15px 15px;
+    border: none;
+    z-index: 10;
+}
+
+.tiny-logo {
+    max-width: 80px;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    list-style-position: outside;
+    padding-left: 0;
+    font-size: 1rem;
+}
+
+li {
+    padding: 1rem;
+    &.nav-item-dropdown:before {
+        content: "- ";
+    }
+    &:hover{
+        background-color: #eee;
+        color: #333;
+    }
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    &:hover {
+        color: #333;
+    }
+}
+
+.pi-plus:before {
+    position: relative;
+    top: 1px;
+}
+
+.add-recipe {
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 768px) {
+    button {
+        margin-top: 22px;
+    }
+}

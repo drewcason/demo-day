@@ -1,0 +1,49 @@
+div.ui-dialog.ui-dialog-content {
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ui-card-footer {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.header-container {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    background-image: linear-gradient(#eee, #fff);
+}
+
+.right {
+    text-align: right;
+} 
+
+.quick-buttons {
+    display: flex;
+    button {
+        background-color: transparent;
+        border: none;
+    }
+    i{
+        position: relative;
+        top: 3px;
+    }
+}
+
+span {
+    text-decoration: underline;
+    text-align: right;
+    cursor: pointer;
+}
+
+.no-padding-600 {
+    padding: 0 !important;
+    max-width: 600px !important;
+}

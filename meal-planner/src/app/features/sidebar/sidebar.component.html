@@ -1,0 +1,52 @@
+<p-sidebar [(visible)]="display" [ngStyle]="{width:'30em'}">
+  <div class='sidebar-header'>
+    <img class='tiny-logo navbar-brand' src='../../../assets/images/WhatsForDInnerLogo_small.png' />
+  </div>
+  <ul>
+    <li class='pb-1 pl-1 border-bottom'><a href='#' class='p-1'>Home</a></li>
+    <li class='pb-1 pl-1 border-bottom'><a href='/calendar' class='p-1'>Calendar</a></li>
+    <li class='pb-1 pl-1 border-bottom'><a href='/grocery-list' class='p-1'>Grocery List</a></li>
+    <li class='pb-1 pl-1 border-bottom'><a href='/recipes' class='p-1'>Recipes</a></li>
+    <li class='pb-1 pl-3 border-bottom'><a href='/recipes/most-popular' class='p-1'>Most Popular</a></li>
+    <li class='pb-1 pl-3 border-bottom'><a href='/recipes/least-popular' class='p-1'>Least Popular</a></li>
+    <li class='pb-1 pl-1 border-bottom nav-item dropdown'>
+      <a class='py-1 nav-link dropdown-toggle' href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Protein
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Chicken</a>
+        <a class="dropdown-item" href="#">Beef</a>
+        <a class="dropdown-item" href="#">Pork</a>
+        <a class="dropdown-item" href="#">Fish</a>
+      </div>
+    </li>
+    <li class="pb-1 pl-1 border-bottom nav-item dropdown">
+      <a class="py-1 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Ethnicity
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Mexican</a>
+        <a class="dropdown-item" href="#">Italian</a>
+        <a class="dropdown-item" href="#">Chinese</a>
+        <a class="dropdown-item" href="#">American</a>
+      </div>
+    </li>
+    <li class="pb-1 pl-1 border-bottom nav-item dropdown">
+      <a class="py-1 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Season
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Spring</a>
+        <a class="dropdown-item" href="#">Summer</a>
+        <a class="dropdown-item" href="#">Autumn</a>
+        <a class="dropdown-item" href="#">Winter</a>
+      </div>
+    </li>
+    <li class='pb-1 pl-1 mt-5 border-bottom'><i class='pi pi-plus add-recipe'></i><a href='#' class='p-1 add-recipe'>Add Recipe</a></li>
+  </ul>
+</p-sidebar>
+
+<button type="type" (click)="display = true" label="Show" class='d-inline-block btn btn-light'><i class="pi pi-bars" style="font-size: 2em"></i></button>
