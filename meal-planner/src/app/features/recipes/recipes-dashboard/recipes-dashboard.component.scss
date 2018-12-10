@@ -40,3 +40,13 @@ p-header h3 {
 .card-img-top {
     max-height: 262px;
 }
+
+.show-hide > i {
+    position: relative;
+    top: 3px;
+    span {
+        position: relative;
+        top: -3px;
+    }
+    
+}

@@ -1,13 +1,13 @@
-<div class='col-12 row '>
+<div class='col-12 row d-flex justify-content-between'>
   <div class='col-md-4 ml-2'>
       <span class="ui-float-label">
           <input id="float-input" type="text" size="30" pInputText [(ngModel)]="recipeFilter"> 
           <label for="float-input">Filter By</label>
       </span>
   </div>
-  <div class='col-5 text-right d-inline-block'>
-    <i class='pi pi-eye' *ngIf="showRecipeInstructions" (click)="toggleRecipeInstructions()">Show Instructions</i>
-    <i class='pi pi-eye-slash' *ngIf="!showRecipeInstructions" (click)="toggleRecipeInstructions()">Hide Instructions</i>
+  <div class='col-5 text-right d-inline-block show-hide'>
+    <i class='pi pi-eye-slash' *ngIf="showRecipeInstructions" (click)="hideInstructions()"><span>Hide Instructions</span></i>
+    <i class='pi pi-eye' *ngIf="!showRecipeInstructions" (click)="showInstructions()"><span>Show Instructions</span></i>
   </div>
 </div>
 <div class='container col-12'>

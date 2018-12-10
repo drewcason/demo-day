@@ -6,7 +6,7 @@ export interface Recipe {
     title: string;
     image: string;
     protein: string;
-    season: string;
+    season: Array<string>;
     ethnicity: string;
     count: number;
     cook_time: string;

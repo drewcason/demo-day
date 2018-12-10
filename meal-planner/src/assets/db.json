@@ -4,11 +4,11 @@
             "title": "Grilled Pork Chops",
             "image": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-0.3.5&s=5f4049825eacb1b9e58bb76188fba497&auto=format&fit=crop&w=2555&q=80",
             "protein": "pork",
-            "season": "summer",
+            "season": ["summer", "fall", "winter"],
             "ethnicity": "American",
             "count": 0,
-            "cook_time": "20 mins",
-            "prep_time": "10 mins",
+            "cook_time": "8 hours",
+            "prep_time": "20 mins",
             "servings": 4,
             "grocery_items": [
                 {
@@ -61,8 +61,8 @@
         {
             "title": "Pho",
             "image": "https://images.unsplash.com/photo-1503764654157-72d979d9af2f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=71cdddf5cc615224cf2c26614d20154d&auto=format&fit=crop&w=1353&q=80",
-            "protein": "pork",
-            "season": "summer",
+            "protein": "chicken",
+            "season": ["summer", "fall", "spring"],
             "ethnicity": "Vietnamese",
             "count": 0,
             "cook_time": "20 mins",
@@ -70,57 +70,65 @@
             "servings": 4,
             "grocery_items": [
                 {
-                    "ingredient": "pork chops",
+                    "ingredient": "chicken thighs",
                     "amount": "4"
                 },
                 { 
-                    "ingredient": "apples",
+                    "ingredient": "beef broth",
                     "amount": "2"
                 },
                 { 
-                    "ingredient": "broccoli",
-                    "amount": "1 bag"
+                    "ingredient": "fresh ginger",
+                    "amount": "5 slices"
                 },
                 { 
-                    "ingredient": "butter",
-                    "amount": "1 stick"
+                    "ingredient": "water",
+                    "amount": "4 quarts"
                 },
                 { 
                     "ingredient": "garlic",
                     "amount": "2 cloves"
                 },
                 { 
-                    "ingredient": "rosemary",
-                    "amount": "2 springs"
+                    "ingredient": "star anise",
+                    "amount": "2 pods"
                 },
                 { 
-                    "ingredient": "sage",
-                    "amount": "1 tsp"
+                    "ingredient": "fish sauce",
+                    "amount": "2 tsp"
                 },
                 { 
-                    "ingredient": "potatoes",
-                    "amount": "4"
+                    "ingredient": "rice noodles",
+                    "amount": "16 oz"
                 },
                 { 
                     "ingredient": "salt",
                     "amount": "1 tsp"
                 },
                 { 
-                    "ingredient": "pepper",
-                    "amount": "1 tsp"
+                    "ingredient": "green onion",
+                    "amount": "1 tbsp"
                 },
                 {
                     "ingredient": "onions",
                     "amount": "1"
+                },
+                {
+                    "ingredient": "Thai basil",
+                    "amount": "1 bunch"
                 }
             ],
-            "directions": ["Season chops with salt and pepper.", "Grill chops.", "Peel and cut the apples", "Make the taters good", "Eat the food."]
+            "directions": [
+                "Place onion on a baking sheet and roast in the preheated oven until blackened and soft, about 45 minutes.",
+                "Place bones, onion, ginger, salt, star anise, and fish sauce in a large stockpot and cover with 4 quarts of water. Bring to a boil and reduce heat to low. Simmer on low for 6 to 10 hours. Strain the broth into a saucepan and set aside.",
+                "Place rice noodles in large bowl filled with room temperature water and allow to soak for 1 hour. Bring a large pot of water to a boil and after the noodles have soaked, place them in the boiling water for 1 minute. Bring stock to a simmer.",
+                "Divide noodles among 4 serving bowls; top with sirloin, cilantro, and green onion. Pour hot broth over the top. Stir and let sit until the beef is partially cooked and no longer pink, 1 to 2 minutes. Serve with bean sprouts, Thai basil, lime wedges, hoisin sauce, and chile-garlic sauce on the side."]
         },
         {
             "title": "Paella",
             "image": "https://images.unsplash.com/photo-1453831362806-3d5577f014a4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9dd8da96be0724ab84e4147d428f6bba&auto=format&fit=crop&w=1338&q=80",
             "protein": "pork",
-            "season": "summer",
+            "season": ["summer", "fall"],
             "ethnicity": "Spanish",
             "count": 0,
             "cook_time": "20 mins",
@@ -128,57 +136,78 @@
             "servings": 4,
             "grocery_items": [
                 {
-                    "ingredient": "pork chops",
-                    "amount": "4"
+                    "ingredient": "fresh parsley",
+                    "amount": "1 cup"
                 },
                 { 
-                    "ingredient": "apples",
-                    "amount": "2"
+                    "ingredient": "lemon juice",
+                    "amount": "1/4 cup"
                 },
                 { 
-                    "ingredient": "broccoli",
-                    "amount": "1 bag"
-                },
-                { 
-                    "ingredient": "butter",
-                    "amount": "1 stick"
+                    "ingredient": "olive oil",
+                    "amount": "1 tbsp"
                 },
                 { 
                     "ingredient": "garlic",
                     "amount": "2 cloves"
                 },
                 { 
-                    "ingredient": "rosemary",
-                    "amount": "2 springs"
-                },
-                { 
-                    "ingredient": "sage",
+                    "ingredient": "saffron",
                     "amount": "1 tsp"
                 },
                 { 
-                    "ingredient": "potatoes",
+                    "ingredient": "chicken broth",
+                    "amount": "48 oz"
+                },
+                { 
+                    "ingredient": "jumbo shrimp",
+                    "amount": "8"
+                },
+                { 
+                    "ingredient": "chicken thighs",
                     "amount": "4"
                 },
                 { 
-                    "ingredient": "salt",
-                    "amount": "1 tsp"
+                    "ingredient": "chorizo",
+                    "amount": "2 links"
                 },
                 { 
-                    "ingredient": "pepper",
-                    "amount": "1 tsp"
+                    "ingredient": "iberico ham",
+                    "amount": "4 oz"
                 },
                 {
                     "ingredient": "onions",
-                    "amount": "1"
+                    "amount": "2 cups"
+                },
+                {
+                    "ingredient": "Arborio rice",
+                    "amount": "3 cups"
+                },
+                {
+                    "ingredient": "mussels",
+                    "amount": "8"
+                },
+                {
+                    "ingredient": "smoked paprika",
+                    "amount": "1 tsp"
                 }
             ],
-            "directions": ["Season chops with salt and pepper.", "Grill chops.", "Peel and cut the apples", "Make the taters good", "Eat the food."]
+            "directions": [
+                "To prepare the herb blend, combine the first 4 ingredients, and set aside.",
+                "To prepare paella, combine water, saffron, and broth in a large saucepan. Bring to a simmer (do not boil). Keep warm over low heat.", 
+                "Peel and devein shrimp, leaving tails intact; set aside.",
+                "Heat 1 tablespoon oil in a large paella pan or large skillet over medium-high heat. Add chicken; saute 2 minutes on each side. Remove from pan.", 
+                "Add sausage and prosciutto; saute 2 minutes. Remove from pan.", 
+                "Add shrimp, and saute 2 minutes. Remove from pan. Reduce heat to medium-low.", "Add onion and bell pepper; saute 15 minutes, stirring occasionally. Add tomatoes, paprika, and 3 garlic cloves; cook 5 minutes.", 
+                "Add rice; cook 1 minute, stirring constantly. Stir in herb blend, broth mixture, chicken, sausage mixture, and peas. Bring to a low boil; cook 10 minutes, stirring frequently.", 
+                "Add mussels to pan, nestling them into rice mixture. Cook 5 minutes or until shells open; discard any unopened shells.", 
+                "Arrange shrimp, heads down, in rice mixture, and cook 5 minutes or until shrimp are done. Sprinkle with 1/4 cup lemon juice. Remove from heat; cover with a towel, and let stand 10 minutes. Serve with lemon wedges, if desired."]
         },
         {
             "title": "Salmon",
             "image": "https://images.unsplash.com/photo-1532597311687-5c2dc87fff52?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5f766ceea9ba1bd2750910e70a94f91e&auto=format&fit=crop&w=1350&q=80",
             "protein": "fish",
-            "season": "summer",
+            "season": ["fall", "winter"],
             "ethnicity": "American",
             "count": 0,
             "cook_time": "20 mins",

@@ -22,14 +22,17 @@ export class RecipesDashboardComponent implements OnInit {
   }
 
   filteredRecipes: Recipe[];
-  showRecipeInstructions: boolean = true;
+  showRecipeInstructions: boolean;
   private subscriptions: Subscription[] = [];
-  constructor( private recipeService: RecipeService) {
-    
-   }
+  
+  constructor( 
+    private recipeService: RecipeService
+    ) {}
 
   ngOnInit() {
+    this.showRecipeInstructions = true;
     this.getRecipesInfo();
+    this.subscribeToRecipeInstructionsVisibility();
   }
 
   subscribeToRecipeInstructionsVisibility(): void {
@@ -47,14 +50,17 @@ export class RecipesDashboardComponent implements OnInit {
     return this.recipes.filter((recipe: Recipe) => {
     if(recipe.protein.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
       recipe.title.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
-      recipe.season.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
       recipe.ethnicity.toLocaleLowerCase().indexOf(filterBy) !== -1) {
       return true;
     }});
   }
 
-  toggleRecipeInstructions(): void {
-    this.recipeService.toggleRecipeInstructions();
+  showInstructions(): void {
+    this.recipeService.showRecipeInstructions();
+  }
+
+  hideInstructions(): void {
+    this.recipeService.hideRecipeInstructions();
   }
 
   getRecipesInfo(): void {

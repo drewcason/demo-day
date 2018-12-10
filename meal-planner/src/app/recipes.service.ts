@@ -11,14 +11,18 @@ export class RecipeService {
     Recipes$ = this.recipeInfoSource.asObservable();
     showRecipeInstructionsSource = new Subject<boolean>();
     ShowRecipeInstructions$ = this.showRecipeInstructionsSource.asObservable();
-    showRecipeInstructions: boolean;
+    showInstructions: boolean;
 
     constructor( private http: HttpClient) { }
 
-    toggleRecipeInstructions(): void {
-        this.showRecipeInstructions = !this.showRecipeInstructions;
+    hideRecipeInstructions(): void {
+        this.showRecipeInstructionsSource.next(false);
       }
 
+    showRecipeInstructions(): void {
+        this.showRecipeInstructionsSource.next(true);
+    }  
+    
     getRecipes(): void {
         this.http
             .get('assets/db.json')

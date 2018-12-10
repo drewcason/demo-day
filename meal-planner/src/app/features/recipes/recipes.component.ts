@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Recipe } from 'src/app/recipe';
+import { RecipeService } from 'src/app/recipes.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-recipes',
@@ -7,16 +9,26 @@ import { Recipe } from 'src/app/recipe';
   styleUrls: ['./recipes.component.scss']
 })
 export class RecipesComponent implements OnInit {
-  showRecipeInstructions: boolean = true;
-  
+  showInstructions: boolean;
+  private subscriptions: Subscription[] = [];
   @Input() recipe: Recipe;
-  constructor() { }
+  constructor(
+    private recipeService: RecipeService
+  ) { }
 
   ngOnInit() {
+    this.showInstructions = true;
+    this.subscribeToRecipeInstructionsVisibility();
   }
 
-  toggleRecipeInstructions(): void {
-    this.showRecipeInstructions = !this.showRecipeInstructions;
+  subscribeToRecipeInstructionsVisibility(): void {
+    this.subscriptions.push(
+      this.recipeService.ShowRecipeInstructions$.subscribe(
+        (state) => {
+          this.showInstructions = state;
+        }
+      )
+    )
   }
   
 }
