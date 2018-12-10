@@ -19,6 +19,7 @@ import { DialogModule } from 'primeng/dialog';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { HttpClientModule } from '@angular/common/http';
     ScrollPanelModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

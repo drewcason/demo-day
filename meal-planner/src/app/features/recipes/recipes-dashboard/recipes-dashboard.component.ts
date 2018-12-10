@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { RecipeService } from 'src/app/recipes.service';
 import { Recipe, RecipeRes } from 'src/app/recipe';
 import { Subscription } from 'rxjs';
+import {InputTextModule} from 'primeng/inputtext';
+
 @Component({
   selector: 'app-recipes-dashboard',
   templateUrl: './recipes-dashboard.component.html',
@@ -9,10 +11,22 @@ import { Subscription } from 'rxjs';
 })
 export class RecipesDashboardComponent implements OnInit {
   recipes: Recipe[] = [];
-  errorMessage: string;
+  _recipeFilter: string;
+  
+  get recipeFilter(): string {
+    return this._recipeFilter;
+  }
+  set recipeFilter(value:string) {
+    this._recipeFilter = value;
+    this.filteredRecipes = this.recipeFilter ? this.performFilter(this.recipeFilter) : this.recipes;
+  }
+
+  filteredRecipes: Recipe[];
   showRecipeInstructions: boolean = true;
   private subscriptions: Subscription[] = [];
-  constructor( private recipeService: RecipeService) { }
+  constructor( private recipeService: RecipeService) {
+    
+   }
 
   ngOnInit() {
     this.getRecipesInfo();
@@ -28,6 +42,17 @@ export class RecipesDashboardComponent implements OnInit {
     )
   }
 
+  performFilter(filterBy: string): Recipe[] {
+    filterBy = filterBy.toLocaleLowerCase();
+    return this.recipes.filter((recipe: Recipe) => {
+    if(recipe.protein.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
+      recipe.title.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
+      recipe.season.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
+      recipe.ethnicity.toLocaleLowerCase().indexOf(filterBy) !== -1) {
+      return true;
+    }});
+  }
+
   toggleRecipeInstructions(): void {
     this.recipeService.toggleRecipeInstructions();
   }
@@ -37,6 +62,7 @@ export class RecipesDashboardComponent implements OnInit {
       this.recipeService.Recipes$.subscribe(
         (recipeResponse: RecipeRes) => {
           this.recipes = recipeResponse.data;
+          this.filteredRecipes = this.recipes;
         }
       )
     )
