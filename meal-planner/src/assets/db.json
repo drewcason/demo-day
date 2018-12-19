@@ -2,9 +2,9 @@
     "data": [
         {
             "title": "Grilled Pork Chops",
-            "image": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-0.3.5&s=5f4049825eacb1b9e58bb76188fba497&auto=format&fit=crop&w=2555&q=80",
+            "image": "/assets/images/porkchops.jpeg",
             "protein": "pork",
-            "season": ["summer", "fall", "winter"],
+            "season": "summer fall winter",
             "ethnicity": "American",
             "count": 0,
             "cook_time": "8 hours",
@@ -60,9 +60,9 @@
         },
         {
             "title": "Pho",
-            "image": "https://images.unsplash.com/photo-1503764654157-72d979d9af2f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=71cdddf5cc615224cf2c26614d20154d&auto=format&fit=crop&w=1353&q=80",
+            "image": "/assets/images/pho.jpeg",
             "protein": "chicken",
-            "season": ["summer", "fall", "spring"],
+            "season": "summer fall spring",
             "ethnicity": "Vietnamese",
             "count": 0,
             "cook_time": "20 mins",
@@ -126,9 +126,9 @@
         },
         {
             "title": "Paella",
-            "image": "https://images.unsplash.com/photo-1453831362806-3d5577f014a4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9dd8da96be0724ab84e4147d428f6bba&auto=format&fit=crop&w=1338&q=80",
-            "protein": "pork",
-            "season": ["summer", "fall"],
+            "image": "/assets/images/paella.jpeg",
+            "protein": "chicken chorizo shrimp mussels",
+            "season": "summer fall",
             "ethnicity": "Spanish",
             "count": 0,
             "cook_time": "20 mins",
@@ -205,9 +205,9 @@
         },
         {
             "title": "Salmon",
-            "image": "https://images.unsplash.com/photo-1532597311687-5c2dc87fff52?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5f766ceea9ba1bd2750910e70a94f91e&auto=format&fit=crop&w=1350&q=80",
-            "protein": "fish",
-            "season": ["fall", "winter"],
+            "image": "/assets/images/salmon.jpeg",
+            "protein": "fish salmon",
+            "season": "fall winter",
             "ethnicity": "American",
             "count": 0,
             "cook_time": "20 mins",
@@ -215,57 +215,41 @@
             "servings": 4,
             "grocery_items": [
                 {
-                    "ingredient": "pork chops",
-                    "amount": "4"
+                    "ingredient": "salmon",
+                    "amount": "4 fillets"
                 },
                 { 
-                    "ingredient": "apples",
-                    "amount": "2"
+                    "ingredient": "lemons",
+                    "amount": "1"
                 },
                 { 
                     "ingredient": "broccoli",
                     "amount": "1 bag"
                 },
                 { 
-                    "ingredient": "butter",
-                    "amount": "1 stick"
-                },
-                { 
-                    "ingredient": "garlic",
-                    "amount": "2 cloves"
-                },
-                { 
-                    "ingredient": "rosemary",
-                    "amount": "2 springs"
-                },
-                { 
-                    "ingredient": "sage",
+                    "ingredient": "olive oil",
                     "amount": "1 tsp"
                 },
                 { 
-                    "ingredient": "potatoes",
-                    "amount": "4"
+                    "ingredient": "dill",
+                    "amount": "1 sprig"
                 },
                 { 
-                    "ingredient": "salt",
-                    "amount": "1 tsp"
+                    "ingredient": "soy sauce",
+                    "amount": "2 tsp"
                 },
                 { 
-                    "ingredient": "pepper",
+                    "ingredient": "honey",
                     "amount": "1 tsp"
-                },
-                {
-                    "ingredient": "onions",
-                    "amount": "1"
                 }
             ],
             "directions": ["Season chops with salt and pepper.", "Grill chops.", "Peel and cut the apples", "Make the taters good", "Eat the food."]
         },
         {
             "title": "Steak",
-            "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=67fb2e7b1fbe39b18b51146234ef38aa&auto=format&fit=crop&w=2550&q=80",
+            "image": "/assets/images/steak.jpeg",
             "protein": "beef",
-            "season": "summer",
+            "season": "summer winter spring fall",
             "ethnicity": "American",
             "count": 0,
             "cook_time": "20 mins",
@@ -273,20 +257,20 @@
             "servings": 4,
             "grocery_items": [
                 {
-                    "ingredient": "pork chops",
-                    "amount": "4"
-                },
-                { 
-                    "ingredient": "apples",
+                    "ingredient": "ribeyes",
                     "amount": "2"
                 },
                 { 
-                    "ingredient": "broccoli",
-                    "amount": "1 bag"
+                    "ingredient": "salt",
+                    "amount": "2 tsp"
+                },
+                { 
+                    "ingredient": "potatoes",
+                    "amount": "2"
                 },
                 { 
                     "ingredient": "butter",
-                    "amount": "1 stick"
+                    "amount": "1/2 stick"
                 },
                 { 
                     "ingredient": "garlic",
@@ -297,85 +281,686 @@
                     "amount": "2 springs"
                 },
                 { 
-                    "ingredient": "sage",
-                    "amount": "1 tsp"
-                },
-                { 
-                    "ingredient": "potatoes",
-                    "amount": "4"
-                },
-                { 
-                    "ingredient": "salt",
-                    "amount": "1 tsp"
-                },
-                { 
                     "ingredient": "pepper",
                     "amount": "1 tsp"
                 },
-                {
-                    "ingredient": "onions",
-                    "amount": "1"
+                { 
+                    "ingredient": "green onions",
+                    "amount": "1/4 cup"
                 }
             ],
-            "directions": ["Season chops with salt and pepper.", "Grill chops.", "Peel and cut the apples", "Make the taters good", "Eat the food."]
+            "directions": [
+                "Preheat oven to 500°F", 
+                "Heat iron skillet over high heat for 5 minutes until smoking.", 
+                "Generously coat steaks with salt and pepper.", 
+                "Drizzle a thin layer of canola oil on steaks.", 
+                "Place in skillet for 30 secs on first side and 45 secs on the other.",
+                "Place skillet in the oven for 2 minutes, flip the steaks, and leave in oven for 2 more minutes."]
         },
         {
             "title": "Grilled Cheese",
-            "image": "https://images.unsplash.com/photo-1480603956404-cf57f7ee5f28?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae37e2254950479f153bfcaf0009dd54&auto=format&fit=crop&w=2533&q=80",
-            "protein": "pork",
+            "image": "/assets/images/grilledcheese.jpeg",
+            "protein": "meatless",
             "season": "summer",
             "ethnicity": "American",
             "count": 0,
-            "cook_time": "20 mins",
-            "prep_time": "10 mins",
-            "servings": 4,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
             "grocery_items": [
                 {
-                    "ingredient": "pork chops",
-                    "amount": "4"
+                    "ingredient": "bread",
+                    "amount": "4 slices"
                 },
                 { 
-                    "ingredient": "apples",
+                    "ingredient": "cheese slices",
                     "amount": "2"
                 },
                 { 
-                    "ingredient": "broccoli",
-                    "amount": "1 bag"
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Cheeseburger",
+            "image": "/assets/images/burger.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
                 },
                 { 
                     "ingredient": "butter",
-                    "amount": "1 stick"
-                },
-                { 
-                    "ingredient": "garlic",
-                    "amount": "2 cloves"
-                },
-                { 
-                    "ingredient": "rosemary",
-                    "amount": "2 springs"
-                },
-                { 
-                    "ingredient": "sage",
                     "amount": "1 tsp"
                 },
                 { 
-                    "ingredient": "potatoes",
-                    "amount": "4"
-                },
-                { 
-                    "ingredient": "salt",
-                    "amount": "1 tsp"
-                },
-                { 
-                    "ingredient": "pepper",
-                    "amount": "1 tsp"
-                },
-                {
-                    "ingredient": "onions",
-                    "amount": "1"
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
                 }
             ],
-            "directions": ["Season chops with salt and pepper.", "Grill chops.", "Peel and cut the apples", "Make the taters good", "Eat the food."]
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Chicken and Veggies",
+            "image": "/assets/images/chickenandveggies.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Tacos",
+            "image": "/assets/images/tacos.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Eggs and Bacon",
+            "image": "/assets/images/eggsandbacon.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Enchiladas",
+            "image": "/assets/images/enchiladas.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Pancakes",
+            "image": "/assets/images/pancakes.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Crepes",
+            "image": "/assets/images/crepes.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Pizza",
+            "image": "/assets/images/pizza.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Roast",
+            "image": "/assets/images/roast.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Waffles",
+            "image": "/assets/images/waffles.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Chicken Soup",
+            "image": "/assets/images/chickensoup.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Orange Chicken",
+            "image": "/assets/images/orangechicken.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Ham",
+            "image": "/assets/images/ham.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Fajitas",
+            "image": "/assets/images/fajitas.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Loaded Fries",
+            "image": "/assets/images/loadedfries.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Salad",
+            "image": "/assets/images/salad.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Chorizo Street Tacos",
+            "image": "/assets/images/chorizotacos.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
+        },
+        {
+            "title": "Shrimp Kebobs",
+            "image": "/assets/images/shrimpkebobs.jpeg",
+            "protein": "meatless",
+            "season": "summer",
+            "ethnicity": "American",
+            "count": 0,
+            "cook_time": "5 mins",
+            "prep_time": "2 mins",
+            "servings": 2,
+            "grocery_items": [
+                {
+                    "ingredient": "bread",
+                    "amount": "4 slices"
+                },
+                { 
+                    "ingredient": "cheese slices",
+                    "amount": "2"
+                },
+                { 
+                    "ingredient": "butter",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "tomato soup",
+                    "amount": "1 can"
+                }
+            ],
+            "directions": [
+                "Heat griddle to 350°F.", 
+                "Coat bread with butter.", 
+                "Place bread on griddle, followed by cheese and other piece of bread.", 
+                "Open can of tomato soup and heat on stove in small pot."
+            ]
         }
     ]
 }

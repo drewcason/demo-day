@@ -17,7 +17,7 @@ export class RecipesComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.showInstructions = true;
+    this.showInstructions = false;
     this.subscribeToRecipeInstructionsVisibility();
   }
 

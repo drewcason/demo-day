@@ -30,7 +30,7 @@ export class RecipesDashboardComponent implements OnInit {
     ) {}
 
   ngOnInit() {
-    this.showRecipeInstructions = true;
+    this.showRecipeInstructions = false;
     this.getRecipesInfo();
     this.subscribeToRecipeInstructionsVisibility();
   }
@@ -50,6 +50,7 @@ export class RecipesDashboardComponent implements OnInit {
     return this.recipes.filter((recipe: Recipe) => {
     if(recipe.protein.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
       recipe.title.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
+      recipe.season.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
       recipe.ethnicity.toLocaleLowerCase().indexOf(filterBy) !== -1) {
       return true;
     }});
