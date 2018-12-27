@@ -10,17 +10,19 @@
         <img class='card-img-top rounded-0' src="{{ recipe.image }}">
       </div>
     </p-header>
-    <div class='text-right'>
-      <app-recipes-modal></app-recipes-modal>
+    <div class='text-left'>
+      <app-recipes-modal 
+      [title]="recipe.title" 
+      [image]="recipe.image" 
+      [grocery_items]="recipe.grocery_items" 
+      [directions]='recipe.directions'
+      [cook_time]='recipe.cook_time'
+      [prep_time]='recipe.prep_time'></app-recipes-modal>
     </div>
     <div class='card-body ui-card-content' *ngIf="showInstructions">
       <ul>
         <li *ngFor="let items of recipe.grocery_items">{{ items.amount }} {{ items.ingredient }}</li>
       </ul>
-      <br/>
-      <ol>
-        <li *ngFor="let steps of recipe.directions">{{ steps }}</li>
-      </ol>
     </div>
     <div class='ui-card-footer m-0 border-top'>
       <button pButton type="button" icon="pi pi-plus" label="Menu" class="ui-button-rounded px-3"></button>

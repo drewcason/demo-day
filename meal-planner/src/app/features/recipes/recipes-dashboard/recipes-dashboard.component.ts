@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { RecipeService } from 'src/app/recipes.service';
 import { Recipe, RecipeRes } from 'src/app/recipe';
 import { Subscription } from 'rxjs';
-import {InputTextModule} from 'primeng/inputtext';
 
 @Component({
   selector: 'app-recipes-dashboard',
@@ -19,6 +18,10 @@ export class RecipesDashboardComponent implements OnInit {
   set recipeFilter(value:string) {
     this._recipeFilter = value;
     this.filteredRecipes = this.recipeFilter ? this.performFilter(this.recipeFilter) : this.recipes;
+  }
+  set proteinFilter(protein: string) {
+    this._recipeFilter = protein;
+    this.filteredRecipes = this.recipeFilter ? this.performFilter(this._recipeFilter) : this.recipes;
   }
 
   filteredRecipes: Recipe[];
@@ -48,12 +51,20 @@ export class RecipesDashboardComponent implements OnInit {
   performFilter(filterBy: string): Recipe[] {
     filterBy = filterBy.toLocaleLowerCase();
     return this.recipes.filter((recipe: Recipe) => {
-    if(recipe.protein.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
+    if (recipe.protein.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
       recipe.title.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
       recipe.season.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
       recipe.ethnicity.toLocaleLowerCase().indexOf(filterBy) !== -1) {
       return true;
     }});
+  }
+
+  filterByProtein(protein: string): Recipe[] {
+    return this.recipes.filter((recipe: Recipe) => {
+      if (recipe.protein.toLocaleLowerCase().indexOf(protein) !== -1) {
+        return true;
+      }
+    })
   }
 
   showInstructions(): void {

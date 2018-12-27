@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Recipe } from 'src/app/recipe';
+import { InvokeFunctionExpr } from '@angular/compiler';
 
 @Component({
   selector: 'app-recipes-modal',
@@ -7,6 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipesModalComponent implements OnInit {
 display: boolean = false;
+@Input() recipe: Recipe;
+@Input() title: Recipe["title"];
+@Input() image: Recipe["image"];
+@Input() grocery_items: Recipe['grocery_items'];
+@Input() directions: Recipe['directions'];
+@Input() cook_time: Recipe['cook_time'];
+@Input() prep_time: Recipe['prep_time'];
+
 
   constructor() { }
 

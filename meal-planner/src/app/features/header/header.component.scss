@@ -4,6 +4,12 @@ div.shadow.p-3.mb-3.bg-white.rounded {
     margin-top: 5px;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -31,6 +37,9 @@ nav {
     right: 5px;
 }
 
+.ui-sidebar-mask {
+    display: none !important;
+}
 @media only screen and (max-width: 860px) {
     nav {
         a {

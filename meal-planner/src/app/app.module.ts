@@ -19,7 +19,9 @@ import { DialogModule } from 'primeng/dialog';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ThisWeekComponent } from './features/this-week/this-week.component';
+import { AddRecipeModalComponent } from './features/add-recipe-modal/add-recipe-modal.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { FormsModule } from '@angular/forms';
     RecipesDashboardComponent,
     StepsComponent,
     HeaderComponent,
+    ThisWeekComponent,
+    AddRecipeModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +50,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

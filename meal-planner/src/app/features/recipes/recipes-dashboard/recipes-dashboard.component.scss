@@ -50,3 +50,36 @@ p-header h3 {
     }
     
 }
+
+li {
+    padding: 1rem;
+    display: inline-block;
+    border: none;
+    &:hover{
+        color: #333;
+    }
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    &:hover {
+        color: #333;
+        cursor: pointer;
+    }
+}
+
+div.move-left-clear, div.move-left {
+    position: relative;
+    right: 60px;
+}
+
+@media only screen and (max-width: 1203px) {
+    div.move-left {
+        position: relative;
+        right: 0;
+        width: 100%;
+    }
+
+}
+

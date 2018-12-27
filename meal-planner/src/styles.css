@@ -2,3 +2,7 @@
 * {
     font-family: 'Didot', Helvetica, serif
 }
+
+body div.ui-widget-overlay.ui-sidebar-mask {
+    display: none !important;
+}

@@ -6,7 +6,7 @@
             "protein": "pork",
             "season": "summer fall winter",
             "ethnicity": "American",
-            "count": 0,
+            "count": 3,
             "cook_time": "8 hours",
             "prep_time": "20 mins",
             "servings": 4,
@@ -64,7 +64,7 @@
             "protein": "chicken",
             "season": "summer fall spring",
             "ethnicity": "Vietnamese",
-            "count": 0,
+            "count": 6,
             "cook_time": "20 mins",
             "prep_time": "10 mins",
             "servings": 4,
@@ -130,7 +130,7 @@
             "protein": "chicken chorizo shrimp mussels",
             "season": "summer fall",
             "ethnicity": "Spanish",
-            "count": 0,
+            "count": 5,
             "cook_time": "20 mins",
             "prep_time": "10 mins",
             "servings": 4,
@@ -209,7 +209,7 @@
             "protein": "fish salmon",
             "season": "fall winter",
             "ethnicity": "American",
-            "count": 0,
+            "count": 2,
             "cook_time": "20 mins",
             "prep_time": "10 mins",
             "servings": 4,
@@ -251,7 +251,7 @@
             "protein": "beef",
             "season": "summer winter spring fall",
             "ethnicity": "American",
-            "count": 0,
+            "count": 4,
             "cook_time": "20 mins",
             "prep_time": "10 mins",
             "servings": 4,
@@ -303,7 +303,7 @@
             "protein": "meatless",
             "season": "summer",
             "ethnicity": "American",
-            "count": 0,
+            "count": 4,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -335,64 +335,91 @@
         {
             "title": "Cheeseburger",
             "image": "/assets/images/burger.jpeg",
-            "protein": "meatless",
+            "protein": "beef",
             "season": "summer",
             "ethnicity": "American",
-            "count": 0,
+            "count": 6,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
             "grocery_items": [
                 {
-                    "ingredient": "bread",
-                    "amount": "4 slices"
+                    "ingredient": "ground beef",
+                    "amount": "1 pound"
                 },
                 { 
                     "ingredient": "cheese slices",
-                    "amount": "2"
+                    "amount": "4"
                 },
                 { 
-                    "ingredient": "butter",
+                    "ingredient": "onion powder",
                     "amount": "1 tsp"
                 },
                 { 
-                    "ingredient": "tomato soup",
-                    "amount": "1 can"
+                    "ingredient": "hamburger buns",
+                    "amount": "4"
+                },
+                { 
+                    "ingredient": "salt",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "pepper",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "mayo",
+                    "amount": "1 tsp"
+                }
+                ,
+                { 
+                    "ingredient": "BBQ sauce",
+                    "amount": "2 tsp"
                 }
             ],
             "directions": [
-                "Heat griddle to 350°F.", 
-                "Coat bread with butter.", 
-                "Place bread on griddle, followed by cheese and other piece of bread.", 
-                "Open can of tomato soup and heat on stove in small pot."
+                "Heat griddle to 450°F.", 
+                "Form 4 equally sized patties and coat generously with onion powder, salt, and pepper",
+                "When griddle is smoking hot, place patties on griddle and cook for 6-7 minutes. Flip the patties and cook for 4-5 minutes.", 
+                "Toast buns in toaster if desired.", 
+                "Add cheese for last minute of cooking.",
+                "If desired, spread thin layer of mayo on bottom bun to prevent it from gettgin soggy. Add BBQ sauce for deliciousness."
             ]
         },
         {
             "title": "Chicken and Veggies",
             "image": "/assets/images/chickenandveggies.jpeg",
-            "protein": "meatless",
+            "protein": "chicken",
             "season": "summer",
             "ethnicity": "American",
-            "count": 0,
+            "count": 4,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
             "grocery_items": [
                 {
-                    "ingredient": "bread",
-                    "amount": "4 slices"
-                },
-                { 
-                    "ingredient": "cheese slices",
+                    "ingredient": "chicken breasts",
                     "amount": "2"
                 },
                 { 
-                    "ingredient": "butter",
+                    "ingredient": "onion",
+                    "amount": "1"
+                },
+                { 
+                    "ingredient": "salt",
                     "amount": "1 tsp"
                 },
                 { 
-                    "ingredient": "tomato soup",
-                    "amount": "1 can"
+                    "ingredient": "pepper",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "asparagus",
+                    "amount": "1 bundle"
+                },
+                { 
+                    "ingredient": "bell peppers",
+                    "amount": "2"
                 }
             ],
             "directions": [
@@ -405,29 +432,61 @@
         {
             "title": "Tacos",
             "image": "/assets/images/tacos.jpeg",
-            "protein": "meatless",
-            "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "protein": "beef chicken",
+            "season": "summer spring fall winter",
+            "ethnicity": "Mexican",
+            "count": 7,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
             "grocery_items": [
                 {
-                    "ingredient": "bread",
-                    "amount": "4 slices"
+                    "ingredient": "ground beef",
+                    "amount": "1 pound"
                 },
                 { 
-                    "ingredient": "cheese slices",
-                    "amount": "2"
+                    "ingredient": "fiesta blend cheese",
+                    "amount": "8 oz"
                 },
                 { 
-                    "ingredient": "butter",
+                    "ingredient": "sour cream",
+                    "amount": "8 oz"
+                },
+                { 
+                    "ingredient": "hard taco shells",
+                    "amount": "8"
+                },
+                { 
+                    "ingredient": "chili powder",
+                    "amount": "3 tsp"
+                },
+                { 
+                    "ingredient": "paprika",
                     "amount": "1 tsp"
                 },
                 { 
-                    "ingredient": "tomato soup",
-                    "amount": "1 can"
+                    "ingredient": "cumin",
+                    "amount": "1.5 tsp"
+                },
+                { 
+                    "ingredient": "onion powder",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "garlic powder",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "oregano",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "salt",
+                    "amount": "1 tsp"
+                },
+                { 
+                    "ingredient": "pepper",
+                    "amount": "1 tsp"
                 }
             ],
             "directions": [
@@ -440,29 +499,29 @@
         {
             "title": "Eggs and Bacon",
             "image": "/assets/images/eggsandbacon.jpeg",
-            "protein": "meatless",
-            "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "protein": "eggs bacon",
+            "season": "summer spring fall winter",
+            "ethnicity": "American breakfast",
+            "count": 4,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
-            "servings": 2,
+            "servings": 4,
             "grocery_items": [
                 {
-                    "ingredient": "bread",
-                    "amount": "4 slices"
+                    "ingredient": "bacon",
+                    "amount": "1 pound"
                 },
                 { 
-                    "ingredient": "cheese slices",
-                    "amount": "2"
+                    "ingredient": "eggs",
+                    "amount": "8"
                 },
                 { 
                     "ingredient": "butter",
                     "amount": "1 tsp"
                 },
                 { 
-                    "ingredient": "tomato soup",
-                    "amount": "1 can"
+                    "ingredient": "cheddar cheese",
+                    "amount": "4 oz"
                 }
             ],
             "directions": [
@@ -475,10 +534,10 @@
         {
             "title": "Enchiladas",
             "image": "/assets/images/enchiladas.jpeg",
-            "protein": "meatless",
-            "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "protein": "beef chicken",
+            "season": "summer spring fall  winter",
+            "ethnicity": "Mexican",
+            "count": 3,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -511,9 +570,9 @@
             "title": "Pancakes",
             "image": "/assets/images/pancakes.jpeg",
             "protein": "meatless",
-            "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "season": "summer spring fall winter",
+            "ethnicity": "American breakfast",
+            "count": 4,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -547,8 +606,8 @@
             "image": "/assets/images/crepes.jpeg",
             "protein": "meatless",
             "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "ethnicity": "French breakfast",
+            "count": 2,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -580,10 +639,10 @@
         {
             "title": "Pizza",
             "image": "/assets/images/pizza.jpeg",
-            "protein": "meatless",
-            "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "protein": "beef pepperoni bacon sausage",
+            "season": "summer spring",
+            "ethnicity": "Italian",
+            "count": 8,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -615,10 +674,10 @@
         {
             "title": "Roast",
             "image": "/assets/images/roast.jpeg",
-            "protein": "meatless",
-            "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "protein": "pork beef",
+            "season": "fall winter",
+            "ethnicity": "English Italian",
+            "count": 3,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -651,9 +710,9 @@
             "title": "Waffles",
             "image": "/assets/images/waffles.jpeg",
             "protein": "meatless",
-            "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "season": "summer spring fall winter",
+            "ethnicity": "American breakfast",
+            "count": 5,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -685,10 +744,10 @@
         {
             "title": "Chicken Soup",
             "image": "/assets/images/chickensoup.jpeg",
-            "protein": "meatless",
-            "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "protein": "chicken",
+            "season": "fall winter",
+            "ethnicity": "American Italian",
+            "count": 2,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -720,10 +779,10 @@
         {
             "title": "Orange Chicken",
             "image": "/assets/images/orangechicken.jpeg",
-            "protein": "meatless",
-            "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "protein": "chicken",
+            "season": "fall winter",
+            "ethnicity": "Chinese",
+            "count": 4,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -755,10 +814,10 @@
         {
             "title": "Ham",
             "image": "/assets/images/ham.jpeg",
-            "protein": "meatless",
+            "protein": "ham pork",
             "season": "summer",
             "ethnicity": "American",
-            "count": 0,
+            "count": 3,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -790,10 +849,10 @@
         {
             "title": "Fajitas",
             "image": "/assets/images/fajitas.jpeg",
-            "protein": "meatless",
+            "protein": "chicken steak",
             "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "ethnicity": "Mexican",
+            "count": 2,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -826,9 +885,9 @@
             "title": "Loaded Fries",
             "image": "/assets/images/loadedfries.jpeg",
             "protein": "meatless",
-            "season": "summer",
+            "season": "summer fall",
             "ethnicity": "American",
-            "count": 0,
+            "count": 1,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -861,9 +920,9 @@
             "title": "Salad",
             "image": "/assets/images/salad.jpeg",
             "protein": "meatless",
-            "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "season": "summer spring",
+            "ethnicity": "American Italian",
+            "count": 1,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -895,10 +954,10 @@
         {
             "title": "Chorizo Street Tacos",
             "image": "/assets/images/chorizotacos.jpeg",
-            "protein": "meatless",
-            "season": "summer",
-            "ethnicity": "American",
-            "count": 0,
+            "protein": "chorizo",
+            "season": "summer spring fall",
+            "ethnicity": "Mexican",
+            "count": 2,
             "cook_time": "5 mins",
             "prep_time": "2 mins",
             "servings": 2,
@@ -930,8 +989,8 @@
         {
             "title": "Shrimp Kebobs",
             "image": "/assets/images/shrimpkebobs.jpeg",
-            "protein": "meatless",
-            "season": "summer",
+            "protein": "shrimp",
+            "season": "summer spring fall",
             "ethnicity": "American",
             "count": 0,
             "cook_time": "5 mins",
