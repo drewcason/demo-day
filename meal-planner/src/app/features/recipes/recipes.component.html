@@ -1,9 +1,9 @@
 <p-card>
     <p-header class='ui-card-header'>
-      <div class='header-container'>
-        <h3 class='ui-card-title p-3 m-0 border-bottom'>{{ recipe.title }}</h3>
-        <div class='right quick-buttons border-bottom'>
-          <button class='mr-2'><i class='pi pi-plus'></i></button>
+      <div class='header-container border-bottom'>
+        <h3 class='ui-card-title p-3 m-0'>{{ recipe.title }}</h3>
+        <div class='right quick-buttons'>
+          <button class='mr-2' (click)='addToThisWeekMenu(recipe)'><i class='pi pi-plus'></i></button>
         </div>
       </div>
       <div class='img-container'>
@@ -25,6 +25,6 @@
       </ul>
     </div>
     <div class='ui-card-footer m-0 border-top'>
-      <button pButton type="button" icon="pi pi-plus" label="Menu" class="ui-button-rounded px-3"></button>
+      <button pButton type="button" icon="pi pi-plus" label="Menu" class="ui-button-rounded px-3" (click)='addToThisWeekMenu(recipe)'></button>
     </div>
   </p-card>

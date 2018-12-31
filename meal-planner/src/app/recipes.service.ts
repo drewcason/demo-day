@@ -12,8 +12,8 @@ export class RecipeService {
     showRecipeInstructionsSource = new Subject<boolean>();
     ShowRecipeInstructions$ = this.showRecipeInstructionsSource.asObservable();
     showInstructions: boolean;
-
-    constructor( private http: HttpClient) { }
+    recipesURL = 'http://localhost:3000/recipes';
+    constructor( private http: HttpClient ) { }
 
     hideRecipeInstructions(): void {
         this.showRecipeInstructionsSource.next(false);
@@ -23,9 +23,29 @@ export class RecipeService {
         this.showRecipeInstructionsSource.next(true);
     }  
     
-    getRecipes(): void {
+    getMostPopularRecipes(): void {
         this.http
-            .get('assets/db.json')
+            .get(`${this.recipesURL}?_sort=count&_order=desc`)
+            .subscribe(
+                (res: Recipe[]) => {
+                    this.recipeInfoSource.next(res);
+                }
+            )
+    }
+
+    getLeastPopularRecipes(): void {
+        this.http
+            .get(`${this.recipesURL}?_sort=count&_order=asc`)
+            .subscribe(
+                (res: Recipe[]) => {
+                    this.recipeInfoSource.next(res);
+                }
+            )
+    }
+
+    getSortedRecipes(): void {
+        this.http
+            .get(`${this.recipesURL}?_sort=title&_order=asc`)
             .subscribe(
                 (res: Recipe[]) => {
                     this.recipeInfoSource.next(res);

@@ -1,7 +1,7 @@
 <div class='col-12 d-flex flex-row flex-wrap justify-content-between align-content-center mx-2 pr-4'>
   <div class='d-inline-flex pl-0 col-6 align-self-center'>
     <span class="d-inline-block pr-2">
-      <input id="float-input" type="text" size="30" pInputText placeholder='Filter by' [(ngModel)]="recipeFilter">
+      <input type="text" size="30" pInputText placeholder='Filter by' [(ngModel)]="recipeFilter">
     </span>
     <div class='move-left-clear d-inline-block filters-buttons'>
       <li class="py-1 px-1 nav-item" style="color:#666;">
@@ -15,47 +15,60 @@
   </div>
 </div>
 <div class='col-12 mx-2'>
-    <div class='d-inline-flex'>
-        <li class='p-0 nav-item dropdown'>
-          <a class='pl-2 py-0 nav-link dropdown-toggle' href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+  <div class='d-inline-flex flex-wrap'>
+      <li class="p-0 nav-item dropdown">
+          <a class="pl-2 py-0 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Protein
+            Sort
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" (click)="recipeFilter = 'beef'">Beef</a>
-            <a class="dropdown-item" (click)="recipeFilter = 'chicken'">Chicken</a>
-            <a class="dropdown-item" (click)="recipeFilter = 'fish'">Fish</a>
-            <a class="dropdown-item" (click)="recipeFilter = 'pork'">Pork</a>
+            <a class="dropdown-item" (click)="getMostPopularRecipesInfo()">Most Popular</a>
+            <a class="dropdown-item" (click)="getLeastPopularRecipesInfo()">Least Popular</a>
+            <a class="dropdown-item" (click)="getSortedRecipesInfo()">A-Z</a>
           </div>
         </li>
-        <li class="py-0 px-1 nav-item dropdown">
-          <a class="py-0 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Ethnicity
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" (click)="recipeFilter = 'american'">American</a>
-            <a class="dropdown-item" (click)="recipeFilter = 'chinese'">Chinese</a>
-            <a class="dropdown-item" (click)="recipeFilter = 'mexican'">Mexican</a>
-            <a class="dropdown-item" (click)="recipeFilter = 'italian'">Italian</a>
-          </div>
-        </li>
-        <li class="py-0 px-1 nav-item dropdown">
-          <a class="py-0 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Season
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" (click)="recipeFilter = 'spring'">Spring</a>
-            <a class="dropdown-item" (click)="recipeFilter = 'summer'">Summer</a>
-            <a class="dropdown-item" (click)="recipeFilter = 'fall'">Fall</a>
-            <a class="dropdown-item" (click)="recipeFilter = 'winter'">Winter</a>
-          </div>
-        </li>
-        <li class="py-0 ml-2 nav-item">
-          <a (click)="recipeFilter = 'breakfast'">Breakfast</a>
-        </li>
+    <li class='py-0 px-1 nav-item dropdown'>
+      <a class='py-0 nav-link dropdown-toggle' href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Protein
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" (click)="recipeFilter = 'beef'">Beef</a>
+        <a class="dropdown-item" (click)="recipeFilter = 'chicken'">Chicken</a>
+        <a class="dropdown-item" (click)="recipeFilter = 'fish'">Fish</a>
+        <a class="dropdown-item" (click)="recipeFilter = 'pork'">Pork</a>
       </div>
+    </li>
+    <li class="py-0 px-1 nav-item dropdown">
+      <a class="py-0 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Ethnicity
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" (click)="recipeFilter = 'american'">American</a>
+        <a class="dropdown-item" (click)="recipeFilter = 'chinese'">Chinese</a>
+        <a class="dropdown-item" (click)="recipeFilter = 'mexican'">Mexican</a>
+        <a class="dropdown-item" (click)="recipeFilter = 'italian'">Italian</a>
+        <a class="dropdown-item" (click)="recipeFilter = 'spanish'">Spanish</a>
+        <a class="dropdown-item" (click)="recipeFilter = 'vietnamese'">Vietnamese</a>
+      </div>
+    </li>
+    <li class="py-0 px-1 nav-item dropdown">
+      <a class="py-0 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Season
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" (click)="recipeFilter = 'spring'">Spring</a>
+        <a class="dropdown-item" (click)="recipeFilter = 'summer'">Summer</a>
+        <a class="dropdown-item" (click)="recipeFilter = 'fall'">Fall</a>
+        <a class="dropdown-item" (click)="recipeFilter = 'winter'">Winter</a>
+      </div>
+    </li>
+    <li class="py-0 ml-2 nav-item">
+      <a (click)="recipeFilter = 'breakfast'">Breakfast</a>
+    </li>
+  </div>
 </div>
 <div class='container col-12'>
   <ng-container *ngFor="let recipe of filteredRecipes">

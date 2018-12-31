@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuService } from '../this-week.service';
+import { RecipeService } from 'src/app/recipes.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,9 +11,15 @@ export class SidebarComponent implements OnInit {
    visible: boolean;
 
 
-  constructor() { }
+  constructor(
+    private menuService: MenuService,
+    private recipeService: RecipeService
+  ) { }
 
   ngOnInit() {
   }
 
+  clearThisWeeksRecipes(): void {
+    this.menuService.clearThisWeeksRecipes().subscribe();
+  }
 }

@@ -34,7 +34,7 @@ export class RecipesDashboardComponent implements OnInit {
 
   ngOnInit() {
     this.showRecipeInstructions = false;
-    this.getRecipesInfo();
+    this.getSortedRecipesInfo();
     this.subscribeToRecipeInstructionsVisibility();
   }
 
@@ -75,16 +75,46 @@ export class RecipesDashboardComponent implements OnInit {
     this.recipeService.hideRecipeInstructions();
   }
 
-  getRecipesInfo(): void {
+  getMostPopularRecipesInfo(): void {
     this.subscriptions.push(
       this.recipeService.Recipes$.subscribe(
-        (recipeResponse: RecipeRes) => {
-          this.recipes = recipeResponse.data;
-          this.filteredRecipes = this.recipes;
+        (recipeResponse: Recipe[]) => {
+          if (recipeResponse) {
+            this.recipes = recipeResponse;
+            this.filteredRecipes = this.recipes;
+          }
         }
       )
     )
-    this.recipeService.getRecipes();
+    this.recipeService.getMostPopularRecipes();
+  }
+
+  getLeastPopularRecipesInfo(): void {
+    this.subscriptions.push(
+      this.recipeService.Recipes$.subscribe(
+        (recipeResponse: Recipe[]) => {
+          if (recipeResponse) {
+            this.recipes = recipeResponse;
+            this.filteredRecipes = this.recipes;
+          }
+        }
+      )
+    )
+    this.recipeService.getLeastPopularRecipes();
+  }
+
+  getSortedRecipesInfo(): void {
+    this.subscriptions.push(
+      this.recipeService.Recipes$.subscribe(
+        (recipeResponse: Recipe[]) => {
+          if (recipeResponse) {
+            this.recipes = recipeResponse;
+            this.filteredRecipes = this.recipes;
+          }
+        }
+      )
+    )
+    this.recipeService.getSortedRecipes();
   }
  
 

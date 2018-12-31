@@ -1,5 +1,38 @@
-<div class="your-class">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
-  </div>
+<h2 class='text-center mx-auto p-2 black'>This Week's Menu</h2>
+<div class='container col-12 d-flex flex-wrap'>
+  <ng-container *ngFor="let recipe of menu">
+    <div class='card-container p-2 col-lg-3 col-md-4 col-sm-6 col-xs-12'>
+        <p-card>
+            <p-header class='ui-card-header'>
+              <div class='header-container'>
+                <h3 class='ui-card-title p-3 m-0 border-bottom'>{{ recipe.title }}</h3>
+              </div>
+              <div class='img-container'>
+                <img class='card-img-top rounded-0' src="{{ recipe.image }}">
+              </div>
+            </p-header>
+            <div class='text-left'>
+              <app-recipes-modal 
+              [title]="recipe.title" 
+              [image]="recipe.image" 
+              [grocery_items]="recipe.grocery_items" 
+              [directions]='recipe.directions'
+              [cook_time]='recipe.cook_time'
+              [prep_time]='recipe.prep_time'></app-recipes-modal>
+            </div>
+            <div class='card-body ui-card-content' *ngIf="showInstructions">
+              <ul>
+                <li *ngFor="let items of recipe.grocery_items">{{ items.amount }} {{ items.ingredient }}</li>
+              </ul>
+            </div>
+            <div class='ui-card-footer m-0 border-top d-flex justify-content-between'>
+              <button pButton type="button" icon="pi pi-minus" label="Remove" class="ui-button-rounded ml-3 px-1" (click)="removeRecipeFromMenu(recipe.id)"></button>
+              <button pButton type="button" icon="pi pi-check" label="Made It" class="ui-button-rounded mr-3 px-1" (click)='madeRecipeAndRemove()'></button>
+            </div>
+          </p-card>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="menu.length === 0">
+    <h2 class='text-center mx-auto p-5'><em>Add recipes to this week's menu.</em></h2>
+  </ng-container>
+</div>

@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl} from '@angular/forms';
 
 @Component({
-  selector: 'app-add-recipe-modal',
-  templateUrl: './add-recipe-modal.component.html',
-  styleUrls: ['./add-recipe-modal.component.css']
+  selector: 'app-add-recipe',
+  templateUrl: './add-recipe.component.html',
+  styleUrls: ['./add-recipe.component.scss']
 })
-export class AddRecipeModalComponent implements OnInit {
+export class AddRecipeComponent implements OnInit {
   addRecipeForm: FormGroup;
+  title: string;
+  prep_time: string;
+  cook_time: string;
+  protein: string;
+  season: string;
+  ethnicity: string;
   constructor(
 
   ) { }

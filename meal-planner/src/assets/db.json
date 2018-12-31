@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "title": "Grilled Pork Chops",
+            "title": "Pork Chops",
             "image": "/assets/images/porkchops.jpeg",
             "protein": "pork",
             "season": "summer fall winter",
@@ -387,7 +387,7 @@
             ]
         },
         {
-            "title": "Chicken and Veggies",
+            "title": "Chicken & Veggies",
             "image": "/assets/images/chickenandveggies.jpeg",
             "protein": "chicken",
             "season": "summer",
@@ -497,7 +497,7 @@
             ]
         },
         {
-            "title": "Eggs and Bacon",
+            "title": "Eggs & Bacon",
             "image": "/assets/images/eggsandbacon.jpeg",
             "protein": "eggs bacon",
             "season": "summer spring fall winter",

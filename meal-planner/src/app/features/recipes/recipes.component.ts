@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Recipe } from 'src/app/recipe';
 import { RecipeService } from 'src/app/recipes.service';
 import { Subscription } from 'rxjs';
+import { MenuService } from '../this-week.service';
 
 @Component({
   selector: 'app-recipes',
@@ -11,9 +12,11 @@ import { Subscription } from 'rxjs';
 export class RecipesComponent implements OnInit {
   showInstructions: boolean;
   private subscriptions: Subscription[] = [];
+  menu = [];
   @Input() recipe: Recipe;
   constructor(
-    private recipeService: RecipeService
+    private recipeService: RecipeService,
+    private menuService: MenuService
   ) { }
 
   ngOnInit() {
@@ -30,5 +33,9 @@ export class RecipesComponent implements OnInit {
       )
     )
   }
-  
+
+  addToThisWeekMenu(newRecipe): void {
+    this.menuService.postThisWeeksRecipes(newRecipe)
+      .subscribe(recipe => this.menu.push(recipe));
+  }
 }
