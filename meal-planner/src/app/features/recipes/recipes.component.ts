@@ -3,6 +3,7 @@ import { Recipe } from 'src/app/recipe';
 import { RecipeService } from 'src/app/recipes.service';
 import { Subscription } from 'rxjs';
 import { MenuService } from '../this-week.service';
+import { GroceryListService } from '../grocery-list/grocery-list.service';
 
 @Component({
   selector: 'app-recipes',
@@ -13,15 +14,18 @@ export class RecipesComponent implements OnInit {
   showInstructions: boolean;
   private subscriptions: Subscription[] = [];
   menu = [];
+  grocery_list = [];
   @Input() recipe: Recipe;
   constructor(
     private recipeService: RecipeService,
-    private menuService: MenuService
+    private menuService: MenuService,
+    private groceryService: GroceryListService
   ) { }
 
   ngOnInit() {
     this.showInstructions = false;
     this.subscribeToRecipeInstructionsVisibility();
+    this.subscribeToMenu();
   }
 
   subscribeToRecipeInstructionsVisibility(): void {
@@ -34,8 +38,26 @@ export class RecipesComponent implements OnInit {
     )
   }
 
+  subscribeToMenu(): void {
+    this.menu = [];
+    this.subscriptions.push(
+      this.menuService.Menu$.subscribe(
+        (menuResponse: Recipe[]) => {
+          if (menuResponse) {
+            this.menu = menuResponse;
+          }
+        }
+      )
+    )
+  }
+
   addToThisWeekMenu(newRecipe): void {
-    this.menuService.postThisWeeksRecipes(newRecipe)
-      .subscribe(recipe => this.menu.push(recipe));
+    this.menuService.postThisWeeksRecipes(newRecipe).subscribe();
+  }
+
+  addItemsToGroceryList(items) {
+    items.forEach(element => {
+      this.groceryService.postItemsToGroceryList(element).subscribe();
+    })
   }
 }

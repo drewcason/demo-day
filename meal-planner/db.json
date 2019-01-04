@@ -62,7 +62,8 @@
         "Peel and cut the apples",
         "Make the taters good",
         "Eat the food."
-      ]
+      ],
+      "id": 1
     },
     {
       "title": "Pho",
@@ -70,7 +71,7 @@
       "protein": "chicken",
       "season": "summer fall spring",
       "ethnicity": "Vietnamese",
-      "count": 6,
+      "count": 7,
       "cook_time": "20 mins",
       "prep_time": "10 mins",
       "servings": 4,
@@ -129,7 +130,8 @@
         "Place bones, onion, ginger, salt, star anise, and fish sauce in a large stockpot and cover with 4 quarts of water. Bring to a boil and reduce heat to low. Simmer on low for 6 to 10 hours. Strain the broth into a saucepan and set aside.",
         "Place rice noodles in large bowl filled with room temperature water and allow to soak for 1 hour. Bring a large pot of water to a boil and after the noodles have soaked, place them in the boiling water for 1 minute. Bring stock to a simmer.",
         "Divide noodles among 4 serving bowls; top with sirloin, cilantro, and green onion. Pour hot broth over the top. Stir and let sit until the beef is partially cooked and no longer pink, 1 to 2 minutes. Serve with bean sprouts, Thai basil, lime wedges, hoisin sauce, and chile-garlic sauce on the side."
-      ]
+      ],
+      "id": 2
     },
     {
       "title": "Paella",
@@ -137,7 +139,7 @@
       "protein": "chicken chorizo shrimp mussels",
       "season": "summer fall",
       "ethnicity": "Spanish",
-      "count": 5,
+      "count": 6,
       "cook_time": "20 mins",
       "prep_time": "10 mins",
       "servings": 4,
@@ -210,7 +212,8 @@
         "Add rice; cook 1 minute, stirring constantly. Stir in herb blend, broth mixture, chicken, sausage mixture, and peas. Bring to a low boil; cook 10 minutes, stirring frequently.",
         "Add mussels to pan, nestling them into rice mixture. Cook 5 minutes or until shells open; discard any unopened shells.",
         "Arrange shrimp, heads down, in rice mixture, and cook 5 minutes or until shrimp are done. Sprinkle with 1/4 cup lemon juice. Remove from heat; cover with a towel, and let stand 10 minutes. Serve with lemon wedges, if desired."
-      ]
+      ],
+      "id": 3
     },
     {
       "title": "Salmon",
@@ -258,7 +261,8 @@
         "Peel and cut the apples",
         "Make the taters good",
         "Eat the food."
-      ]
+      ],
+      "id": 4
     },
     {
       "title": "Steak",
@@ -311,7 +315,8 @@
         "Drizzle a thin layer of canola oil on steaks.",
         "Place in skillet for 30 secs on first side and 45 secs on the other.",
         "Place skillet in the oven for 2 minutes, flip the steaks, and leave in oven for 2 more minutes."
-      ]
+      ],
+      "id": 5
     },
     {
       "title": "Grilled Cheese",
@@ -346,7 +351,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 6
     },
     {
       "title": "Cheeseburger",
@@ -399,7 +405,8 @@
         "Toast buns in toaster if desired.",
         "Add cheese for last minute of cooking.",
         "If desired, spread thin layer of mayo on bottom bun to prevent it from gettgin soggy. Add BBQ sauce for deliciousness."
-      ]
+      ],
+      "id": 7
     },
     {
       "title": "Chicken & Veggies",
@@ -442,7 +449,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 8
     },
     {
       "title": "Tacos",
@@ -509,7 +517,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 9
     },
     {
       "title": "Eggs & Bacon",
@@ -544,7 +553,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 10
     },
     {
       "title": "Enchiladas",
@@ -579,7 +589,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 11
     },
     {
       "title": "Pancakes",
@@ -587,7 +598,7 @@
       "protein": "meatless",
       "season": "summer spring fall winter",
       "ethnicity": "American breakfast",
-      "count": 4,
+      "count": 5,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
@@ -614,7 +625,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 12
     },
     {
       "title": "Crepes",
@@ -649,7 +661,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 13
     },
     {
       "title": "Pizza",
@@ -684,7 +697,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 14
     },
     {
       "title": "Roast",
@@ -719,7 +733,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 15
     },
     {
       "title": "Waffles",
@@ -754,7 +769,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 16
     },
     {
       "title": "Chicken Soup",
@@ -789,7 +805,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 17
     },
     {
       "title": "Orange Chicken",
@@ -824,7 +841,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 18
     },
     {
       "title": "Ham",
@@ -859,7 +877,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 19
     },
     {
       "title": "Fajitas",
@@ -894,7 +913,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 20
     },
     {
       "title": "Loaded Fries",
@@ -902,7 +922,7 @@
       "protein": "meatless",
       "season": "summer fall",
       "ethnicity": "American",
-      "count": 1,
+      "count": 2,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
@@ -929,7 +949,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 21
     },
     {
       "title": "Salad",
@@ -964,10 +985,11 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 22
     },
     {
-      "title": "Chorizo Street Tacos",
+      "title": "Street Tacos",
       "image": "/assets/images/chorizotacos.jpeg",
       "protein": "chorizo",
       "season": "summer spring fall",
@@ -999,7 +1021,8 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 23
     },
     {
       "title": "Shrimp Kebobs",
@@ -1034,63 +1057,10 @@
         "Coat bread with butter.",
         "Place bread on griddle, followed by cheese and other piece of bread.",
         "Open can of tomato soup and heat on stove in small pot."
-      ]
+      ],
+      "id": 24
     }
   ],
-  "menu": [
-    {
-      "title": "Cheeseburger",
-      "image": "/assets/images/burger.jpeg",
-      "protein": "beef",
-      "season": "summer",
-      "ethnicity": "American",
-      "count": 6,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "grocery_items": [
-        {
-          "ingredient": "ground beef",
-          "amount": "1 pound"
-        },
-        {
-          "ingredient": "cheese slices",
-          "amount": "4"
-        },
-        {
-          "ingredient": "onion powder",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "hamburger buns",
-          "amount": "4"
-        },
-        {
-          "ingredient": "salt",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "pepper",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "mayo",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "BBQ sauce",
-          "amount": "2 tsp"
-        }
-      ],
-      "directions": [
-        "Heat griddle to 450°F.",
-        "Form 4 equally sized patties and coat generously with onion powder, salt, and pepper",
-        "When griddle is smoking hot, place patties on griddle and cook for 6-7 minutes. Flip the patties and cook for 4-5 minutes.",
-        "Toast buns in toaster if desired.",
-        "Add cheese for last minute of cooking.",
-        "If desired, spread thin layer of mayo on bottom bun to prevent it from gettgin soggy. Add BBQ sauce for deliciousness."
-      ],
-      "id": 3
-    }
-  ]
+  "menu": [],
+  "grocery_list": []
 }

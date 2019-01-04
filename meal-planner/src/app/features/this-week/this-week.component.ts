@@ -11,6 +11,7 @@ import { Recipe } from 'src/app/recipe';
 
 export class MenuComponent implements OnInit {
   menu: Recipe[] = [];
+  count: number;
   private subscriptions: Subscription[] = [];
   constructor(
     private menuService: MenuService,
@@ -22,7 +23,6 @@ export class MenuComponent implements OnInit {
   }
 
   getThisWeeksMenu(): void {
-    this.menu = [];
     this.subscriptions.push(
       this.menuService.Menu$.subscribe(
         (menuResponse: Recipe[]) => {
@@ -37,12 +37,20 @@ export class MenuComponent implements OnInit {
 
   removeRecipeFromMenu(id) {
     this.menuService.removeRecipeFromMenu(id).subscribe((value) => {
-    this.getThisWeeksMenu();
-    this.changeDetector.detectChanges();
+      this.getThisWeeksMenu();
+      this.changeDetector.detectChanges();
     });
   }
 
-  madeRecipeAndRemove(id) {
-    this.menuService.removeRecipeFromMenu(id).subscribe();
+  async updateRecipeCount(id) {
+    for (let i = 0; i < this.menu.length; i++) {
+      if ( this.menu[i].id === id ) {
+        this.count = this.menu[i].count + 1;
+      }
+    }
+    await this.menuService.updateRecipeCount(id, this.count).subscribe((value) => {
+      this.getThisWeeksMenu();
+      this.changeDetector.detectChanges();
+    });
   }
 }

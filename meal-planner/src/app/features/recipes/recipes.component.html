@@ -3,7 +3,7 @@
       <div class='header-container border-bottom'>
         <h3 class='ui-card-title p-3 m-0'>{{ recipe.title }}</h3>
         <div class='right quick-buttons'>
-          <button class='mr-2' (click)='addToThisWeekMenu(recipe)'><i class='pi pi-plus'></i></button>
+          <button class='mr-2' (click)='addToThisWeekMenu(recipe); addItemsToGroceryList(recipe.grocery_items)'><i class='pi pi-plus'></i></button>
         </div>
       </div>
       <div class='img-container'>
@@ -25,6 +25,6 @@
       </ul>
     </div>
     <div class='ui-card-footer m-0 border-top'>
-      <button pButton type="button" icon="pi pi-plus" label="Menu" class="ui-button-rounded px-3" (click)='addToThisWeekMenu(recipe)'></button>
+      <button pButton type="button" icon="pi pi-plus" label="Menu" class="ui-button-rounded px-3" (click)='addToThisWeekMenu(recipe); addItemsToGroceryList(recipe.id)'></button>
     </div>
   </p-card>

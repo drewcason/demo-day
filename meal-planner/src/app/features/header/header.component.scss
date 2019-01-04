@@ -21,7 +21,8 @@ nav {
     }
     a {
         color: #333;
-        min-width: 125px;
+        width: 100px;
+        display: inline-block;
         &:hover {
             color: #333;
             text-decoration: none;
@@ -43,7 +44,8 @@ nav {
 @media only screen and (max-width: 860px) {
     nav {
         a {
-        display: none;
+            display: none;
+            color:red;
         }
         img {
             right: -5px;

@@ -18,8 +18,4 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  clearThisWeeksRecipes(): void {
-    this.menuService.clearThisWeeksRecipes().subscribe();
-  }
 }

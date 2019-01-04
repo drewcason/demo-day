@@ -1,0 +1,32 @@
+ul {
+    
+    list-style-position: outside;
+    padding-left: 0;
+    font-size: 1rem;
+}
+
+li {
+    padding: 1rem;
+    &:hover{
+        background-color: #eee;
+        color: #333;
+    }
+}
+
+p-header {
+    background-image: linear-gradient(#eee, #fff);
+    width: 100%;
+}
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    &:hover {
+        color: #333;
+        cursor: pointer;
+    }
+}
