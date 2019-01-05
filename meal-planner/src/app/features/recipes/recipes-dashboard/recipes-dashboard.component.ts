@@ -88,4 +88,32 @@ export class RecipesDashboardComponent implements OnInit {
     )
     this.recipeService.getSortedRecipes();
   }
+
+  getMostPopularRecipesInfo(): void {
+    this.subscriptions.push(
+      this.recipeService.Recipes$.subscribe(
+        (recipeResponse: Recipe[]) => {
+          if (recipeResponse) {
+            this.recipes = recipeResponse;
+            this.filteredRecipes = this.recipes;
+          }
+        }
+      )
+    )
+    this.recipeService.getMostPopularRecipes();
+  }
+
+  getLeastPopularRecipesInfo(): void {
+    this.subscriptions.push(
+      this.recipeService.Recipes$.subscribe(
+        (recipeResponse: Recipe[]) => {
+          if (recipeResponse) {
+            this.recipes = recipeResponse;
+            this.filteredRecipes = this.recipes;
+          }
+        }
+      )
+    )
+    this.recipeService.getLeastPopularRecipes();
+  }
 }

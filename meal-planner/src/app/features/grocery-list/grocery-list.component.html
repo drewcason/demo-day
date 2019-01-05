@@ -1,8 +1,10 @@
 <h2 class='text-center mx-auto p-2 black'>This Week's Grocery List</h2>
-<ng-container  *ngIf="grocery_list && grocery_list.length > 0">
-    <ul class="mx-5">
+<ng-container class="justify-content-center" *ngIf="grocery_list && grocery_list.length > 0">
+    <div class="d-flex w-100 justify-content-center">
+    <ul class="mx-sm-3 mx-lg-5 w-100">
       <li *ngFor="let item of grocery_list" class="border-bottom d-flex justify-content-between">{{ item.ingredient }}<button pButton type="button" label="REMOVE" icon="pi pi-minus" class="ui-button-rounded ml-3 mr-1 px-1" (click)="removeItemFromGroceryList(item.id)"></button></li>
     </ul>
+  </div>
 </ng-container>
 <ng-container *ngIf="grocery_list.length === 0">
   <h2 class='text-center mx-auto p-5'><em>Add recipes to this week's menu.</em></h2>

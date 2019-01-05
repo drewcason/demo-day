@@ -3,6 +3,7 @@ ul {
     list-style-position: outside;
     padding-left: 0;
     font-size: 1rem;
+    max-width: 650px
 }
 
 li {
@@ -28,5 +29,16 @@ a {
     &:hover {
         color: #333;
         cursor: pointer;
+    }
+}
+h2 {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+@media only screen and (max-width: 420px) {
+    h2 {
+        font-size: 20px
     }
 }

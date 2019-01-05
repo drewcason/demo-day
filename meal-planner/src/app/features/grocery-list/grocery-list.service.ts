@@ -7,7 +7,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
   providedIn: 'root'
 })
 export class GroceryListService {
-  grocerySource = new Subject<string[]>();
+  grocerySource = new Subject();
   GroceryList$ = this.grocerySource.asObservable();
   groceryURL = 'http://localhost:3000/grocery_list';
   httpOptions = {
@@ -21,7 +21,7 @@ export class GroceryListService {
     this.http
       .get(this.groceryURL)
       .subscribe(
-        (res: [] ) => {
+        (res) => {
           this.grocerySource.next(res);
         }
       )
