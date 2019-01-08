@@ -5,6 +5,7 @@ import { GroceryListComponent } from './features/grocery-list/grocery-list.compo
 import { SidebarComponent } from './features/sidebar/sidebar.component';
 import { MenuComponent } from './features/this-week/this-week.component';
 import { AddRecipeComponent } from './features/add-recipe/add-recipe.component';
+import { ToastComponent } from './features/toast/toast.component';
 
 const routes: Routes = [
   { path: 'recipes',

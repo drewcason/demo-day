@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl} from '@angular/forms';
+import { Recipe } from '../../recipe';
 
 @Component({
   selector: 'app-add-recipe',
@@ -14,6 +15,8 @@ export class AddRecipeComponent implements OnInit {
   protein: string;
   season: string;
   ethnicity: string;
+  newRecipe: Recipe;
+
   constructor(
 
   ) { }
@@ -39,4 +42,5 @@ export class AddRecipeComponent implements OnInit {
     })
 
   }
+
 }

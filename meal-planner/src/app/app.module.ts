@@ -19,6 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MenuComponent } from './features/this-week/this-week.component';
 import { AddRecipeComponent } from './features/add-recipe/add-recipe.component';
+import { ToastComponent } from './features/toast/toast.component';
+import { MessageService } from 'primeng/api';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,7 @@ import { AddRecipeComponent } from './features/add-recipe/add-recipe.component';
     HeaderComponent,
     MenuComponent,
     AddRecipeComponent,
+    ToastComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,9 +48,10 @@ import { AddRecipeComponent } from './features/add-recipe/add-recipe.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
