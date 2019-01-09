@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl} from '@angular/forms';
+import { FormGroup, FormControl, Validators} from '@angular/forms';
 import { Recipe } from '../../recipe';
 
 @Component({
@@ -23,24 +23,32 @@ export class AddRecipeComponent implements OnInit {
 
   ngOnInit() {
     this.setForm();
+    this.setRecipeCardInfo();
+  }
+
+  setRecipeCardInfo(): void {
+    this.addRecipeForm.valueChanges.subscribe((form) => {
+      this.title = form.title;
+      this.cook_time = form.cook_time;
+      this.prep_time = form.prep_time;
+    });
   }
 
   setForm () {
     this.addRecipeForm = new FormGroup({
-      title: new FormControl(),
+      title: new FormControl('',[Validators.required]),
       grocery_items: new FormGroup({
-        ingredient: new FormControl(),
-        amount: new FormControl()
+        ingredient: new FormControl('',[Validators.required]),
+        amount: new FormControl('',[Validators.required])
       }),
-      protein: new FormControl(),
-      season: new FormControl(),
-      ethnicity: new FormControl(),
-      servings: new FormControl(),
-      cook_time: new FormControl(),
-      prep_time: new FormControl(),
-      directions: new FormControl()
+      protein: new FormControl('',[Validators.required]),
+      season: new FormControl('',[Validators.required]),
+      ethnicity: new FormControl('',[Validators.required]),
+      servings: new FormControl('',[Validators.required]),
+      cook_time: new FormControl('',[Validators.required]),
+      prep_time: new FormControl('',[Validators.required]),
+      directions: new FormControl('',[Validators.required])
     })
-
   }
 
 }

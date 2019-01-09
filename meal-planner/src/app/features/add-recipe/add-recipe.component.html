@@ -1,4 +1,4 @@
-<form class='go-right col-5 ml-4 float-left d-inline-block'>
+<!-- <form class='go-right col-5 ml-4 float-left d-inline-block'>
   <h2>Add Your Recipe</h2>
   <div>
     <input class='w-100' id="title" type='text' name='title' [(ngModel)]='title'placeholder='(Lasagna)' required>
@@ -32,7 +32,71 @@
     <input class='w-100' id="directions" type='textarea' name='directions'placeholder='(Peel the potatoes.) separate lines by comma' required>
     <label for="directions">Directions</label>
   </div>
+</form> -->
+<form class='go-right col-5 ml-4 float-left d-inline-block' [formGroup]="addRecipeForm">
+  <h2>Add Your Recipe</h2>
+  <div>
+    <input class='w-100' id="title" type='text' formControlName='title' [(ngModel)]='title'placeholder='(Lasagna)' required>
+    <label for="title">Recipe Title</label>
+  </div>
+  <div>
+    <input class='w-100' id="prep_time" type='text' formControlName='prep_time' [(ngModel)]='prep_time'placeholder='(25 mins)' required>
+    <label for="prep_time">Prep Time</label>
+  </div>
+  <div>
+    <input class='w-100' id="cook_time" type='text' formControlName='cook_time' [(ngModel)]='cook_time'placeholder='(90 mins)' required>
+    <label for="cook_time">Cook Time</label>
+  </div>
+  <div>
+    <input class='w-100' id="protein" type='text' formControlName='protein' placeholder='(chicken) or (chicken beef) for mulitple options' required>
+    <label for="protein">Protein</label>
+  </div>
+  <div>
+    <input class='w-100' id="ethnicity" type='text' formControlName='ethnicity' placeholder='(italian)' required>
+    <label for="ethnicity">Ethnicity</label>
+  </div>
+  <div>
+    <input class='w-100' id="season" type='text' formControlName='season' placeholder='(summer) or (spring fall) for multiple options' required>
+    <label for="season">Season</label>
+  </div>
+  <div>
+    <input class='w-100' id="servings" type='text' formControlName='servings' placeholder='(8)' required>
+    <label for="servings">Servings</label>
+  </div>
+  <div>
+    <input class='w-100' id="directions" type='textarea' formControlName='directions' placeholder='(Peel the potatoes.) separate lines by comma' required>
+    <label for="directions">Directions</label>
+  </div>
 </form>
+
+<!-- <div class='card-container p-2 mr-5 mt-3 ml-2 col-6 float-right d-inline-block'>
+  <p-card>
+    <p-header class='ui-card-header'>
+      <div class='header-container border-bottom'>
+        <h3 class='ui-card-title p-3 m-0 ml-2'>{{ title }}</h3>
+      </div>
+      <img class='card-img-top rounded-0' src="{{ image }}">
+    </p-header>
+    <div class='card-body ui-card-content'>
+      <div class='float-left'>
+        <h4>Ingredients</h4>
+        <ul>
+          <li *ngFor="let items of grocery_items">{{ items.amount }} {{ items.ingredient }}</li>
+        </ul>
+      </div>
+      <div class='float-right right mb-3'>
+        <em>Prep Time: {{ prep_time }} <br />
+          Cook Time: {{ cook_time }}<br />
+        </em>
+      </div>
+      <hr>
+      <h4>Instructions</h4>
+      <ol>
+        <li *ngFor="let steps of directions">{{ steps }}</li>
+      </ol>
+    </div>
+  </p-card>
+</div> -->
 
 <div class='card-container p-2 mr-5 mt-3 ml-2 col-6 float-right d-inline-block'>
   <p-card>

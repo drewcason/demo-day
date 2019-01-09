@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Recipe } from './recipe';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { throwError, Subject } from 'rxjs';
+import { MessageService } from 'primeng/api';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,10 @@ export class RecipeService {
     ShowRecipeInstructions$ = this.showRecipeInstructionsSource.asObservable();
     showInstructions: boolean;
     recipesURL = 'http://localhost:3000/recipes';
-    constructor( private http: HttpClient ) { }
+    constructor( 
+        private http: HttpClient,
+        private messageService: MessageService
+         ) { }
 
     hideRecipeInstructions(): void {
         this.showRecipeInstructionsSource.next(false);
@@ -30,7 +34,11 @@ export class RecipeService {
                 (res: Recipe[]) => {
                     this.recipeInfoSource.next(res);
                 }
-            )
+            ),
+            error => {
+                this.recipeInfoSource.next();
+                this.displayToastMessage('error', 'Recipes Not Retrieved', 'Recipes could not be retrieved from your recipe box.')
+            }
     }
 
     getLeastPopularRecipes(): void {
@@ -40,7 +48,11 @@ export class RecipeService {
                 (res: Recipe[]) => {
                     this.recipeInfoSource.next(res);
                 }
-            )
+            ),
+            error => {
+                this.recipeInfoSource.next();
+                this.displayToastMessage('error', 'Recipes Not Retrieved', 'Recipes could not be retrieved from your recipe box.')
+            }
     }
 
     getSortedRecipes(): void {
@@ -50,18 +62,14 @@ export class RecipeService {
                 (res: Recipe[]) => {
                     this.recipeInfoSource.next(res);
                 }
-            )
+            ),
+            error => {
+                this.recipeInfoSource.next();
+                this.displayToastMessage('error', 'Recipes Not Retrieved', 'Recipes could not be retrieved from your recipe box.')
+            }
     }
 
-    private handleError(err: HttpErrorResponse) {
-        let errorMessage = '';
-        if (err.error instanceof ErrorEvent) {
-            errorMessage = `An error occurred: ${err.error.message}`;
-        } else {
-            errorMessage = `Served returned code: ${err.status}, error message is: ${err.message}`;
-        }
-        console.log(errorMessage);
-        return throwError(errorMessage);
+    displayToastMessage(type, message, details) {
+        this.messageService.add({severity: type, summary: message, detail: details});
     }
-
 }
