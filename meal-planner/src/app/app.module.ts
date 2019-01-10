@@ -22,6 +22,7 @@ import { AddRecipeComponent } from './features/add-recipe/add-recipe.component';
 import { ToastComponent } from './features/toast/toast.component';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
+import {SelectButtonModule} from 'primeng/selectbutton';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { ToastModule } from 'primeng/toast';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    ToastModule
+    ToastModule,
+    SelectButtonModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder, FormArray} from '@angular/forms';
 import { Recipe } from '../../recipe';
+import { SelectItem } from 'primeng/api';
 
 @Component({
   selector: 'app-add-recipe',
@@ -16,14 +17,29 @@ export class AddRecipeComponent implements OnInit {
   season: string;
   ethnicity: string;
   newRecipe: Recipe;
-
+  grocery_items: FormArray;
+  directions: FormArray;
+  groceries: [];
+  instructions: [];
+  formPages: SelectItem[];
+  selectedFormPage: any;
   constructor(
-
+    private formBuilder: FormBuilder
   ) { }
 
   ngOnInit() {
     this.setForm();
     this.setRecipeCardInfo();
+    this.setFormPages();
+    this.selectedFormPage = 'Basics';
+  }
+
+  setFormPages(): void {
+    this.formPages = [
+      { label: 'Basics', value: "Basics"},
+      { label: 'Ingredients', value: 'Ingredients'},
+      { label: 'Instructions', value: 'Instructions'}
+    ]
   }
 
   setRecipeCardInfo(): void {
@@ -31,24 +47,64 @@ export class AddRecipeComponent implements OnInit {
       this.title = form.title;
       this.cook_time = form.cook_time;
       this.prep_time = form.prep_time;
+      this.groceries = form.grocery_items;
+      this.instructions = form.directions;
+      this.selectedFormPage = form.selectedPage;
     });
   }
 
   setForm () {
-    this.addRecipeForm = new FormGroup({
-      title: new FormControl('',[Validators.required]),
-      grocery_items: new FormGroup({
-        ingredient: new FormControl('',[Validators.required]),
-        amount: new FormControl('',[Validators.required])
-      }),
-      protein: new FormControl('',[Validators.required]),
-      season: new FormControl('',[Validators.required]),
-      ethnicity: new FormControl('',[Validators.required]),
-      servings: new FormControl('',[Validators.required]),
-      cook_time: new FormControl('',[Validators.required]),
-      prep_time: new FormControl('',[Validators.required]),
-      directions: new FormControl('',[Validators.required])
-    })
+    this.addRecipeForm = this.formBuilder.group({
+      title: ['', Validators.required],
+      protein: ['', Validators.required],
+      season: ['', Validators.required],
+      ethnicity: ['', Validators.required],
+      servings: ['', Validators.required],
+      cook_time: ['', Validators.required],
+      prep_time: ['', Validators.required],
+      grocery_items: this.formBuilder.array([
+        this.addGroceryItemField(),
+        this.addGroceryItemField(),
+        this.addGroceryItemField()
+      ]),
+      directions: this.formBuilder.array([
+        this.addDirectionsStepField(),
+        this.addDirectionsStepField(),
+        this.addDirectionsStepField()
+      ]),
+      selectedPage: ['Basics']
+    });
   }
 
+  addItems() {
+    this.grocery_items = this.addRecipeForm.get('grocery_items') as FormArray;
+    this.grocery_items.push(this.addGroceryItemField());
+  }
+
+  addGroceryItemField(): FormGroup {
+    return this.formBuilder.group({
+      amount: '',
+      ingredient: ''
+    });
+  }
+
+  removeItem(index) {
+    this.grocery_items.removeAt(index);
+  }
+
+  addSteps() {
+    this.directions = this.addRecipeForm.get('directions') as FormArray;
+    this.directions.push(this.addDirectionsStepField());
+  }
+
+  addDirectionsStepField(): FormGroup {
+    return this.formBuilder.group({
+      step: ''
+    });
+  }
+  
+  removeStep(index) {
+    this.directions.removeAt(index);
+  }
 }
+
