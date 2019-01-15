@@ -12,6 +12,8 @@ export interface Recipe {
     cook_time: string;
     prep_time: string;
     servings: number;
+    isAddedToMenu: boolean;
+    breakfast: string;
     grocery_items:{
         ingredient: string;
         amount: string;

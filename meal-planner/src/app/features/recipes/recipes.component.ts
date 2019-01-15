@@ -15,6 +15,7 @@ export class RecipesComponent implements OnInit {
   private subscriptions: Subscription[] = [];
   menu = [];
   grocery_list = [];
+  isAdded: boolean;
   @Input() recipe: Recipe;
   constructor(
     private recipeService: RecipeService,
@@ -53,13 +54,11 @@ export class RecipesComponent implements OnInit {
 
   addToThisWeekMenu(newRecipe): void {
     this.menuService.postThisWeeksRecipes(newRecipe).subscribe();
+    this.isAdded = true;
   }
 
   markAsAddedToMenu(id): void {
-    this.menuService.updateRecipeAddedToMenu(id).subscribe((value) => {
-      this.recipeService.getSortedRecipes();
-      this.changeDetector.detectChanges();
-    });
+    this.menuService.updateRecipeAddedToMenu(id).subscribe();
   }
 
   addItemsToGroceryList(items) {

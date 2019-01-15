@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Recipe } from './recipe';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { throwError, Subject } from 'rxjs';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { throwError, Subject, Observable } from 'rxjs';
 import { MessageService } from 'primeng/api';
 
 @Injectable({
@@ -13,6 +13,11 @@ export class RecipeService {
     showRecipeInstructionsSource = new Subject<boolean>();
     ShowRecipeInstructions$ = this.showRecipeInstructionsSource.asObservable();
     recipesURL = 'http://localhost:3000/recipes';
+    httpOptions = {
+        headers: new HttpHeaders({
+          'Content-Type':  'application/json'
+        })
+      };
     constructor( 
         private http: HttpClient,
         private messageService: MessageService
@@ -68,6 +73,10 @@ export class RecipeService {
             }
     }
 
+    addNewRecipeFromScratch(recipe: Recipe): Observable<Recipe> {
+        return this.http.post<Recipe>(this.recipesURL, recipe, this.httpOptions);
+    }
+      
     displayToastMessage(type, message, details) {
         this.messageService.add({severity: type, summary: message, detail: details});
     }

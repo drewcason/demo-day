@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder, FormArray} from '@angular/forms';
 import { Recipe } from '../../recipe';
 import { SelectItem } from 'primeng/api';
+import { RecipeService } from 'src/app/recipes.service';
 
 @Component({
   selector: 'app-add-recipe',
@@ -23,8 +24,11 @@ export class AddRecipeComponent implements OnInit {
   instructions = [];
   formPages: SelectItem[];
   selectedFormPage: any;
+  breakfast: boolean;
+
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private recipeService: RecipeService
   ) { }
 
   ngOnInit() {
@@ -62,6 +66,7 @@ export class AddRecipeComponent implements OnInit {
       servings: ['', Validators.required],
       cook_time: ['', Validators.required],
       prep_time: ['', Validators.required],
+      breakfast: ['', Validators.required],
       grocery_items: this.formBuilder.array([
         this.addGroceryItemField(),
         this.addGroceryItemField(),
@@ -106,5 +111,13 @@ export class AddRecipeComponent implements OnInit {
   removeStep(index) {
     this.directions.removeAt(index);
   }
+
+  onSubmit() {
+    this.newRecipe = this.addRecipeForm.value;
+    this.newRecipe['isAddedToMenu'] = false;
+    this.newRecipe['count'] = 0;
+    this.newRecipe['image'] = '/assets/images/porkchops.jpeg'
+    this.recipeService.addNewRecipeFromScratch(this.newRecipe).subscribe();
+    }
 }
 

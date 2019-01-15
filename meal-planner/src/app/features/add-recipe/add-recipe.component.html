@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-around main">
   <div class="form-container container-fluid">
-    <form class='go-right ml-5 float-left' [formGroup]="addRecipeForm">
+    <form class='go-right ml-5 float-left' [formGroup]="addRecipeForm" (ngSubmit)="onSubmit()">
         <p-selectButton class="ui-button-rounded mt-2 px-1" [options]="formPages" formControlName="selectedPage"></p-selectButton>
       <h2>Add Your Recipe</h2>
       <ng-container *ngIf="selectedFormPage === 'Basics'">
@@ -34,6 +34,12 @@
         <input class='w-100' id="servings" type='text' formControlName='servings' placeholder='(8)' required>
         <label for="servings">Servings</label>
       </div>
+      <div class="mt-1">
+        <h6>Breakfast? ----------</h6>
+        <p-radioButton class="d-inline-block mx-2 float-right" name="breakfast" value="breakfast" label="Yes" formControlName="breakfast"></p-radioButton>
+        <p-radioButton class="d-inline-block mx-2 float-right" name="breakfast" value="null" label="No" formControlName="breakfast"></p-radioButton>
+      </div>
+      <button pButton type="button" class="ui-button-rounded mt-2 px-1 float-right" label="Next" (click)="addRecipeForm.controls['selectedPage'].setValue('Ingredients')"></button>
     </ng-container>
     <ng-container *ngIf="selectedFormPage === 'Ingredients'">
       <div formArrayName="grocery_items">
@@ -58,6 +64,7 @@
           </div>
         </div>
         <button pButton type="button" class="ui-button-rounded mt-2 px-1" label="Add Item" (click)="addItems()"></button>
+        <button pButton type="button" class="ui-button-rounded mt-2 px-1 float-right" label="Next" (click)="addRecipeForm.controls['selectedPage'].setValue('Instructions')"></button>
       </div>
     </ng-container>
     <ng-container *ngIf="selectedFormPage === 'Instructions'">
@@ -72,6 +79,7 @@
           </div>
         </div>
         <button pButton type="button" class="ui-button-rounded mt-2 px-1" label="Add Step" (click)="addSteps()"></button>
+        <button pButton type="submit" class="ui-button-rounded mt-2 px-1 float-right" label="Submit"></button>
       </div>
     </ng-container>
     </form>

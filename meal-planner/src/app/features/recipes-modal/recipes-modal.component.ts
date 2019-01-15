@@ -26,4 +26,8 @@ display: boolean = false;
   showModal() {
     this.display = true;
   }
+
+  closeModal() {
+    this.display = false;
+  }
 }

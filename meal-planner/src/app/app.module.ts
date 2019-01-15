@@ -23,6 +23,7 @@ import { ToastComponent } from './features/toast/toast.component';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 import {SelectButtonModule} from 'primeng/selectbutton';
+import {RadioButtonModule} from 'primeng/radiobutton';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import {SelectButtonModule} from 'primeng/selectbutton';
     FormsModule,
     ReactiveFormsModule,
     ToastModule,
-    SelectButtonModule
+    SelectButtonModule,
+    RadioButtonModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

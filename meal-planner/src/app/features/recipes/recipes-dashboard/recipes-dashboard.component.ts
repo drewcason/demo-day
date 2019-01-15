@@ -50,12 +50,14 @@ export class RecipesDashboardComponent implements OnInit {
   performFilter(filterBy: string): Recipe[] {
     filterBy = filterBy.toLocaleLowerCase();
     return this.recipes.filter((recipe: Recipe) => {
-    if (recipe.protein.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
-      recipe.title.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
-      recipe.season.toLocaleLowerCase().indexOf(filterBy) !== -1 ||
-      recipe.ethnicity.toLocaleLowerCase().indexOf(filterBy) !== -1) {
-      return true;
-    }});
+    if (recipe.protein.toLocaleLowerCase().indexOf(filterBy) !== -1
+      || recipe.title.toLocaleLowerCase().indexOf(filterBy) !== -1
+      || recipe.season.toLocaleLowerCase().indexOf(filterBy) !== -1
+      || recipe.ethnicity.toLocaleLowerCase().indexOf(filterBy) !== -1
+      || recipe.breakfast.toLocaleLowerCase().indexOf(filterBy) !== -1) {
+        return true;
+      }
+    });
   }
 
   filterByProtein(protein: string): Recipe[] {

@@ -11,6 +11,7 @@
       "prep_time": "20 mins",
       "servings": 4,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "pork chops",
@@ -58,11 +59,21 @@
         }
       ],
       "directions": [
-        "Season chops with salt and pepper.",
-        "Grill chops.",
-        "Peel and cut the apples",
-        "Make the taters good",
-        "Eat the food."
+        {
+          "step": "Season chops with salt and pepper."
+        },
+        {
+          "step": "Grill chops."
+        },
+        {
+          "step": "Peel and cut the apples"
+        },
+        {
+          "step": "Make the taters good"
+        },
+        {
+          "step": "Eat the food."
+        }
       ],
       "id": 1
     },
@@ -77,6 +88,7 @@
       "prep_time": "10 mins",
       "servings": 4,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "chicken thighs",
@@ -128,10 +140,18 @@
         }
       ],
       "directions": [
-        "Place onion on a baking sheet and roast in the preheated oven until blackened and soft, about 45 minutes.",
-        "Place bones, onion, ginger, salt, star anise, and fish sauce in a large stockpot and cover with 4 quarts of water. Bring to a boil and reduce heat to low. Simmer on low for 6 to 10 hours. Strain the broth into a saucepan and set aside.",
-        "Place rice noodles in large bowl filled with room temperature water and allow to soak for 1 hour. Bring a large pot of water to a boil and after the noodles have soaked, place them in the boiling water for 1 minute. Bring stock to a simmer.",
-        "Divide noodles among 4 serving bowls; top with sirloin, cilantro, and green onion. Pour hot broth over the top. Stir and let sit until the beef is partially cooked and no longer pink, 1 to 2 minutes. Serve with bean sprouts, Thai basil, lime wedges, hoisin sauce, and chile-garlic sauce on the side."
+        {
+          "step": "Place onion on a baking sheet and roast in the preheated oven until blackened and soft, about 45 minutes."
+        },
+        {
+          "step": "Place bones, onion, ginger, salt, star anise, and fish sauce in a large stockpot and cover with 4 quarts of water. Bring to a boil and reduce heat to low. Simmer on low for 6 to 10 hours. Strain the broth into a saucepan and set aside."
+        },
+        {
+          "step": "Place rice noodles in large bowl filled with room temperature water and allow to soak for 1 hour. Bring a large pot of water to a boil and after the noodles have soaked, place them in the boiling water for 1 minute. Bring stock to a simmer."
+        },
+        {
+          "step": "Divide noodles among 4 serving bowls; top with sirloin, cilantro, and green onion. Pour hot broth over the top. Stir and let sit until the beef is partially cooked and no longer pink, 1 to 2 minutes. Serve with bean sprouts, Thai basil, lime wedges, hoisin sauce, and chile-garlic sauce on the side."
+        }
       ],
       "id": 2
     },
@@ -146,6 +166,7 @@
       "prep_time": "10 mins",
       "servings": 4,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "fresh parsley",
@@ -205,16 +226,36 @@
         }
       ],
       "directions": [
-        "To prepare the herb blend, combine the first 4 ingredients, and set aside.",
-        "To prepare paella, combine water, saffron, and broth in a large saucepan. Bring to a simmer (do not boil). Keep warm over low heat.",
-        "Peel and devein shrimp, leaving tails intact; set aside.",
-        "Heat 1 tablespoon oil in a large paella pan or large skillet over medium-high heat. Add chicken; saute 2 minutes on each side. Remove from pan.",
-        "Add sausage and prosciutto; saute 2 minutes. Remove from pan.",
-        "Add shrimp, and saute 2 minutes. Remove from pan. Reduce heat to medium-low.",
-        "Add onion and bell pepper; saute 15 minutes, stirring occasionally. Add tomatoes, paprika, and 3 garlic cloves; cook 5 minutes.",
-        "Add rice; cook 1 minute, stirring constantly. Stir in herb blend, broth mixture, chicken, sausage mixture, and peas. Bring to a low boil; cook 10 minutes, stirring frequently.",
-        "Add mussels to pan, nestling them into rice mixture. Cook 5 minutes or until shells open; discard any unopened shells.",
-        "Arrange shrimp, heads down, in rice mixture, and cook 5 minutes or until shrimp are done. Sprinkle with 1/4 cup lemon juice. Remove from heat; cover with a towel, and let stand 10 minutes. Serve with lemon wedges, if desired."
+        {
+          "step": "To prepare the herb blend, combine the first 4 ingredients, and set aside."
+        },
+        {
+          "step": "To prepare paella, combine water, saffron, and broth in a large saucepan. Bring to a simmer (do not boil). Keep warm over low heat."
+        },
+        {
+          "step": "Peel and devein shrimp, leaving tails intact; set aside."
+        },
+        {
+          "step": "Heat 1 tablespoon oil in a large paella pan or large skillet over medium-high heat. Add chicken; saute 2 minutes on each side. Remove from pan."
+        },
+        {
+          "step": "Add sausage and prosciutto; saute 2 minutes. Remove from pan."
+        },
+        {
+          "step": "Add shrimp, and saute 2 minutes. Remove from pan. Reduce heat to medium-low."
+        },
+        {
+          "step": "Add onion and bell pepper; saute 15 minutes, stirring occasionally. Add tomatoes, paprika, and 3 garlic cloves; cook 5 minutes."
+        },
+        {
+          "step": "Add rice; cook 1 minute, stirring constantly. Stir in herb blend, broth mixture, chicken, sausage mixture, and peas. Bring to a low boil; cook 10 minutes, stirring frequently."
+        },
+        {
+          "step": "Add mussels to pan, nestling them into rice mixture. Cook 5 minutes or until shells open; discard any unopened shells."
+        },
+        {
+          "step": "Arrange shrimp, heads down, in rice mixture, and cook 5 minutes or until shrimp are done. Sprinkle with 1/4 cup lemon juice. Remove from heat; cover with a towel, and let stand 10 minutes. Serve with lemon wedges, if desired."
+        }
       ],
       "id": 3
     },
@@ -229,6 +270,7 @@
       "prep_time": "10 mins",
       "servings": 4,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "salmon",
@@ -260,11 +302,21 @@
         }
       ],
       "directions": [
-        "Season chops with salt and pepper.",
-        "Grill chops.",
-        "Peel and cut the apples",
-        "Make the taters good",
-        "Eat the food."
+        {
+          "step": "Season chops with salt and pepper."
+        },
+        {
+          "step": "Grill chops."
+        },
+        {
+          "step": "Peel and cut the apples"
+        },
+        {
+          "step": "Make the taters good"
+        },
+        {
+          "step": "Eat the food."
+        }
       ],
       "id": 4
     },
@@ -279,6 +331,7 @@
       "prep_time": "10 mins",
       "servings": 4,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "ribeyes",
@@ -314,12 +367,24 @@
         }
       ],
       "directions": [
-        "Preheat oven to 500°F",
-        "Heat iron skillet over high heat for 5 minutes until smoking.",
-        "Generously coat steaks with salt and pepper.",
-        "Drizzle a thin layer of canola oil on steaks.",
-        "Place in skillet for 30 secs on first side and 45 secs on the other.",
-        "Place skillet in the oven for 2 minutes, flip the steaks, and leave in oven for 2 more minutes."
+        {
+          "step": "Preheat oven to 500°F"
+        },
+        {
+          "step": "Heat iron skillet over high heat for 5 minutes until smoking."
+        },
+        {
+          "step": "Generously coat steaks with salt and pepper."
+        },
+        {
+          "step": "Drizzle a thin layer of canola oil on steaks."
+        },
+        {
+          "step": "Place in skillet for 30 secs on first side and 45 secs on the other."
+        },
+        {
+          "step": "Place skillet in the oven for 2 minutes, flip the steaks, and leave in oven for 2 more minutes."
+        }
       ],
       "id": 5
     },
@@ -334,6 +399,7 @@
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -353,10 +419,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 6
     },
@@ -371,6 +445,7 @@
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "ground beef",
@@ -406,12 +481,24 @@
         }
       ],
       "directions": [
-        "Heat griddle to 450°F.",
-        "Form 4 equally sized patties and coat generously with onion powder, salt, and pepper",
-        "When griddle is smoking hot, place patties on griddle and cook for 6-7 minutes. Flip the patties and cook for 4-5 minutes.",
-        "Toast buns in toaster if desired.",
-        "Add cheese for last minute of cooking.",
-        "If desired, spread thin layer of mayo on bottom bun to prevent it from gettgin soggy. Add BBQ sauce for deliciousness."
+        {
+          "step": "Heat griddle to 450°F."
+        },
+        {
+          "step": "Form 4 equally sized patties and coat generously with onion powder, salt, and pepper"
+        },
+        {
+          "step": "When griddle is smoking hot, place patties on griddle and cook for 6-7 minutes. Flip the patties and cook for 4-5 minutes."
+        },
+        {
+          "step": "Toast buns in toaster if desired."
+        },
+        {
+          "step": "Add cheese for last minute of cooking."
+        },
+        {
+          "step": "If desired, spread thin layer of mayo on bottom bun to prevent it from gettgin soggy. Add BBQ sauce for deliciousness."
+        }
       ],
       "id": 7
     },
@@ -425,7 +512,8 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": false,
+      "isAddedToMenu": true,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "chicken breasts",
@@ -453,10 +541,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 8
     },
@@ -471,6 +567,7 @@
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "ground beef",
@@ -522,10 +619,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 9
     },
@@ -534,12 +639,13 @@
       "image": "/assets/images/eggsandbacon.jpeg",
       "protein": "eggs bacon",
       "season": "summer spring fall winter",
-      "ethnicity": "American breakfast",
+      "ethnicity": "American",
       "count": 4,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 4,
       "isAddedToMenu": false,
+      "breakfast": "breakfast",
       "grocery_items": [
         {
           "ingredient": "bacon",
@@ -559,10 +665,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 10
     },
@@ -577,6 +691,7 @@
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "ground beef",
@@ -608,10 +723,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 11
     },
@@ -620,12 +743,13 @@
       "image": "/assets/images/pancakes.jpeg",
       "protein": "meatless",
       "season": "summer spring fall winter",
-      "ethnicity": "American breakfast",
+      "ethnicity": "American",
       "count": 5,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": "breakfast",
       "grocery_items": [
         {
           "ingredient": "flour",
@@ -653,10 +777,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 375°F.",
-        "Melt butter.",
-        "Mix all ingredients together.",
-        "Pour 1/4 cup of the batter onto the griddle and let cook for 2 minutes per side."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 12
     },
@@ -665,12 +797,13 @@
       "image": "/assets/images/crepes.jpeg",
       "protein": "meatless",
       "season": "summer",
-      "ethnicity": "French breakfast",
+      "ethnicity": "French",
       "count": 3,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": false,
+      "isAddedToMenu": true,
+      "breakfast": "breakfast",
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -690,10 +823,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 13
     },
@@ -708,6 +849,7 @@
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "pizza crust",
@@ -743,11 +885,21 @@
         }
       ],
       "directions": [
-        "Preheat oven to 425°F.",
-        "Mix cheese, garlic powder, onion powder, pepper, and basil together.",
-        "Spread pizza sauce over crust and layer with pepperonis.",
-        "Top evenly with cheese.",
-        "Bake for 10 mins or until cheese in golden."
+        {
+          "step": "Preheat oven to 425°F."
+        },
+        {
+          "step": "Mix cheese, garlic powder, onion powder, pepper, and basil together."
+        },
+        {
+          "step": "Spread pizza sauce over crust and layer with pepperonis."
+        },
+        {
+          "step": "Top evenly with cheese."
+        },
+        {
+          "step": "Bake for 10 mins or until cheese in golden."
+        }
       ],
       "id": 14
     },
@@ -762,6 +914,7 @@
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "roast",
@@ -805,10 +958,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 15
     },
@@ -817,12 +978,13 @@
       "image": "/assets/images/waffles.jpeg",
       "protein": "meatless",
       "season": "summer spring fall winter",
-      "ethnicity": "American breakfast",
+      "ethnicity": "American",
       "count": 5,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": "breakfast",
       "grocery_items": [
         {
           "ingredient": "flour",
@@ -842,10 +1004,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 16
     },
@@ -859,7 +1029,8 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": false,
+      "isAddedToMenu": true,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "chicken thighs",
@@ -895,10 +1066,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 17
     },
@@ -913,6 +1092,7 @@
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -932,10 +1112,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 18
     },
@@ -949,7 +1137,8 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": false,
+      "isAddedToMenu": true,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -969,10 +1158,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 19
     },
@@ -987,6 +1184,7 @@
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -1006,10 +1204,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 20
     },
@@ -1023,7 +1229,8 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": false,
+      "isAddedToMenu": true,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -1043,10 +1250,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 21
     },
@@ -1061,6 +1276,7 @@
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -1080,10 +1296,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 22
     },
@@ -1098,6 +1322,7 @@
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -1117,10 +1342,18 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 23
     },
@@ -1135,6 +1368,7 @@
       "prep_time": "2 mins",
       "servings": 2,
       "isAddedToMenu": false,
+      "breakfast": " ",
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -1154,14 +1388,474 @@
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
       ],
       "id": 24
     }
   ],
-  "menu": [],
-  "grocery_list": []
+  "menu": [
+    {
+      "title": "Chicken & Veggies",
+      "image": "/assets/images/chickenandveggies.jpeg",
+      "protein": "chicken",
+      "season": "summer",
+      "ethnicity": "American",
+      "count": 5,
+      "cook_time": "5 mins",
+      "prep_time": "2 mins",
+      "servings": 2,
+      "isAddedToMenu": false,
+      "breakfast": " ",
+      "grocery_items": [
+        {
+          "ingredient": "chicken breasts",
+          "amount": "2"
+        },
+        {
+          "ingredient": "onions",
+          "amount": "1"
+        },
+        {
+          "ingredient": "salt",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "pepper",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "asparagus",
+          "amount": "1 bundle"
+        },
+        {
+          "ingredient": "bell peppers",
+          "amount": "2"
+        }
+      ],
+      "directions": [
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
+      ],
+      "id": 8
+    },
+    {
+      "title": "Chicken Soup",
+      "image": "/assets/images/chickensoup.jpeg",
+      "protein": "chicken",
+      "season": "fall winter",
+      "ethnicity": "American Italian",
+      "count": 3,
+      "cook_time": "5 mins",
+      "prep_time": "2 mins",
+      "servings": 2,
+      "isAddedToMenu": false,
+      "breakfast": " ",
+      "grocery_items": [
+        {
+          "ingredient": "chicken thighs",
+          "amount": "4"
+        },
+        {
+          "ingredient": "chicken broth",
+          "amount": "4 cups"
+        },
+        {
+          "ingredient": "cumin",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "smoked paprika",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "celery",
+          "amount": "3 stalks"
+        },
+        {
+          "ingredient": "onions",
+          "amount": "1"
+        },
+        {
+          "ingredient": "carrots",
+          "amount": "3"
+        },
+        {
+          "ingredient": "egg noodles",
+          "amount": "1 pound"
+        }
+      ],
+      "directions": [
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
+      ],
+      "id": 17
+    },
+    {
+      "title": "Crepes",
+      "image": "/assets/images/crepes.jpeg",
+      "protein": "meatless",
+      "season": "summer",
+      "ethnicity": "French",
+      "count": 3,
+      "cook_time": "5 mins",
+      "prep_time": "2 mins",
+      "servings": 2,
+      "isAddedToMenu": false,
+      "breakfast": "breakfast",
+      "grocery_items": [
+        {
+          "ingredient": "bread",
+          "amount": "4 slices"
+        },
+        {
+          "ingredient": "cheese slices",
+          "amount": "2"
+        },
+        {
+          "ingredient": "butter",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "tomato soup",
+          "amount": "1 can"
+        }
+      ],
+      "directions": [
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
+      ],
+      "id": 13
+    },
+    {
+      "title": "Loaded Fries",
+      "image": "/assets/images/loadedfries.jpeg",
+      "protein": "meatless",
+      "season": "summer fall",
+      "ethnicity": "American",
+      "count": 2,
+      "cook_time": "5 mins",
+      "prep_time": "2 mins",
+      "servings": 2,
+      "isAddedToMenu": false,
+      "breakfast": " ",
+      "grocery_items": [
+        {
+          "ingredient": "bread",
+          "amount": "4 slices"
+        },
+        {
+          "ingredient": "cheese slices",
+          "amount": "2"
+        },
+        {
+          "ingredient": "butter",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "tomato soup",
+          "amount": "1 can"
+        }
+      ],
+      "directions": [
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
+      ],
+      "id": 21
+    },
+    {
+      "title": "Orange Chicken",
+      "image": "/assets/images/orangechicken.jpeg",
+      "protein": "chicken",
+      "season": "fall winter",
+      "ethnicity": "Chinese",
+      "count": 4,
+      "cook_time": "5 mins",
+      "prep_time": "2 mins",
+      "servings": 2,
+      "isAddedToMenu": false,
+      "breakfast": " ",
+      "grocery_items": [
+        {
+          "ingredient": "bread",
+          "amount": "4 slices"
+        },
+        {
+          "ingredient": "cheese slices",
+          "amount": "2"
+        },
+        {
+          "ingredient": "butter",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "tomato soup",
+          "amount": "1 can"
+        }
+      ],
+      "directions": [
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
+      ],
+      "id": 18
+    },
+    {
+      "title": "Ham",
+      "image": "/assets/images/ham.jpeg",
+      "protein": "ham pork",
+      "season": "summer",
+      "ethnicity": "American",
+      "count": 3,
+      "cook_time": "5 mins",
+      "prep_time": "2 mins",
+      "servings": 2,
+      "isAddedToMenu": false,
+      "breakfast": " ",
+      "grocery_items": [
+        {
+          "ingredient": "bread",
+          "amount": "4 slices"
+        },
+        {
+          "ingredient": "cheese slices",
+          "amount": "2"
+        },
+        {
+          "ingredient": "butter",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "tomato soup",
+          "amount": "1 can"
+        }
+      ],
+      "directions": [
+        {
+          "step": "Heat griddle to 350°F."
+        },
+        {
+          "step": "Coat bread with butter."
+        },
+        {
+          "step": "Place bread on griddle, followed by cheese and other piece of bread."
+        },
+        {
+          "step": "Open can of tomato soup and heat on stove in small pot."
+        }
+      ],
+      "id": 19
+    }
+  ],
+  "grocery_list": [
+    {
+      "ingredient": "chicken breasts",
+      "amount": "2",
+      "id": 1
+    },
+    {
+      "ingredient": "onions",
+      "amount": "1",
+      "id": 2
+    },
+    {
+      "ingredient": "asparagus",
+      "amount": "1 bundle",
+      "id": 3
+    },
+    {
+      "ingredient": "salt",
+      "amount": "1 tsp",
+      "id": 4
+    },
+    {
+      "ingredient": "pepper",
+      "amount": "1 tsp",
+      "id": 5
+    },
+    {
+      "ingredient": "bell peppers",
+      "amount": "2",
+      "id": 6
+    },
+    {
+      "ingredient": "chicken thighs",
+      "amount": "4",
+      "id": 7
+    },
+    {
+      "ingredient": "chicken broth",
+      "amount": "4 cups",
+      "id": 8
+    },
+    {
+      "ingredient": "cumin",
+      "amount": "1 tsp",
+      "id": 9
+    },
+    {
+      "ingredient": "smoked paprika",
+      "amount": "1 tsp",
+      "id": 10
+    },
+    {
+      "ingredient": "celery",
+      "amount": "3 stalks",
+      "id": 11
+    },
+    {
+      "ingredient": "onions",
+      "amount": "1",
+      "id": 12
+    },
+    {
+      "ingredient": "carrots",
+      "amount": "3",
+      "id": 13
+    },
+    {
+      "ingredient": "egg noodles",
+      "amount": "1 pound",
+      "id": 14
+    },
+    {
+      "ingredient": "bread",
+      "amount": "4 slices",
+      "id": 15
+    },
+    {
+      "ingredient": "cheese slices",
+      "amount": "2",
+      "id": 16
+    },
+    {
+      "ingredient": "butter",
+      "amount": "1 tsp",
+      "id": 17
+    },
+    {
+      "ingredient": "tomato soup",
+      "amount": "1 can",
+      "id": 18
+    },
+    {
+      "ingredient": "bread",
+      "amount": "4 slices",
+      "id": 19
+    },
+    {
+      "ingredient": "cheese slices",
+      "amount": "2",
+      "id": 20
+    },
+    {
+      "ingredient": "butter",
+      "amount": "1 tsp",
+      "id": 21
+    },
+    {
+      "ingredient": "tomato soup",
+      "amount": "1 can",
+      "id": 22
+    },
+    {
+      "ingredient": "bread",
+      "amount": "4 slices",
+      "id": 23
+    },
+    {
+      "ingredient": "cheese slices",
+      "amount": "2",
+      "id": 24
+    },
+    {
+      "ingredient": "butter",
+      "amount": "1 tsp",
+      "id": 25
+    },
+    {
+      "ingredient": "tomato soup",
+      "amount": "1 can",
+      "id": 26
+    },
+    {
+      "ingredient": "bread",
+      "amount": "4 slices",
+      "id": 27
+    },
+    {
+      "ingredient": "cheese slices",
+      "amount": "2",
+      "id": 28
+    },
+    {
+      "ingredient": "butter",
+      "amount": "1 tsp",
+      "id": 29
+    },
+    {
+      "ingredient": "tomato soup",
+      "amount": "1 can",
+      "id": 30
+    }
+  ]
 }

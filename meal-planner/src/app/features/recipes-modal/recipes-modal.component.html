@@ -4,6 +4,9 @@
     <p-header class='ui-card-header'>
       <div class='header-container border-bottom'>
         <h3 class='ui-card-title p-3 m-0 ml-2'>{{ title }}</h3>
+        <div class='right quick-buttons'>
+          <button class='mr-2' (click)="closeModal()"><i class='pi pi-times'></i></button>
+        </div>
       </div>
       <img class='card-img-top rounded-0' src="{{ image }}">
     </p-header>
@@ -21,7 +24,7 @@
       <hr>
       <h4>Instructions</h4>
       <ol>
-        <li *ngFor="let steps of directions">{{ steps }}</li>
+        <li *ngFor="let directions of directions">{{ directions.step }}</li>
       </ol>
     </div>
   </p-card>

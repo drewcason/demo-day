@@ -67,6 +67,16 @@ form {
         padding: 7px 6px;
     }
 
+    h6 {
+        color: #999;
+        padding: 7px 6px;
+        display: inline-block;
+    }
+
+    p-radioButton {
+        padding-top: 2px;
+    }
+
     textarea {
         display: block;
         resize: vertical;
@@ -162,12 +172,3 @@ div.form-container {
 div.main {
     overflow-y: scroll;
 }
-// @media only screen and (max-width: 959px) {
-//     div.card-container {
-//         display: none;
-//     }
-
-//     div.form-container {
-//         margin: 0 auto;
-//     }
-// }
