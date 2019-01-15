@@ -12,7 +12,6 @@ export class RecipeService {
     Recipes$ = this.recipeInfoSource.asObservable();
     showRecipeInstructionsSource = new Subject<boolean>();
     ShowRecipeInstructions$ = this.showRecipeInstructionsSource.asObservable();
-    showInstructions: boolean;
     recipesURL = 'http://localhost:3000/recipes';
     constructor( 
         private http: HttpClient,

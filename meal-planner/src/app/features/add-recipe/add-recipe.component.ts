@@ -19,8 +19,8 @@ export class AddRecipeComponent implements OnInit {
   newRecipe: Recipe;
   grocery_items: FormArray;
   directions: FormArray;
-  groceries: [];
-  instructions: [];
+  groceries = [];
+  instructions = [];
   formPages: SelectItem[];
   selectedFormPage: any;
   constructor(

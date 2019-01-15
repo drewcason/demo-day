@@ -22,9 +22,20 @@ export class GroceryListComponent implements OnInit {
   getThisWeeksGroceryList(): void {
     this.subscriptions.push(
       this.groceryService.GroceryList$.subscribe(
-        (groceryListResponse: string[]) => {
+        (groceryListResponse: any) => {
           if ( groceryListResponse) {
-            this.grocery_list = groceryListResponse;
+            let groceries = groceryListResponse;
+            let justIngredients = groceries.map(element => {
+              return element.ingredient;
+            })
+            this.grocery_list = justIngredients.sort().reduce((accumulator, current) => {
+              const length = accumulator.length
+              if (length === 0 || accumulator[length - 1] !== current) {
+                  accumulator.push(current);
+              }
+              return accumulator;
+            }, []);
+          
           }
         }
       )

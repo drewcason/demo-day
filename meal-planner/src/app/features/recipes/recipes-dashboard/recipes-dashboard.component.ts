@@ -33,7 +33,6 @@ export class RecipesDashboardComponent implements OnInit {
     ) {}
 
   ngOnInit() {
-    this.showRecipeInstructions = false;
     this.getSortedRecipesInfo();
     this.subscribeToRecipeInstructionsVisibility();
   }

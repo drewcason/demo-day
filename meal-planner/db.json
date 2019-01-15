@@ -10,6 +10,7 @@
       "cook_time": "8 hours",
       "prep_time": "20 mins",
       "servings": 4,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "pork chops",
@@ -75,6 +76,7 @@
       "cook_time": "20 mins",
       "prep_time": "10 mins",
       "servings": 4,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "chicken thighs",
@@ -143,6 +145,7 @@
       "cook_time": "20 mins",
       "prep_time": "10 mins",
       "servings": 4,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "fresh parsley",
@@ -225,6 +228,7 @@
       "cook_time": "20 mins",
       "prep_time": "10 mins",
       "servings": 4,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "salmon",
@@ -274,6 +278,7 @@
       "cook_time": "20 mins",
       "prep_time": "10 mins",
       "servings": 4,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "ribeyes",
@@ -328,6 +333,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -360,10 +366,11 @@
       "protein": "beef",
       "season": "summer",
       "ethnicity": "American",
-      "count": 6,
+      "count": 7,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "ground beef",
@@ -414,17 +421,18 @@
       "protein": "chicken",
       "season": "summer",
       "ethnicity": "American",
-      "count": 4,
+      "count": 5,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "chicken breasts",
           "amount": "2"
         },
         {
-          "ingredient": "onion",
+          "ingredient": "onions",
           "amount": "1"
         },
         {
@@ -462,6 +470,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "ground beef",
@@ -530,6 +539,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 4,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "bacon",
@@ -566,22 +576,35 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
-          "ingredient": "bread",
-          "amount": "4 slices"
+          "ingredient": "ground beef",
+          "amount": "1 pound"
         },
         {
-          "ingredient": "cheese slices",
-          "amount": "2"
+          "ingredient": "onions",
+          "amount": "1"
         },
         {
-          "ingredient": "butter",
+          "ingredient": "garlic",
+          "amount": "3 cloves"
+        },
+        {
+          "ingredient": "enchilada sauce",
+          "amount": "1 can"
+        },
+        {
+          "ingredient": "salt",
           "amount": "1 tsp"
         },
         {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
+          "ingredient": "flour tortillas",
+          "amount": "8"
+        },
+        {
+          "ingredient": "shredded cheddar",
+          "amount": "1 cup"
         }
       ],
       "directions": [
@@ -602,29 +625,38 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
-          "ingredient": "bread",
-          "amount": "4 slices"
-        },
-        {
-          "ingredient": "cheese slices",
-          "amount": "2"
+          "ingredient": "flour",
+          "amount": "3 cups"
         },
         {
           "ingredient": "butter",
+          "amount": "1 stick"
+        },
+        {
+          "ingredient": "baking powder",
           "amount": "1 tsp"
         },
         {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
+          "ingredient": "salt",
+          "amount": "1/2 tsp"
+        },
+        {
+          "ingredient": "sugar",
+          "amount": "1 cup"
+        },
+        {
+          "ingredient": "egg",
+          "amount": "1"
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        "Heat griddle to 375°F.",
+        "Melt butter.",
+        "Mix all ingredients together.",
+        "Pour 1/4 cup of the batter onto the griddle and let cook for 2 minutes per side."
       ],
       "id": 12
     },
@@ -634,10 +666,11 @@
       "protein": "meatless",
       "season": "summer",
       "ethnicity": "French breakfast",
-      "count": 2,
+      "count": 3,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -674,29 +707,47 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
-          "ingredient": "bread",
-          "amount": "4 slices"
+          "ingredient": "pizza crust",
+          "amount": "1"
         },
         {
-          "ingredient": "cheese slices",
-          "amount": "2"
+          "ingredient": "shredded mozzarella",
+          "amount": "2 cups"
         },
         {
-          "ingredient": "butter",
+          "ingredient": "garlic powder",
           "amount": "1 tsp"
         },
         {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
+          "ingredient": "onion powder",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "pepper",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "pizza sauce",
+          "amount": "5 tbsp"
+        },
+        {
+          "ingredient": "pepperonis",
+          "amount": "1 bag"
+        },
+        {
+          "ingredient": "basil",
+          "amount": "1 tsp"
         }
       ],
       "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
+        "Preheat oven to 425°F.",
+        "Mix cheese, garlic powder, onion powder, pepper, and basil together.",
+        "Spread pizza sauce over crust and layer with pepperonis.",
+        "Top evenly with cheese.",
+        "Bake for 10 mins or until cheese in golden."
       ],
       "id": 14
     },
@@ -710,22 +761,47 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
-          "ingredient": "bread",
-          "amount": "4 slices"
+          "ingredient": "roast",
+          "amount": "1"
         },
         {
-          "ingredient": "cheese slices",
-          "amount": "2"
+          "ingredient": "beef broth",
+          "amount": "2 cups"
         },
         {
           "ingredient": "butter",
-          "amount": "1 tsp"
+          "amount": "4 tsp"
         },
         {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
+          "ingredient": "onions",
+          "amount": "1"
+        },
+        {
+          "ingredient": "basil",
+          "amount": "2 tsp"
+        },
+        {
+          "ingredient": "rosemary",
+          "amount": "3 sprigs"
+        },
+        {
+          "ingredient": "carrots",
+          "amount": "3"
+        },
+        {
+          "ingredient": "red wine vinegar",
+          "amount": "1/2 cup"
+        },
+        {
+          "ingredient": "Worcestershire",
+          "amount": "1/2 cup"
+        },
+        {
+          "ingredient": "salt",
+          "amount": "2 tsp"
         }
       ],
       "directions": [
@@ -746,22 +822,23 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
-          "ingredient": "bread",
-          "amount": "4 slices"
+          "ingredient": "flour",
+          "amount": "3 cups"
         },
         {
-          "ingredient": "cheese slices",
+          "ingredient": "eggs",
           "amount": "2"
         },
         {
           "ingredient": "butter",
-          "amount": "1 tsp"
+          "amount": "4 tbsp"
         },
         {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
+          "ingredient": "sugar",
+          "amount": "1 cup"
         }
       ],
       "directions": [
@@ -778,26 +855,43 @@
       "protein": "chicken",
       "season": "fall winter",
       "ethnicity": "American Italian",
-      "count": 2,
+      "count": 3,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
-          "ingredient": "bread",
-          "amount": "4 slices"
+          "ingredient": "chicken thighs",
+          "amount": "4"
         },
         {
-          "ingredient": "cheese slices",
-          "amount": "2"
+          "ingredient": "chicken broth",
+          "amount": "4 cups"
         },
         {
-          "ingredient": "butter",
+          "ingredient": "cumin",
           "amount": "1 tsp"
         },
         {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
+          "ingredient": "smoked paprika",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "celery",
+          "amount": "3 stalks"
+        },
+        {
+          "ingredient": "onions",
+          "amount": "1"
+        },
+        {
+          "ingredient": "carrots",
+          "amount": "3"
+        },
+        {
+          "ingredient": "egg noodles",
+          "amount": "1 pound"
         }
       ],
       "directions": [
@@ -818,6 +912,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -854,6 +949,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -890,6 +986,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -926,6 +1023,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -962,6 +1060,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -998,6 +1097,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -1034,6 +1134,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
+      "isAddedToMenu": false,
       "grocery_items": [
         {
           "ingredient": "bread",
@@ -1061,589 +1162,6 @@
       "id": 24
     }
   ],
-  "menu": [
-    {
-      "title": "Eggs & Bacon",
-      "image": "/assets/images/eggsandbacon.jpeg",
-      "protein": "eggs bacon",
-      "season": "summer spring fall winter",
-      "ethnicity": "American breakfast",
-      "count": 4,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 4,
-      "grocery_items": [
-        {
-          "ingredient": "bacon",
-          "amount": "1 pound"
-        },
-        {
-          "ingredient": "eggs",
-          "amount": "8"
-        },
-        {
-          "ingredient": "butter",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "cheddar cheese",
-          "amount": "4 oz"
-        }
-      ],
-      "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
-      ],
-      "id": 10
-    },
-    {
-      "title": "Cheeseburger",
-      "image": "/assets/images/burger.jpeg",
-      "protein": "beef",
-      "season": "summer",
-      "ethnicity": "American",
-      "count": 6,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "grocery_items": [
-        {
-          "ingredient": "ground beef",
-          "amount": "1 pound"
-        },
-        {
-          "ingredient": "cheese slices",
-          "amount": "4"
-        },
-        {
-          "ingredient": "onion powder",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "hamburger buns",
-          "amount": "4"
-        },
-        {
-          "ingredient": "salt",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "pepper",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "mayo",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "BBQ sauce",
-          "amount": "2 tsp"
-        }
-      ],
-      "directions": [
-        "Heat griddle to 450°F.",
-        "Form 4 equally sized patties and coat generously with onion powder, salt, and pepper",
-        "When griddle is smoking hot, place patties on griddle and cook for 6-7 minutes. Flip the patties and cook for 4-5 minutes.",
-        "Toast buns in toaster if desired.",
-        "Add cheese for last minute of cooking.",
-        "If desired, spread thin layer of mayo on bottom bun to prevent it from gettgin soggy. Add BBQ sauce for deliciousness."
-      ],
-      "id": 7
-    },
-    {
-      "title": "Paella",
-      "image": "/assets/images/paella.jpeg",
-      "protein": "chicken chorizo shrimp mussels",
-      "season": "summer fall",
-      "ethnicity": "Spanish",
-      "count": 6,
-      "cook_time": "20 mins",
-      "prep_time": "10 mins",
-      "servings": 4,
-      "grocery_items": [
-        {
-          "ingredient": "fresh parsley",
-          "amount": "1 cup"
-        },
-        {
-          "ingredient": "lemon juice",
-          "amount": "1/4 cup"
-        },
-        {
-          "ingredient": "olive oil",
-          "amount": "1 tbsp"
-        },
-        {
-          "ingredient": "garlic",
-          "amount": "2 cloves"
-        },
-        {
-          "ingredient": "saffron",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "chicken broth",
-          "amount": "48 oz"
-        },
-        {
-          "ingredient": "jumbo shrimp",
-          "amount": "8"
-        },
-        {
-          "ingredient": "chicken thighs",
-          "amount": "4"
-        },
-        {
-          "ingredient": "chorizo",
-          "amount": "2 links"
-        },
-        {
-          "ingredient": "iberico ham",
-          "amount": "4 oz"
-        },
-        {
-          "ingredient": "onions",
-          "amount": "2 cups"
-        },
-        {
-          "ingredient": "Arborio rice",
-          "amount": "3 cups"
-        },
-        {
-          "ingredient": "mussels",
-          "amount": "8"
-        },
-        {
-          "ingredient": "smoked paprika",
-          "amount": "1 tsp"
-        }
-      ],
-      "directions": [
-        "To prepare the herb blend, combine the first 4 ingredients, and set aside.",
-        "To prepare paella, combine water, saffron, and broth in a large saucepan. Bring to a simmer (do not boil). Keep warm over low heat.",
-        "Peel and devein shrimp, leaving tails intact; set aside.",
-        "Heat 1 tablespoon oil in a large paella pan or large skillet over medium-high heat. Add chicken; saute 2 minutes on each side. Remove from pan.",
-        "Add sausage and prosciutto; saute 2 minutes. Remove from pan.",
-        "Add shrimp, and saute 2 minutes. Remove from pan. Reduce heat to medium-low.",
-        "Add onion and bell pepper; saute 15 minutes, stirring occasionally. Add tomatoes, paprika, and 3 garlic cloves; cook 5 minutes.",
-        "Add rice; cook 1 minute, stirring constantly. Stir in herb blend, broth mixture, chicken, sausage mixture, and peas. Bring to a low boil; cook 10 minutes, stirring frequently.",
-        "Add mussels to pan, nestling them into rice mixture. Cook 5 minutes or until shells open; discard any unopened shells.",
-        "Arrange shrimp, heads down, in rice mixture, and cook 5 minutes or until shrimp are done. Sprinkle with 1/4 cup lemon juice. Remove from heat; cover with a towel, and let stand 10 minutes. Serve with lemon wedges, if desired."
-      ],
-      "id": 3
-    },
-    {
-      "title": "Pho",
-      "image": "/assets/images/pho.jpeg",
-      "protein": "chicken",
-      "season": "summer fall spring",
-      "ethnicity": "Vietnamese",
-      "count": 7,
-      "cook_time": "20 mins",
-      "prep_time": "10 mins",
-      "servings": 4,
-      "grocery_items": [
-        {
-          "ingredient": "chicken thighs",
-          "amount": "4"
-        },
-        {
-          "ingredient": "beef broth",
-          "amount": "2"
-        },
-        {
-          "ingredient": "fresh ginger",
-          "amount": "5 slices"
-        },
-        {
-          "ingredient": "water",
-          "amount": "4 quarts"
-        },
-        {
-          "ingredient": "garlic",
-          "amount": "2 cloves"
-        },
-        {
-          "ingredient": "star anise",
-          "amount": "2 pods"
-        },
-        {
-          "ingredient": "fish sauce",
-          "amount": "2 tsp"
-        },
-        {
-          "ingredient": "rice noodles",
-          "amount": "16 oz"
-        },
-        {
-          "ingredient": "salt",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "green onion",
-          "amount": "1 tbsp"
-        },
-        {
-          "ingredient": "onions",
-          "amount": "1"
-        },
-        {
-          "ingredient": "Thai basil",
-          "amount": "1 bunch"
-        }
-      ],
-      "directions": [
-        "Place onion on a baking sheet and roast in the preheated oven until blackened and soft, about 45 minutes.",
-        "Place bones, onion, ginger, salt, star anise, and fish sauce in a large stockpot and cover with 4 quarts of water. Bring to a boil and reduce heat to low. Simmer on low for 6 to 10 hours. Strain the broth into a saucepan and set aside.",
-        "Place rice noodles in large bowl filled with room temperature water and allow to soak for 1 hour. Bring a large pot of water to a boil and after the noodles have soaked, place them in the boiling water for 1 minute. Bring stock to a simmer.",
-        "Divide noodles among 4 serving bowls; top with sirloin, cilantro, and green onion. Pour hot broth over the top. Stir and let sit until the beef is partially cooked and no longer pink, 1 to 2 minutes. Serve with bean sprouts, Thai basil, lime wedges, hoisin sauce, and chile-garlic sauce on the side."
-      ],
-      "id": 2
-    },
-    {
-      "title": "Pizza",
-      "image": "/assets/images/pizza.jpeg",
-      "protein": "beef pepperoni bacon sausage",
-      "season": "summer spring",
-      "ethnicity": "Italian",
-      "count": 8,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "grocery_items": [
-        {
-          "ingredient": "bread",
-          "amount": "4 slices"
-        },
-        {
-          "ingredient": "cheese slices",
-          "amount": "2"
-        },
-        {
-          "ingredient": "butter",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
-        }
-      ],
-      "directions": [
-        "Heat griddle to 350°F.",
-        "Coat bread with butter.",
-        "Place bread on griddle, followed by cheese and other piece of bread.",
-        "Open can of tomato soup and heat on stove in small pot."
-      ],
-      "id": 14
-    },
-    {
-      "title": "Pork Chops",
-      "image": "/assets/images/porkchops.jpeg",
-      "protein": "pork",
-      "season": "summer fall winter",
-      "ethnicity": "American",
-      "count": 3,
-      "cook_time": "8 hours",
-      "prep_time": "20 mins",
-      "servings": 4,
-      "grocery_items": [
-        {
-          "ingredient": "pork chops",
-          "amount": "4"
-        },
-        {
-          "ingredient": "apples",
-          "amount": "2"
-        },
-        {
-          "ingredient": "broccoli",
-          "amount": "1 bag"
-        },
-        {
-          "ingredient": "butter",
-          "amount": "1 stick"
-        },
-        {
-          "ingredient": "garlic",
-          "amount": "2 cloves"
-        },
-        {
-          "ingredient": "rosemary",
-          "amount": "2 springs"
-        },
-        {
-          "ingredient": "sage",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "potatoes",
-          "amount": "4"
-        },
-        {
-          "ingredient": "salt",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "pepper",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "onions",
-          "amount": "1"
-        }
-      ],
-      "directions": [
-        "Season chops with salt and pepper.",
-        "Grill chops.",
-        "Peel and cut the apples",
-        "Make the taters good",
-        "Eat the food."
-      ],
-      "id": 1
-    }
-  ],
-  "grocery_list": [
-    {
-      "ingredient": "bacon",
-      "amount": "1 pound",
-      "id": 1
-    },
-    {
-      "ingredient": "eggs",
-      "amount": "8",
-      "id": 2
-    },
-    {
-      "ingredient": "butter",
-      "amount": "1 tsp",
-      "id": 3
-    },
-    {
-      "ingredient": "cheddar cheese",
-      "amount": "4 oz",
-      "id": 4
-    },
-    {
-      "ingredient": "ground beef",
-      "amount": "1 pound",
-      "id": 5
-    },
-    {
-      "ingredient": "cheese slices",
-      "amount": "4",
-      "id": 6
-    },
-    {
-      "ingredient": "onion powder",
-      "amount": "1 tsp",
-      "id": 7
-    },
-    {
-      "ingredient": "hamburger buns",
-      "amount": "4",
-      "id": 8
-    },
-    {
-      "ingredient": "salt",
-      "amount": "1 tsp",
-      "id": 9
-    },
-    {
-      "ingredient": "pepper",
-      "amount": "1 tsp",
-      "id": 10
-    },
-    {
-      "ingredient": "mayo",
-      "amount": "1 tsp",
-      "id": 11
-    },
-    {
-      "ingredient": "BBQ sauce",
-      "amount": "2 tsp",
-      "id": 12
-    },
-    {
-      "ingredient": "fresh parsley",
-      "amount": "1 cup",
-      "id": 13
-    },
-    {
-      "ingredient": "lemon juice",
-      "amount": "1/4 cup",
-      "id": 14
-    },
-    {
-      "ingredient": "olive oil",
-      "amount": "1 tbsp",
-      "id": 15
-    },
-    {
-      "ingredient": "garlic",
-      "amount": "2 cloves",
-      "id": 16
-    },
-    {
-      "ingredient": "chicken broth",
-      "amount": "48 oz",
-      "id": 17
-    },
-    {
-      "ingredient": "saffron",
-      "amount": "1 tsp",
-      "id": 18
-    },
-    {
-      "ingredient": "jumbo shrimp",
-      "amount": "8",
-      "id": 19
-    },
-    {
-      "ingredient": "chicken thighs",
-      "amount": "4",
-      "id": 20
-    },
-    {
-      "ingredient": "chorizo",
-      "amount": "2 links",
-      "id": 21
-    },
-    {
-      "ingredient": "chicken thighs",
-      "amount": "4",
-      "id": 22
-    },
-    {
-      "ingredient": "beef broth",
-      "amount": "2",
-      "id": 23
-    },
-    {
-      "ingredient": "fresh ginger",
-      "amount": "5 slices",
-      "id": 24
-    },
-    {
-      "ingredient": "water",
-      "amount": "4 quarts",
-      "id": 25
-    },
-    {
-      "ingredient": "garlic",
-      "amount": "2 cloves",
-      "id": 26
-    },
-    {
-      "ingredient": "star anise",
-      "amount": "2 pods",
-      "id": 27
-    },
-    {
-      "ingredient": "fish sauce",
-      "amount": "2 tsp",
-      "id": 28
-    },
-    {
-      "ingredient": "rice noodles",
-      "amount": "16 oz",
-      "id": 29
-    },
-    {
-      "ingredient": "salt",
-      "amount": "1 tsp",
-      "id": 30
-    },
-    {
-      "ingredient": "green onion",
-      "amount": "1 tbsp",
-      "id": 31
-    },
-    {
-      "ingredient": "onions",
-      "amount": "1",
-      "id": 32
-    },
-    {
-      "ingredient": "Thai basil",
-      "amount": "1 bunch",
-      "id": 33
-    },
-    {
-      "ingredient": "bread",
-      "amount": "4 slices",
-      "id": 34
-    },
-    {
-      "ingredient": "cheese slices",
-      "amount": "2",
-      "id": 35
-    },
-    {
-      "ingredient": "butter",
-      "amount": "1 tsp",
-      "id": 36
-    },
-    {
-      "ingredient": "tomato soup",
-      "amount": "1 can",
-      "id": 37
-    },
-    {
-      "ingredient": "pork chops",
-      "amount": "4",
-      "id": 38
-    },
-    {
-      "ingredient": "apples",
-      "amount": "2",
-      "id": 39
-    },
-    {
-      "ingredient": "broccoli",
-      "amount": "1 bag",
-      "id": 40
-    },
-    {
-      "ingredient": "butter",
-      "amount": "1 stick",
-      "id": 41
-    },
-    {
-      "ingredient": "garlic",
-      "amount": "2 cloves",
-      "id": 42
-    },
-    {
-      "ingredient": "rosemary",
-      "amount": "2 springs",
-      "id": 43
-    },
-    {
-      "ingredient": "sage",
-      "amount": "1 tsp",
-      "id": 44
-    },
-    {
-      "ingredient": "potatoes",
-      "amount": "4",
-      "id": 45
-    },
-    {
-      "ingredient": "salt",
-      "amount": "1 tsp",
-      "id": 46
-    },
-    {
-      "ingredient": "pepper",
-      "amount": "1 tsp",
-      "id": 47
-    },
-    {
-      "ingredient": "onions",
-      "amount": "1",
-      "id": 48
-    }
-  ]
+  "menu": [],
+  "grocery_list": []
 }

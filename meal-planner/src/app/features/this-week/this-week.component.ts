@@ -42,13 +42,21 @@ export class MenuComponent implements OnInit {
     });
   }
 
-  async updateRecipeCount(id) {
+  uncheckRecipe(id): void {
+    this.menuService.updateRecipeRemovedFromMenu(id).subscribe();
+  }
+
+  async updateRecipeCountAndRemoveFromMenu(id) {
     for (let i = 0; i < this.menu.length; i++) {
       if ( this.menu[i].id === id ) {
         this.count = this.menu[i].count + 1;
       }
     }
     await this.menuService.updateRecipeCount(id, this.count).subscribe((value) => {
+      this.getThisWeeksMenu();
+      this.changeDetector.detectChanges();
+    });
+    this.menuService.removeRecipeFromMenu(id).subscribe((value) => {
       this.getThisWeeksMenu();
       this.changeDetector.detectChanges();
     });

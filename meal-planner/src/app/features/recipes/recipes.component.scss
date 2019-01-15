@@ -1,3 +1,22 @@
+:host ::ng-deep {
+    p-card > div > div.ui-card-body > div > div.ui-card-footer.m-0.border-top > button {
+        background-color: #000 !important;
+        border-color: #ddd; 
+        :focus {
+            outline-color: #999;
+        }
+    }
+
+    button:focus {
+        outline: none !important;
+    }
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+} 
+
 p-header h3 {
     background-image: linear-gradient(#eee, #fff);
     width: 100%;
@@ -39,4 +58,10 @@ p-header h3 {
 
 ol {
     padding-left: 20px;
+}
+
+.check {
+    font-size: 30px;
+    position: relative;
+    left: 8px;
 }

@@ -1,3 +1,16 @@
+:host ::ng-deep {
+    div.form-container.container-fluid > form > p-selectbutton > div > div.ui-button.ui-widget.ui-state-default.ui-button-text-only.ui-state-active.ng-star-inserted {
+        background-color: #000 !important;
+        border-color: #ddd;
+        outline: 2px solid #000;
+        z-index: 3;
+    }
+
+    div > div.form-container.container-fluid > form > div > button:focus {
+        background-color: #000 !important;
+    }
+}
+
 form {
     float: left;
     margin: 20px;

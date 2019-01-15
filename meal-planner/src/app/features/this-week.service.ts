@@ -48,6 +48,14 @@ export class MenuService {
     return this.http.patch(`${this.recipeURL}/${id}`, { "count": count }, this.httpOptions);
   }
 
+  updateRecipeAddedToMenu(id) {
+    return this.http.patch(`${this.recipeURL}/${id}`, { "isAddedToMenu": true }, this.httpOptions);
+  }
+
+  updateRecipeRemovedFromMenu(id) {
+    return this.http.patch(`${this.recipeURL}/${id}`, { "isAddedToMenu": false }, this.httpOptions);
+  }
+
   madeRecipeAndRemoveFromMenu(id, count) {
     this.updateRecipeCount(id, count);
     this.removeRecipeFromMenu(id);

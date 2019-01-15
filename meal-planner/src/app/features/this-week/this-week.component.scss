@@ -5,3 +5,10 @@ h2 {
     }
 }
 
+.header-container {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    background-image: linear-gradient(#eee, #fff);
+}
+

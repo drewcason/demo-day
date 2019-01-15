@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
 import { Recipe } from 'src/app/recipe';
 import { RecipeService } from 'src/app/recipes.service';
 import { Subscription } from 'rxjs';
@@ -19,11 +19,11 @@ export class RecipesComponent implements OnInit {
   constructor(
     private recipeService: RecipeService,
     private menuService: MenuService,
-    private groceryService: GroceryListService
+    private groceryService: GroceryListService,
+    private changeDetector: ChangeDetectorRef
   ) { }
 
   ngOnInit() {
-    this.showInstructions = false;
     this.subscribeToRecipeInstructionsVisibility();
     this.subscribeToMenu();
   }
@@ -53,6 +53,13 @@ export class RecipesComponent implements OnInit {
 
   addToThisWeekMenu(newRecipe): void {
     this.menuService.postThisWeeksRecipes(newRecipe).subscribe();
+  }
+
+  markAsAddedToMenu(id): void {
+    this.menuService.updateRecipeAddedToMenu(id).subscribe((value) => {
+      this.recipeService.getSortedRecipes();
+      this.changeDetector.detectChanges();
+    });
   }
 
   addItemsToGroceryList(items) {

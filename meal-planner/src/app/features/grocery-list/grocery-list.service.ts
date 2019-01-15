@@ -19,7 +19,7 @@ export class GroceryListService {
 
   getGroceryList(): any {
     this.http
-      .get(this.groceryURL)
+      .get(`${this.groceryURL}?_sort=ingredient&_order=asc`)
       .subscribe(
         (res) => {
           this.grocerySource.next(res);
