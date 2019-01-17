@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder, FormArray} from '@angular/forms';
 import { Recipe } from '../../recipe';
-import { SelectItem } from 'primeng/api';
+import { SelectItem, MessageService } from 'primeng/api';
 import { RecipeService } from 'src/app/recipes.service';
 
 @Component({
@@ -28,7 +28,9 @@ export class AddRecipeComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private recipeService: RecipeService
+    private recipeService: RecipeService,
+    private changeDetector: ChangeDetectorRef,
+    private messageService: MessageService
   ) { }
 
   ngOnInit() {
@@ -68,13 +70,9 @@ export class AddRecipeComponent implements OnInit {
       prep_time: ['', Validators.required],
       breakfast: ['', Validators.required],
       grocery_items: this.formBuilder.array([
-        this.addGroceryItemField(),
-        this.addGroceryItemField(),
         this.addGroceryItemField()
       ]),
       directions: this.formBuilder.array([
-        this.addDirectionsStepField(),
-        this.addDirectionsStepField(),
         this.addDirectionsStepField()
       ]),
       selectedPage: ['Basics']
@@ -116,8 +114,30 @@ export class AddRecipeComponent implements OnInit {
     this.newRecipe = this.addRecipeForm.value;
     this.newRecipe['isAddedToMenu'] = false;
     this.newRecipe['count'] = 0;
-    this.newRecipe['image'] = '/assets/images/porkchops.jpeg'
-    this.recipeService.addNewRecipeFromScratch(this.newRecipe).subscribe();
-    }
+    this.newRecipe['image'] = '/assets/images/default.png'
+    delete this.newRecipe.selectedPage;
+    this.showConfirm();
+    // this.recipeService.addNewRecipeFromScratch(this.newRecipe);
+    this.addRecipeForm.reset();
+  }
+
+  showConfirm() {
+    
+    this.messageService.clear();
+    this.messageService.add({key: 'c', sticky: true, severity:'info', summary:'Are you sure?', detail:'Confirm to proceed'});
+  }
+
+  onConfirm() {
+    this.recipeService.addNewRecipeFromScratch(this.newRecipe);
+    this.messageService.clear('c');
+  }
+
+  onReject() {
+    this.messageService.clear('c');
+  }
+
+  clear() {
+    this.messageService.clear();
+  }
 }
 

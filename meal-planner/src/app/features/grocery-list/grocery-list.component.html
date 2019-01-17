@@ -2,7 +2,7 @@
 <ng-container class="justify-content-center" *ngIf="grocery_list && grocery_list.length > 0">
     <div class="d-flex w-100 justify-content-center">
     <ul class="mx-sm-3 mx-lg-5 w-100">
-      <li *ngFor="let item of grocery_list" class="border-bottom d-flex justify-content-between">{{ item }}<button pButton type="button" label="REMOVE" icon="pi pi-minus" class="ui-button-rounded ml-3 mr-1 px-1" (click)="removeItemFromGroceryList(item.id)"></button></li>
+      <li *ngFor="let item of grocery_list" class="border-bottom d-flex justify-content-between">{{ item.ingredient }}<ng-container *ngIf='item.count'> {{ item.count }}x</ng-container><button pButton type="button" label="REMOVE" icon="pi pi-minus" class="ui-button-rounded ml-3 mr-1 px-1" (click)="removeItemFromGroceryList(item.id)"></button></li>
     </ul>
   </div>
 </ng-container>

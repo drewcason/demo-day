@@ -6,3 +6,14 @@
 body div.ui-widget-overlay.ui-sidebar-mask {
     display: none !important;
 }
+
+.ui-toast-message-text-content {
+    font-weight: bold;
+    font-size: 16px;
+}
+div.ui-toast-summary {
+    margin-top: 10px;
+}
+div.ui-toast-details {
+    margin-bottom: 15px;
+}

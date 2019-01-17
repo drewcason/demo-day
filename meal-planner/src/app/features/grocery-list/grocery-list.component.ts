@@ -26,13 +26,18 @@ export class GroceryListComponent implements OnInit {
           if ( groceryListResponse) {
             let groceries = groceryListResponse;
             let justIngredients = groceries.map(element => {
-              return element.ingredient;
+              return { ingredient: element.ingredient, id: element.id };
             })
             this.grocery_list = justIngredients.sort().reduce((accumulator, current) => {
               const length = accumulator.length
-              if (length === 0 || accumulator[length - 1] !== current) {
+              if (length === 0 || accumulator[length - 1].ingredient !== current.ingredient) {
                   accumulator.push(current);
+              } else if (accumulator[length-1].ingredient === current.ingredient && !accumulator[length-1].count) {
+                  accumulator[length-1].count = 2;
+              } else if (accumulator[length-1].ingredient === current.ingredient && accumulator[length-1].count) {
+                  accumulator[length-1].count += 1;
               }
+              console.log(accumulator);
               return accumulator;
             }, []);
           
@@ -42,8 +47,6 @@ export class GroceryListComponent implements OnInit {
     )
     this.groceryService.getGroceryList();
   }
-
-
 
   removeItemFromGroceryList(id) {
     this.groceryService.removeItemFromGroceryList(id).subscribe((value) => {

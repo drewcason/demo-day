@@ -13,11 +13,12 @@ export class RecipeService {
     showRecipeInstructionsSource = new Subject<boolean>();
     ShowRecipeInstructions$ = this.showRecipeInstructionsSource.asObservable();
     recipesURL = 'http://localhost:3000/recipes';
-    httpOptions = {
+    httpOptions = { 
         headers: new HttpHeaders({
-          'Content-Type':  'application/json'
+            'Content-Type':  'application/json'
         })
-      };
+    };
+
     constructor( 
         private http: HttpClient,
         private messageService: MessageService
@@ -32,8 +33,7 @@ export class RecipeService {
     }  
     
     getMostPopularRecipes(): void {
-        this.http
-            .get(`${this.recipesURL}?_sort=count&_order=desc`)
+        this.http.get(`${this.recipesURL}?_sort=count&_order=desc`)
             .subscribe(
                 (res: Recipe[]) => {
                     this.recipeInfoSource.next(res);
@@ -41,13 +41,16 @@ export class RecipeService {
             ),
             error => {
                 this.recipeInfoSource.next();
-                this.displayToastMessage('error', 'Recipes Not Retrieved', 'Recipes could not be retrieved from your recipe box.')
+                this.displayToastMessage(
+                    'error',
+                    'Recipes Not Retrieved', 
+                    'Recipes could not be retrieved from your recipe box.'
+                    )
             }
     }
 
     getLeastPopularRecipes(): void {
-        this.http
-            .get(`${this.recipesURL}?_sort=count&_order=asc`)
+        this.http.get(`${this.recipesURL}?_sort=count&_order=asc`)
             .subscribe(
                 (res: Recipe[]) => {
                     this.recipeInfoSource.next(res);
@@ -55,13 +58,16 @@ export class RecipeService {
             ),
             error => {
                 this.recipeInfoSource.next();
-                this.displayToastMessage('error', 'Recipes Not Retrieved', 'Recipes could not be retrieved from your recipe box.')
+                this.displayToastMessage(
+                    'error',
+                    'Recipes Not Retrieved',
+                    'Recipes could not be retrieved from your recipe box.'
+                    )
             }
     }
 
     getSortedRecipes(): void {
-        this.http
-            .get(`${this.recipesURL}?_sort=title&_order=asc`)
+        this.http.get(`${this.recipesURL}?_sort=title&_order=asc`)
             .subscribe(
                 (res: Recipe[]) => {
                     this.recipeInfoSource.next(res);
@@ -69,12 +75,30 @@ export class RecipeService {
             ),
             error => {
                 this.recipeInfoSource.next();
-                this.displayToastMessage('error', 'Recipes Not Retrieved', 'Recipes could not be retrieved from your recipe box.')
+                this.displayToastMessage(
+                    'error',
+                    'Recipes Not Retrieved',
+                    'Recipes could not be retrieved from your recipe box.'
+                    )
             }
     }
 
-    addNewRecipeFromScratch(recipe: Recipe): Observable<Recipe> {
-        return this.http.post<Recipe>(this.recipesURL, recipe, this.httpOptions);
+    addNewRecipeFromScratch(recipe: Recipe): void {
+        this.http.post(this.recipesURL, recipe, this.httpOptions)
+            .subscribe((response) => {
+                this.displayToastMessage(
+                    'success',
+                    'Success',
+                    'Your new recipe was added to the recipe box.'
+                )
+            },
+            error => {
+                this.displayToastMessage(
+                    'error',
+                    'Error',
+                    'Your recipe was not added to the recipe box.'
+                )
+            });
     }
       
     displayToastMessage(type, message, details) {

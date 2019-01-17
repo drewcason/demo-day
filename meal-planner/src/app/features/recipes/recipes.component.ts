@@ -53,7 +53,7 @@ export class RecipesComponent implements OnInit {
   }
 
   addToThisWeekMenu(newRecipe): void {
-    this.menuService.postThisWeeksRecipes(newRecipe).subscribe();
+    this.menuService.postThisWeeksRecipes(newRecipe);
     this.isAdded = true;
   }
 
@@ -63,7 +63,7 @@ export class RecipesComponent implements OnInit {
 
   addItemsToGroceryList(items) {
     items.forEach(element => {
-      this.groceryService.postItemsToGroceryList(element).subscribe();
+      this.groceryService.postItemsToGroceryList(element);
     })
   }
 }

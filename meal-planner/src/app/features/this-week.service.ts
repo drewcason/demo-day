@@ -32,16 +32,34 @@ export class MenuService {
       ),
       error => {
           this.menuSource.next();
-          this.displayToastMessage('error', 'Menu Not Retrieved', 'This week\'s menu could not be retrieved.')
+          this.displayToastMessage(
+            'error',
+            'Menu Not Retrieved',
+            'This week\'s menu could not be retrieved.'
+            )
       }
   }
 
-  postThisWeeksRecipes(recipe: Recipe): Observable<Recipe> {
-    return this.http.post<Recipe>(this.menuURL, recipe, this.httpOptions)
+  postThisWeeksRecipes(recipe: Recipe): void {
+    this.http.post<Recipe>(this.menuURL, recipe, this.httpOptions)
+      .subscribe((response) => {
+        this.displayToastMessage(
+          'success',
+          'Success',
+          `${response.title} was added to your menu.`
+        )
+      },
+        error => {
+          this.displayToastMessage(
+            'error',
+            'Error',
+            'Recipe was not added to menu.'
+          )
+        })
   }
 
   removeRecipeFromMenu(id) {
-    return this.http.delete(`${this.menuURL}/${id}`, this.httpOptions)
+    return this.http.delete(`${this.menuURL}/${id}`, this.httpOptions);
   }
 
   updateRecipeCount(id, count) {
@@ -56,21 +74,7 @@ export class MenuService {
     return this.http.patch(`${this.recipeURL}/${id}`, { "isAddedToMenu": false }, this.httpOptions);
   }
 
-  madeRecipeAndRemoveFromMenu(id, count) {
-    this.updateRecipeCount(id, count);
-    this.removeRecipeFromMenu(id);
-  }
-
   displayToastMessage(type, message, details) {
     this.messageService.add({severity: type, summary: message, detail: details});
   }
-
-  private handleError(error: HttpErrorResponse, message) {
-    if (error.error instanceof ErrorEvent) {
-      this.displayToastMessage('error', message, error.error.message);
-    } else {
-      this.displayToastMessage('error', error.status, error.error);
-    }
-  };
-  
 }

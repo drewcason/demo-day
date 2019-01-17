@@ -512,7 +512,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": true,
+      "isAddedToMenu": false,
       "breakfast": " ",
       "grocery_items": [
         {
@@ -802,7 +802,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": true,
+      "isAddedToMenu": false,
       "breakfast": "breakfast",
       "grocery_items": [
         {
@@ -1029,7 +1029,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": true,
+      "isAddedToMenu": false,
       "breakfast": " ",
       "grocery_items": [
         {
@@ -1137,7 +1137,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": true,
+      "isAddedToMenu": false,
       "breakfast": " ",
       "grocery_items": [
         {
@@ -1229,7 +1229,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": true,
+      "isAddedToMenu": false,
       "breakfast": " ",
       "grocery_items": [
         {
@@ -1402,460 +1402,72 @@
         }
       ],
       "id": 24
-    }
-  ],
-  "menu": [
+    },
     {
-      "title": "Chicken & Veggies",
-      "image": "/assets/images/chickenandveggies.jpeg",
-      "protein": "chicken",
-      "season": "summer",
-      "ethnicity": "American",
-      "count": 5,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "isAddedToMenu": false,
-      "breakfast": " ",
+      "title": "sdf",
+      "protein": "sdf",
+      "season": "",
+      "ethnicity": "sdf",
+      "servings": "",
+      "cook_time": "",
+      "prep_time": "",
+      "breakfast": "",
       "grocery_items": [
         {
-          "ingredient": "chicken breasts",
-          "amount": "2"
+          "amount": "",
+          "ingredient": ""
         },
         {
-          "ingredient": "onions",
-          "amount": "1"
+          "amount": "",
+          "ingredient": ""
         },
         {
-          "ingredient": "salt",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "pepper",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "asparagus",
-          "amount": "1 bundle"
-        },
-        {
-          "ingredient": "bell peppers",
-          "amount": "2"
+          "amount": "",
+          "ingredient": ""
         }
       ],
       "directions": [
         {
-          "step": "Heat griddle to 350°F."
+          "step": ""
         },
         {
-          "step": "Coat bread with butter."
+          "step": ""
         },
         {
-          "step": "Place bread on griddle, followed by cheese and other piece of bread."
-        },
-        {
-          "step": "Open can of tomato soup and heat on stove in small pot."
+          "step": ""
         }
       ],
-      "id": 8
-    },
-    {
-      "title": "Chicken Soup",
-      "image": "/assets/images/chickensoup.jpeg",
-      "protein": "chicken",
-      "season": "fall winter",
-      "ethnicity": "American Italian",
-      "count": 3,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
       "isAddedToMenu": false,
-      "breakfast": " ",
-      "grocery_items": [
-        {
-          "ingredient": "chicken thighs",
-          "amount": "4"
-        },
-        {
-          "ingredient": "chicken broth",
-          "amount": "4 cups"
-        },
-        {
-          "ingredient": "cumin",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "smoked paprika",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "celery",
-          "amount": "3 stalks"
-        },
-        {
-          "ingredient": "onions",
-          "amount": "1"
-        },
-        {
-          "ingredient": "carrots",
-          "amount": "3"
-        },
-        {
-          "ingredient": "egg noodles",
-          "amount": "1 pound"
-        }
-      ],
-      "directions": [
-        {
-          "step": "Heat griddle to 350°F."
-        },
-        {
-          "step": "Coat bread with butter."
-        },
-        {
-          "step": "Place bread on griddle, followed by cheese and other piece of bread."
-        },
-        {
-          "step": "Open can of tomato soup and heat on stove in small pot."
-        }
-      ],
-      "id": 17
-    },
-    {
-      "title": "Crepes",
-      "image": "/assets/images/crepes.jpeg",
-      "protein": "meatless",
-      "season": "summer",
-      "ethnicity": "French",
-      "count": 3,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "isAddedToMenu": false,
-      "breakfast": "breakfast",
-      "grocery_items": [
-        {
-          "ingredient": "bread",
-          "amount": "4 slices"
-        },
-        {
-          "ingredient": "cheese slices",
-          "amount": "2"
-        },
-        {
-          "ingredient": "butter",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
-        }
-      ],
-      "directions": [
-        {
-          "step": "Heat griddle to 350°F."
-        },
-        {
-          "step": "Coat bread with butter."
-        },
-        {
-          "step": "Place bread on griddle, followed by cheese and other piece of bread."
-        },
-        {
-          "step": "Open can of tomato soup and heat on stove in small pot."
-        }
-      ],
-      "id": 13
-    },
-    {
-      "title": "Loaded Fries",
-      "image": "/assets/images/loadedfries.jpeg",
-      "protein": "meatless",
-      "season": "summer fall",
-      "ethnicity": "American",
-      "count": 2,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "isAddedToMenu": false,
-      "breakfast": " ",
-      "grocery_items": [
-        {
-          "ingredient": "bread",
-          "amount": "4 slices"
-        },
-        {
-          "ingredient": "cheese slices",
-          "amount": "2"
-        },
-        {
-          "ingredient": "butter",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
-        }
-      ],
-      "directions": [
-        {
-          "step": "Heat griddle to 350°F."
-        },
-        {
-          "step": "Coat bread with butter."
-        },
-        {
-          "step": "Place bread on griddle, followed by cheese and other piece of bread."
-        },
-        {
-          "step": "Open can of tomato soup and heat on stove in small pot."
-        }
-      ],
-      "id": 21
-    },
-    {
-      "title": "Orange Chicken",
-      "image": "/assets/images/orangechicken.jpeg",
-      "protein": "chicken",
-      "season": "fall winter",
-      "ethnicity": "Chinese",
-      "count": 4,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "isAddedToMenu": false,
-      "breakfast": " ",
-      "grocery_items": [
-        {
-          "ingredient": "bread",
-          "amount": "4 slices"
-        },
-        {
-          "ingredient": "cheese slices",
-          "amount": "2"
-        },
-        {
-          "ingredient": "butter",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
-        }
-      ],
-      "directions": [
-        {
-          "step": "Heat griddle to 350°F."
-        },
-        {
-          "step": "Coat bread with butter."
-        },
-        {
-          "step": "Place bread on griddle, followed by cheese and other piece of bread."
-        },
-        {
-          "step": "Open can of tomato soup and heat on stove in small pot."
-        }
-      ],
-      "id": 18
-    },
-    {
-      "title": "Ham",
-      "image": "/assets/images/ham.jpeg",
-      "protein": "ham pork",
-      "season": "summer",
-      "ethnicity": "American",
-      "count": 3,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "isAddedToMenu": false,
-      "breakfast": " ",
-      "grocery_items": [
-        {
-          "ingredient": "bread",
-          "amount": "4 slices"
-        },
-        {
-          "ingredient": "cheese slices",
-          "amount": "2"
-        },
-        {
-          "ingredient": "butter",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
-        }
-      ],
-      "directions": [
-        {
-          "step": "Heat griddle to 350°F."
-        },
-        {
-          "step": "Coat bread with butter."
-        },
-        {
-          "step": "Place bread on griddle, followed by cheese and other piece of bread."
-        },
-        {
-          "step": "Open can of tomato soup and heat on stove in small pot."
-        }
-      ],
-      "id": 19
-    }
-  ],
-  "grocery_list": [
-    {
-      "ingredient": "chicken breasts",
-      "amount": "2",
-      "id": 1
-    },
-    {
-      "ingredient": "onions",
-      "amount": "1",
-      "id": 2
-    },
-    {
-      "ingredient": "asparagus",
-      "amount": "1 bundle",
-      "id": 3
-    },
-    {
-      "ingredient": "salt",
-      "amount": "1 tsp",
-      "id": 4
-    },
-    {
-      "ingredient": "pepper",
-      "amount": "1 tsp",
-      "id": 5
-    },
-    {
-      "ingredient": "bell peppers",
-      "amount": "2",
-      "id": 6
-    },
-    {
-      "ingredient": "chicken thighs",
-      "amount": "4",
-      "id": 7
-    },
-    {
-      "ingredient": "chicken broth",
-      "amount": "4 cups",
-      "id": 8
-    },
-    {
-      "ingredient": "cumin",
-      "amount": "1 tsp",
-      "id": 9
-    },
-    {
-      "ingredient": "smoked paprika",
-      "amount": "1 tsp",
-      "id": 10
-    },
-    {
-      "ingredient": "celery",
-      "amount": "3 stalks",
-      "id": 11
-    },
-    {
-      "ingredient": "onions",
-      "amount": "1",
-      "id": 12
-    },
-    {
-      "ingredient": "carrots",
-      "amount": "3",
-      "id": 13
-    },
-    {
-      "ingredient": "egg noodles",
-      "amount": "1 pound",
-      "id": 14
-    },
-    {
-      "ingredient": "bread",
-      "amount": "4 slices",
-      "id": 15
-    },
-    {
-      "ingredient": "cheese slices",
-      "amount": "2",
-      "id": 16
-    },
-    {
-      "ingredient": "butter",
-      "amount": "1 tsp",
-      "id": 17
-    },
-    {
-      "ingredient": "tomato soup",
-      "amount": "1 can",
-      "id": 18
-    },
-    {
-      "ingredient": "bread",
-      "amount": "4 slices",
-      "id": 19
-    },
-    {
-      "ingredient": "cheese slices",
-      "amount": "2",
-      "id": 20
-    },
-    {
-      "ingredient": "butter",
-      "amount": "1 tsp",
-      "id": 21
-    },
-    {
-      "ingredient": "tomato soup",
-      "amount": "1 can",
-      "id": 22
-    },
-    {
-      "ingredient": "bread",
-      "amount": "4 slices",
-      "id": 23
-    },
-    {
-      "ingredient": "cheese slices",
-      "amount": "2",
-      "id": 24
-    },
-    {
-      "ingredient": "butter",
-      "amount": "1 tsp",
+      "count": 0,
+      "image": "/assets/images/default.png",
       "id": 25
     },
     {
-      "ingredient": "tomato soup",
-      "amount": "1 can",
+      "title": "sadfsadf",
+      "protein": "i",
+      "season": "o",
+      "ethnicity": "italiano",
+      "servings": "o",
+      "cook_time": "u",
+      "prep_time": "aa",
+      "breakfast": "null",
+      "grocery_items": [
+        {
+          "amount": "ooo",
+          "ingredient": "oooo"
+        }
+      ],
+      "directions": [
+        {
+          "step": "999"
+        }
+      ],
+      "isAddedToMenu": false,
+      "count": 0,
+      "image": "/assets/images/default.png",
       "id": 26
-    },
-    {
-      "ingredient": "bread",
-      "amount": "4 slices",
-      "id": 27
-    },
-    {
-      "ingredient": "cheese slices",
-      "amount": "2",
-      "id": 28
-    },
-    {
-      "ingredient": "butter",
-      "amount": "1 tsp",
-      "id": 29
-    },
-    {
-      "ingredient": "tomato soup",
-      "amount": "1 can",
-      "id": 30
     }
-  ]
+  ],
+  "menu": [],
+  "grocery_list": []
 }
