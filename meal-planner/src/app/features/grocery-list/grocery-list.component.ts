@@ -37,7 +37,6 @@ export class GroceryListComponent implements OnInit {
               } else if (accumulator[length-1].ingredient === current.ingredient && accumulator[length-1].count) {
                   accumulator[length-1].count += 1;
               }
-              console.log(accumulator);
               return accumulator;
             }, []);
           

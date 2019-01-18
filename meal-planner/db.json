@@ -444,7 +444,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": false,
+      "isAddedToMenu": true,
       "breakfast": " ",
       "grocery_items": [
         {
@@ -1402,72 +1402,118 @@
         }
       ],
       "id": 24
-    },
-    {
-      "title": "sdf",
-      "protein": "sdf",
-      "season": "",
-      "ethnicity": "sdf",
-      "servings": "",
-      "cook_time": "",
-      "prep_time": "",
-      "breakfast": "",
-      "grocery_items": [
-        {
-          "amount": "",
-          "ingredient": ""
-        },
-        {
-          "amount": "",
-          "ingredient": ""
-        },
-        {
-          "amount": "",
-          "ingredient": ""
-        }
-      ],
-      "directions": [
-        {
-          "step": ""
-        },
-        {
-          "step": ""
-        },
-        {
-          "step": ""
-        }
-      ],
-      "isAddedToMenu": false,
-      "count": 0,
-      "image": "/assets/images/default.png",
-      "id": 25
-    },
-    {
-      "title": "sadfsadf",
-      "protein": "i",
-      "season": "o",
-      "ethnicity": "italiano",
-      "servings": "o",
-      "cook_time": "u",
-      "prep_time": "aa",
-      "breakfast": "null",
-      "grocery_items": [
-        {
-          "amount": "ooo",
-          "ingredient": "oooo"
-        }
-      ],
-      "directions": [
-        {
-          "step": "999"
-        }
-      ],
-      "isAddedToMenu": false,
-      "count": 0,
-      "image": "/assets/images/default.png",
-      "id": 26
     }
   ],
-  "menu": [],
-  "grocery_list": []
+  "menu": [
+    {
+      "title": "Cheeseburger",
+      "image": "/assets/images/burger.jpeg",
+      "protein": "beef",
+      "season": "summer",
+      "ethnicity": "American",
+      "count": 7,
+      "cook_time": "5 mins",
+      "prep_time": "2 mins",
+      "servings": 2,
+      "isAddedToMenu": false,
+      "breakfast": " ",
+      "grocery_items": [
+        {
+          "ingredient": "ground beef",
+          "amount": "1 pound"
+        },
+        {
+          "ingredient": "cheese slices",
+          "amount": "4"
+        },
+        {
+          "ingredient": "onion powder",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "hamburger buns",
+          "amount": "4"
+        },
+        {
+          "ingredient": "salt",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "pepper",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "mayo",
+          "amount": "1 tsp"
+        },
+        {
+          "ingredient": "BBQ sauce",
+          "amount": "2 tsp"
+        }
+      ],
+      "directions": [
+        {
+          "step": "Heat griddle to 450°F."
+        },
+        {
+          "step": "Form 4 equally sized patties and coat generously with onion powder, salt, and pepper"
+        },
+        {
+          "step": "When griddle is smoking hot, place patties on griddle and cook for 6-7 minutes. Flip the patties and cook for 4-5 minutes."
+        },
+        {
+          "step": "Toast buns in toaster if desired."
+        },
+        {
+          "step": "Add cheese for last minute of cooking."
+        },
+        {
+          "step": "If desired, spread thin layer of mayo on bottom bun to prevent it from gettgin soggy. Add BBQ sauce for deliciousness."
+        }
+      ],
+      "id": 7
+    }
+  ],
+  "grocery_list": [
+    {
+      "ingredient": "ground beef",
+      "amount": "1 pound",
+      "id": 1
+    },
+    {
+      "ingredient": "onion powder",
+      "amount": "1 tsp",
+      "id": 2
+    },
+    {
+      "ingredient": "cheese slices",
+      "amount": "4",
+      "id": 3
+    },
+    {
+      "ingredient": "hamburger buns",
+      "amount": "4",
+      "id": 4
+    },
+    {
+      "ingredient": "salt",
+      "amount": "1 tsp",
+      "id": 5
+    },
+    {
+      "ingredient": "BBQ sauce",
+      "amount": "2 tsp",
+      "id": 6
+    },
+    {
+      "ingredient": "pepper",
+      "amount": "1 tsp",
+      "id": 7
+    },
+    {
+      "ingredient": "mayo",
+      "amount": "1 tsp",
+      "id": 8
+    }
+  ]
 }

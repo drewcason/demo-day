@@ -19,5 +19,6 @@ export interface Recipe {
         amount: string;
         }[];     
     directions: Array<string>;
-    id: number
+    selectedPage?: string;
+    id: number;
 }

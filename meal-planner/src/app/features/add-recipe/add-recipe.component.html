@@ -65,6 +65,7 @@
         </div>
         <button pButton type="button" class="ui-button-rounded mt-2 px-1" label="Add Item" (click)="addItems()"></button>
         <button pButton type="button" class="ui-button-rounded mt-2 px-1 float-right" label="Next" (click)="addRecipeForm.controls['selectedPage'].setValue('Instructions')"></button>
+        <button pButton type="button" class="ui-button-rounded mt-2 px-1 mr-1 float-right" label="Back" (click)="addRecipeForm.controls['selectedPage'].setValue('Basics')"></button>
       </div>
     </ng-container>
     <ng-container *ngIf="selectedFormPage === 'Instructions'">
@@ -80,6 +81,7 @@
         </div>
         <button pButton type="button" class="ui-button-rounded mt-2 px-1" label="Add Step" (click)="addSteps()"></button>
         <button pButton type="submit" class="ui-button-rounded mt-2 px-1 float-right" label="Submit" [disabled]="!addRecipeForm.valid"></button>
+        <button pButton type="button" class="ui-button-rounded mt-2 px-1 mr-1 float-right" label="Back" (click)="addRecipeForm.controls['selectedPage'].setValue('Ingredients')"></button>
       </div>
     </ng-container>
     </form>
