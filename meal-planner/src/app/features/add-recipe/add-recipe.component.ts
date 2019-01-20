@@ -116,13 +116,11 @@ export class AddRecipeComponent implements OnInit {
     this.newRecipe['count'] = 0;
     this.newRecipe['image'] = '/assets/images/default.png'
     delete this.newRecipe.selectedPage;
-    this.showConfirm();
-    // this.recipeService.addNewRecipeFromScratch(this.newRecipe);
+    this.recipeService.addNewRecipeFromScratch(this.newRecipe);
     this.addRecipeForm.reset();
   }
 
   showConfirm() {
-    
     this.messageService.clear();
     this.messageService.add({key: 'c', sticky: true, severity:'info', summary:'Are you sure?', detail:'Confirm to proceed'});
   }
@@ -130,6 +128,7 @@ export class AddRecipeComponent implements OnInit {
   onConfirm() {
     this.recipeService.addNewRecipeFromScratch(this.newRecipe);
     this.messageService.clear('c');
+    this.addRecipeForm.reset();
   }
 
   onReject() {

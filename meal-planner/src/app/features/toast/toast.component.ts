@@ -19,11 +19,6 @@ export class ToastComponent implements OnInit {
         this.messageService.add({severity: type, summary: message, detail: details});
     }
 
-    showConfirm() {
-        this.messageService.clear();
-        this.messageService.add({key: 'c', sticky: true, severity:'info', summary:'Are you sure?', detail:'Confirm to proceed'});
-    }
-
     onConfirm() {
         this.messageService.clear('c');
     }

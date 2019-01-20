@@ -444,7 +444,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": true,
+      "isAddedToMenu": false,
       "breakfast": " ",
       "grocery_items": [
         {
@@ -508,7 +508,7 @@
       "protein": "chicken",
       "season": "summer",
       "ethnicity": "American",
-      "count": 5,
+      "count": 6,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
@@ -640,7 +640,7 @@
       "protein": "eggs bacon",
       "season": "summer spring fall winter",
       "ethnicity": "American",
-      "count": 4,
+      "count": 5,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 4,
@@ -798,7 +798,7 @@
       "protein": "meatless",
       "season": "summer",
       "ethnicity": "French",
-      "count": 3,
+      "count": 4,
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
@@ -1402,84 +1402,35 @@
         }
       ],
       "id": 24
-    }
-  ],
-  "menu": [
+    },
     {
-      "title": "Cheeseburger",
-      "image": "/assets/images/burger.jpeg",
-      "protein": "beef",
-      "season": "summer",
-      "ethnicity": "American",
-      "count": 7,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "isAddedToMenu": false,
-      "breakfast": " ",
+      "title": "qwer",
+      "protein": "qwer",
+      "season": "qwer",
+      "ethnicity": "qwer",
+      "servings": "qwer",
+      "cook_time": "qwer",
+      "prep_time": "qer",
+      "breakfast": "null",
       "grocery_items": [
         {
-          "ingredient": "ground beef",
-          "amount": "1 pound"
-        },
-        {
-          "ingredient": "cheese slices",
-          "amount": "4"
-        },
-        {
-          "ingredient": "onion powder",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "hamburger buns",
-          "amount": "4"
-        },
-        {
-          "ingredient": "salt",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "pepper",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "mayo",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "BBQ sauce",
-          "amount": "2 tsp"
+          "amount": "qwer",
+          "ingredient": "qwer"
         }
       ],
       "directions": [
         {
-          "step": "Heat griddle to 450°F."
-        },
-        {
-          "step": "Form 4 equally sized patties and coat generously with onion powder, salt, and pepper"
-        },
-        {
-          "step": "When griddle is smoking hot, place patties on griddle and cook for 6-7 minutes. Flip the patties and cook for 4-5 minutes."
-        },
-        {
-          "step": "Toast buns in toaster if desired."
-        },
-        {
-          "step": "Add cheese for last minute of cooking."
-        },
-        {
-          "step": "If desired, spread thin layer of mayo on bottom bun to prevent it from gettgin soggy. Add BBQ sauce for deliciousness."
+          "step": "qwerqwerqwerwqre"
         }
       ],
-      "id": 7
+      "isAddedToMenu": false,
+      "count": 0,
+      "image": "/assets/images/default.png",
+      "id": 25
     }
   ],
+  "menu": [],
   "grocery_list": [
-    {
-      "ingredient": "ground beef",
-      "amount": "1 pound",
-      "id": 1
-    },
     {
       "ingredient": "onion powder",
       "amount": "1 tsp",
@@ -1496,24 +1447,214 @@
       "id": 4
     },
     {
-      "ingredient": "salt",
-      "amount": "1 tsp",
-      "id": 5
-    },
-    {
       "ingredient": "BBQ sauce",
       "amount": "2 tsp",
       "id": 6
     },
     {
-      "ingredient": "pepper",
-      "amount": "1 tsp",
-      "id": 7
-    },
-    {
       "ingredient": "mayo",
       "amount": "1 tsp",
       "id": 8
+    },
+    {
+      "ingredient": "chicken breasts",
+      "amount": "2",
+      "id": 9
+    },
+    {
+      "ingredient": "pepper",
+      "amount": "1 tsp",
+      "id": 10
+    },
+    {
+      "ingredient": "asparagus",
+      "amount": "1 bundle",
+      "id": 13
+    },
+    {
+      "ingredient": "bell peppers",
+      "amount": "2",
+      "id": 14
+    },
+    {
+      "ingredient": "chicken thighs",
+      "amount": "4",
+      "id": 15
+    },
+    {
+      "ingredient": "chicken broth",
+      "amount": "4 cups",
+      "id": 16
+    },
+    {
+      "ingredient": "cumin",
+      "amount": "1 tsp",
+      "id": 18
+    },
+    {
+      "ingredient": "smoked paprika",
+      "amount": "1 tsp",
+      "id": 19
+    },
+    {
+      "ingredient": "celery",
+      "amount": "3 stalks",
+      "id": 20
+    },
+    {
+      "ingredient": "carrots",
+      "amount": "3",
+      "id": 21
+    },
+    {
+      "ingredient": "egg noodles",
+      "amount": "1 pound",
+      "id": 22
+    },
+    {
+      "ingredient": "bacon",
+      "amount": "1 pound",
+      "id": 23
+    },
+    {
+      "ingredient": "eggs",
+      "amount": "8",
+      "id": 24
+    },
+    {
+      "ingredient": "butter",
+      "amount": "1 tsp",
+      "id": 25
+    },
+    {
+      "ingredient": "cheddar cheese",
+      "amount": "4 oz",
+      "id": 26
+    },
+    {
+      "ingredient": "ground beef",
+      "amount": "1 pound",
+      "id": 27
+    },
+    {
+      "ingredient": "onions",
+      "amount": "1",
+      "id": 28
+    },
+    {
+      "ingredient": "garlic",
+      "amount": "3 cloves",
+      "id": 29
+    },
+    {
+      "ingredient": "enchilada sauce",
+      "amount": "1 can",
+      "id": 30
+    },
+    {
+      "ingredient": "salt",
+      "amount": "1 tsp",
+      "id": 31
+    },
+    {
+      "ingredient": "flour tortillas",
+      "amount": "8",
+      "id": 32
+    },
+    {
+      "ingredient": "shredded cheddar",
+      "amount": "1 cup",
+      "id": 33
+    },
+    {
+      "ingredient": "chicken breasts",
+      "amount": "2",
+      "id": 34
+    },
+    {
+      "ingredient": "salt",
+      "amount": "1 tsp",
+      "id": 35
+    },
+    {
+      "ingredient": "onions",
+      "amount": "1",
+      "id": 36
+    },
+    {
+      "ingredient": "pepper",
+      "amount": "1 tsp",
+      "id": 37
+    },
+    {
+      "ingredient": "asparagus",
+      "amount": "1 bundle",
+      "id": 38
+    },
+    {
+      "ingredient": "bell peppers",
+      "amount": "2",
+      "id": 39
+    },
+    {
+      "ingredient": "chicken thighs",
+      "amount": "4",
+      "id": 40
+    },
+    {
+      "ingredient": "chicken broth",
+      "amount": "4 cups",
+      "id": 41
+    },
+    {
+      "ingredient": "cumin",
+      "amount": "1 tsp",
+      "id": 42
+    },
+    {
+      "ingredient": "smoked paprika",
+      "amount": "1 tsp",
+      "id": 43
+    },
+    {
+      "ingredient": "celery",
+      "amount": "3 stalks",
+      "id": 44
+    },
+    {
+      "ingredient": "onions",
+      "amount": "1",
+      "id": 45
+    },
+    {
+      "ingredient": "carrots",
+      "amount": "3",
+      "id": 46
+    },
+    {
+      "ingredient": "egg noodles",
+      "amount": "1 pound",
+      "id": 47
+    },
+    {
+      "ingredient": "bread",
+      "amount": "4 slices",
+      "id": 48
+    },
+    {
+      "ingredient": "cheese slices",
+      "amount": "2",
+      "id": 49
+    },
+    {
+      "ingredient": "butter",
+      "amount": "1 tsp",
+      "id": 50
+    },
+    {
+      "ingredient": "tomato soup",
+      "amount": "1 can",
+      "id": 51
     }
   ]
 }
