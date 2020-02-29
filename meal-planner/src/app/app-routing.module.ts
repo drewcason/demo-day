@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RecipesDashboardComponent } from './features/recipes/recipes-dashboard/recipes-dashboard.component';
-import { GroceryListComponent } from './features/grocery-list/grocery-list.component';
-import { SidebarComponent } from './features/sidebar/sidebar.component';
-import { MenuComponent } from './features/this-week/this-week.component';
-import { AddRecipeComponent } from './features/add-recipe/add-recipe.component';
-import { ToastComponent } from './features/toast/toast.component';
+import { RecipesDashboardComponent } from './recipes/recipes-dashboard/recipes-dashboard.component';
+import { GroceryListComponent } from './grocery-list/grocery-list.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { MenuComponent } from './this-week/this-week.component';
+import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 
 const routes: Routes = [
   { path: 'recipes',
@@ -27,7 +26,7 @@ const routes: Routes = [
     redirectTo: 'recipes',
     pathMatch: 'full'
   },
-]
+];
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes, {

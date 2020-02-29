@@ -23,27 +23,25 @@ export class GroceryListComponent implements OnInit {
     this.subscriptions.push(
       this.groceryService.GroceryList$.subscribe(
         (groceryListResponse: any) => {
-          if ( groceryListResponse) {
-            let groceries = groceryListResponse;
-            let justIngredients = groceries.map(element => {
+          if (groceryListResponse) {
+            const justIngredients = groceryListResponse.map(element => {
               return { ingredient: element.ingredient, id: element.id };
-            })
+            });
             this.grocery_list = justIngredients.sort().reduce((accumulator, current) => {
-              const length = accumulator.length
+              const length = accumulator.length;
               if (length === 0 || accumulator[length - 1].ingredient !== current.ingredient) {
                   accumulator.push(current);
-              } else if (accumulator[length-1].ingredient === current.ingredient && !accumulator[length-1].count) {
-                  accumulator[length-1].count = 2;
-              } else if (accumulator[length-1].ingredient === current.ingredient && accumulator[length-1].count) {
-                  accumulator[length-1].count += 1;
+              } else if (accumulator[length - 1].ingredient === current.ingredient && !accumulator[length - 1].count) {
+                  accumulator[length - 1].count = 2;
+              } else if (accumulator[length - 1].ingredient === current.ingredient && accumulator[length - 1].count) {
+                  accumulator[length - 1].count += 1;
               }
               return accumulator;
             }, []);
-          
           }
         }
       )
-    )
+    );
     this.groceryService.getGroceryList();
   }
 

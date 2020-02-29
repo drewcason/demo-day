@@ -14,10 +14,10 @@ export interface Recipe {
     servings: number;
     isAddedToMenu: boolean;
     breakfast: string;
-    grocery_items:{
+    grocery_items: {
         ingredient: string;
         amount: string;
-        }[];     
+        }[];
     directions: Array<string>;
     selectedPage?: string;
     id: number;

@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
-import { Recipe } from 'src/app/recipe';
-import { RecipeService } from 'src/app/recipes.service';
+import { Recipe } from './recipe';
+import { RecipeService } from './recipes.service';
 import { Subscription } from 'rxjs';
-import { MenuService } from '../this-week.service';
+import { MenuService } from '../this-week/this-week.service';
 import { GroceryListService } from '../grocery-list/grocery-list.service';
 
 @Component({
@@ -11,32 +11,20 @@ import { GroceryListService } from '../grocery-list/grocery-list.service';
   styleUrls: ['./recipes.component.scss']
 })
 export class RecipesComponent implements OnInit {
-  showInstructions: boolean;
-  private subscriptions: Subscription[] = [];
+  @Input() recipe: Recipe;
+  @Input() showInstructions: boolean;
   menu = [];
   grocery_list = [];
   isAdded: boolean;
-  @Input() recipe: Recipe;
+  private subscriptions: Subscription[] = [];
+
   constructor(
-    private recipeService: RecipeService,
     private menuService: MenuService,
     private groceryService: GroceryListService,
-    private changeDetector: ChangeDetectorRef
   ) { }
 
   ngOnInit() {
-    this.subscribeToRecipeInstructionsVisibility();
     this.subscribeToMenu();
-  }
-
-  subscribeToRecipeInstructionsVisibility(): void {
-    this.subscriptions.push(
-      this.recipeService.ShowRecipeInstructions$.subscribe(
-        (state) => {
-          this.showInstructions = state;
-        }
-      )
-    )
   }
 
   subscribeToMenu(): void {
@@ -49,21 +37,21 @@ export class RecipesComponent implements OnInit {
           }
         }
       )
-    )
+    );
   }
 
-  addToThisWeekMenu(newRecipe): void {
+  addToThisWeekMenu(newRecipe: Recipe): void {
     this.menuService.postThisWeeksRecipes(newRecipe);
     this.isAdded = true;
   }
 
-  markAsAddedToMenu(id): void {
+  markAsAddedToMenu(id: number): void {
     this.menuService.updateRecipeAddedToMenu(id).subscribe();
   }
 
   addItemsToGroceryList(items) {
     items.forEach(element => {
       this.groceryService.postItemsToGroceryList(element);
-    })
+    });
   }
 }

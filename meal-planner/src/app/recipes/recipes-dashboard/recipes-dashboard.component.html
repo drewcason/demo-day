@@ -5,13 +5,17 @@
     </span>
     <div class='move-left-clear d-inline-block filters-buttons'>
       <li class="py-1 px-1 nav-item" style="color:#666;">
-        <a (click)="recipeFilter = ''">Clear</a>
+        <a (click)="setRecipeFilter('')">Clear</a>
       </li>
     </div>
   </div>
   <div class='p-2 d-inline-flex show-hide col-6 justify-content-end'>
-    <i class='pi pi-eye-slash' *ngIf="showRecipeInstructions" (click)="hideInstructions()"><span>Hide Ingredients</span></i>
-    <i class='pi pi-eye' *ngIf="!showRecipeInstructions" (click)="showInstructions()"><span>Show Ingredients</span></i>
+    <i [ngClass]="showRecipeInstructions ? 'pi pi-eye-slash' : 'pi pi-eye'" (click)="toggleInstructions()">
+      <span *ngIf="showRecipeInstructions; else show">Hide Ingredients</span>
+      <ng-template #show>
+        <span>Show Ingredients</span>
+      </ng-template>
+    </i>
   </div>
 </div>
 <div class='col-12 mx-2'>
@@ -33,10 +37,7 @@
         Protein
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" (click)="recipeFilter = 'beef'">Beef</a>
-        <a class="dropdown-item" (click)="recipeFilter = 'chicken'">Chicken</a>
-        <a class="dropdown-item" (click)="recipeFilter = 'fish'">Fish</a>
-        <a class="dropdown-item" (click)="recipeFilter = 'pork'">Pork</a>
+          <a class="dropdown-item" *ngFor="let protein of proteins" (click)="setRecipeFilter(protein)">{{ protein }}</a>
       </div>
     </li>
     <li class="py-0 px-1 nav-item dropdown">
@@ -45,12 +46,7 @@
         Ethnicity
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" (click)="recipeFilter = 'american'">American</a>
-        <a class="dropdown-item" (click)="recipeFilter = 'chinese'">Chinese</a>
-        <a class="dropdown-item" (click)="recipeFilter = 'mexican'">Mexican</a>
-        <a class="dropdown-item" (click)="recipeFilter = 'italian'">Italian</a>
-        <a class="dropdown-item" (click)="recipeFilter = 'spanish'">Spanish</a>
-        <a class="dropdown-item" (click)="recipeFilter = 'vietnamese'">Vietnamese</a>
+        <a class="dropdown-item" *ngFor="let ethnicity of ethnicities" (click)="setRecipeFilter(ethnicity)">{{ ethnicity }}</a>
       </div>
     </li>
     <li class="py-0 px-1 nav-item dropdown">
@@ -59,21 +55,18 @@
         Season
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" (click)="recipeFilter = 'spring'">Spring</a>
-        <a class="dropdown-item" (click)="recipeFilter = 'summer'">Summer</a>
-        <a class="dropdown-item" (click)="recipeFilter = 'fall'">Fall</a>
-        <a class="dropdown-item" (click)="recipeFilter = 'winter'">Winter</a>
+          <a class="dropdown-item" *ngFor="let season of seasons" (click)="setRecipeFilter(season)">{{ season }}</a>
       </div>
     </li>
     <li class="py-0 ml-2 nav-item">
-      <a (click)="recipeFilter = 'breakfast'">Breakfast</a>
+      <a (click)="setRecipeFilter('breakfast')">Breakfast</a>
     </li>
   </div>
 </div>
-<div class='container col-12'>
+<div  class='row-wrap col-12'>
   <ng-container *ngFor="let recipe of filteredRecipes">
     <div class='card-container p-2 col-lg-3 col-md-4 col-sm-6 col-xs-12'>
-      <app-recipes [recipe]='recipe'></app-recipes>
+      <app-recipes [recipe]='recipe' [showInstructions]="showRecipeInstructions"></app-recipes>
     </div>
   </ng-container>
 </div>

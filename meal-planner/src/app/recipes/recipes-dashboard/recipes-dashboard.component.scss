@@ -3,9 +3,14 @@ p-header h3 {
     width: 100%;
 }
 
-.container {
+.row-wrap {
     display: flex;
     flex-flow: row wrap;
+}
+
+.column-wrap {
+    display: flex;
+    flex-flow: column;
 }
 
 .ui-card-footer {

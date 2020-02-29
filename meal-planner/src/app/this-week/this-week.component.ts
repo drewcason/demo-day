@@ -1,7 +1,7 @@
 import { Component, OnInit, OnChanges, ChangeDetectorRef } from '@angular/core';
-import { MenuService } from '../this-week.service';
+import { MenuService } from './this-week.service';
 import { Subscription } from 'rxjs';
-import { Recipe } from 'src/app/recipe';
+import { Recipe } from '../recipes/recipe';
 
 @Component({
   selector: 'app-this-week',
@@ -18,8 +18,9 @@ export class MenuComponent implements OnInit {
     private changeDetector: ChangeDetectorRef
   ) { }
 
-  ngOnInit() { 
+  ngOnInit() {
     this.getThisWeeksMenu();
+    this.menuService.getThisWeeksRecipes();
   }
 
   getThisWeeksMenu(): void {
@@ -31,13 +32,12 @@ export class MenuComponent implements OnInit {
           }
         }
       )
-    )
-    this.menuService.getThisWeeksRecipes();
+    );
   }
 
   removeRecipeFromMenu(id) {
     this.menuService.removeRecipeFromMenu(id).subscribe((value) => {
-      this.getThisWeeksMenu();
+      this.menuService.getThisWeeksRecipes();
       this.changeDetector.detectChanges();
     });
   }
@@ -53,11 +53,11 @@ export class MenuComponent implements OnInit {
       }
     }
     await this.menuService.updateRecipeCount(id, this.count).subscribe((value) => {
-      this.getThisWeeksMenu();
+      this.menuService.getThisWeeksRecipes();
       this.changeDetector.detectChanges();
     });
     this.menuService.removeRecipeFromMenu(id).subscribe((value) => {
-      this.getThisWeeksMenu();
+      this.menuService.getThisWeeksRecipes();
       this.changeDetector.detectChanges();
     });
   }

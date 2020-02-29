@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Recipe } from '../recipe';
-import { Subject, Observable } from 'rxjs';
-import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { Recipe } from '../recipes/recipe';
+import { Subject } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { MessageService } from 'primeng/api';
-import { retry, catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +19,7 @@ export class MenuService {
     })
   };
   count: number;
-  constructor( 
+  constructor(
     private http: HttpClient,
     private messageService: MessageService ) { }
 
@@ -28,16 +27,16 @@ export class MenuService {
     this.http.get(this.menuURL).subscribe(
         (res: Recipe[]) => {
           this.menuSource.next(res);
-        }
-      ),
+        },
       error => {
           this.menuSource.next();
           this.displayToastMessage(
             'error',
             'Menu Not Retrieved',
             'This week\'s menu could not be retrieved.'
-            )
+            );
       }
+    );
   }
 
   postThisWeeksRecipes(recipe: Recipe): void {
@@ -47,15 +46,15 @@ export class MenuService {
           'success',
           'Success',
           `${response.title} was added to your menu.`
-        )
+        );
       },
         error => {
           this.displayToastMessage(
             'error',
             'Error',
             'Recipe was not added to menu.'
-          )
-        })
+          );
+        });
   }
 
   removeRecipeFromMenu(id) {
@@ -63,15 +62,15 @@ export class MenuService {
   }
 
   updateRecipeCount(id, count) {
-    return this.http.patch(`${this.recipeURL}/${id}`, { "count": count }, this.httpOptions);
+    return this.http.patch(`${this.recipeURL}/${id}`, { 'count': count }, this.httpOptions);
   }
 
   updateRecipeAddedToMenu(id) {
-    return this.http.patch(`${this.recipeURL}/${id}`, { "isAddedToMenu": true }, this.httpOptions);
+    return this.http.patch(`${this.recipeURL}/${id}`, { 'isAddedToMenu': true }, this.httpOptions);
   }
 
   updateRecipeRemovedFromMenu(id) {
-    return this.http.patch(`${this.recipeURL}/${id}`, { "isAddedToMenu": false }, this.httpOptions);
+    return this.http.patch(`${this.recipeURL}/${id}`, { 'isAddedToMenu': false }, this.httpOptions);
   }
 
   displayToastMessage(type, message, details) {

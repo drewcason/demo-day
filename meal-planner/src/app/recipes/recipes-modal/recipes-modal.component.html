@@ -3,30 +3,30 @@
   <p-card>
     <p-header class='ui-card-header'>
       <div class='header-container border-bottom'>
-        <h3 class='ui-card-title p-3 m-0 ml-2'>{{ title }}</h3>
+        <h3 class='ui-card-title p-3 m-0 ml-2'>{{ recipe.title }}</h3>
         <div class='right quick-buttons'>
-          <button class='mr-2' (click)="closeModal()"><i class='pi pi-times'></i></button>
+          <button class='mr-2' (click)="toggleModal(false)"><i class='pi pi-times'></i></button>
         </div>
       </div>
-      <img class='card-img-top rounded-0' src="{{ image }}">
+      <img class='card-img-top rounded-0' src="{{ recipe.image }}">
     </p-header>
     <div class='card-body ui-card-content'>
       <div class='float-left'>
         <h4>Ingredients</h4>
         <ul>
-          <li *ngFor="let items of grocery_items">{{ items.amount }} {{ items.ingredient }}</li>
+          <li *ngFor="let items of recipe.grocery_items">{{ items.amount }} {{ items.ingredient }}</li>
         </ul>
       </div>
       <div class='float-right'>
-        <em>Prep Time: {{ prep_time }} <br />
-          Cook Time: {{ cook_time }}</em>
+        <em>Prep Time: {{ recipe.prep_time }} <br />
+          Cook Time: {{ recipe.cook_time }}</em>
       </div>
       <hr>
       <h4>Instructions</h4>
       <ol>
-        <li *ngFor="let directions of directions">{{ directions.step }}</li>
+        <li *ngFor="let directions of recipe.directions">{{ directions.step }}</li>
       </ol>
     </div>
   </p-card>
 </p-dialog>
-<span (click)="showModal()">Read More</span>
+<span (click)="toggleModal(true)">Read More</span>

@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Recipe } from '../../recipe';
-import { Subject, Observable } from 'rxjs';
-import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { Subject } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { MessageService } from 'primeng/api';
 
 @Injectable({
@@ -16,7 +15,7 @@ export class GroceryListService {
       'Content-Type':  'application/json'
     })
   };
-  constructor( 
+  constructor(
     private http: HttpClient,
     private messageService: MessageService ) { }
 
@@ -32,9 +31,9 @@ export class GroceryListService {
             'error',
             'Error',
             'Grocery list could not be retrieved.'
-          )
+          );
         }
-      )
+      );
   }
 
   postItemsToGroceryList(grocery_item: object): void {
@@ -45,13 +44,13 @@ export class GroceryListService {
           'error',
           'Error',
           'Item were not added to grocery list.'
-        )
+        );
       }
       );
   }
 
   removeItemFromGroceryList(id) {
-    return this.http.delete(`${this.groceryURL}/${id}`, this.httpOptions)
+    return this.http.delete(`${this.groceryURL}/${id}`, this.httpOptions);
   }
 
   displayToastMessage(type, message, details) {

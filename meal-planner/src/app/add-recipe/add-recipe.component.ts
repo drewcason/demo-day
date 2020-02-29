@@ -1,8 +1,8 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormBuilder, FormArray} from '@angular/forms';
-import { Recipe } from '../../recipe';
+import { FormGroup, Validators, FormBuilder, FormArray} from '@angular/forms';
+import { Recipe } from '../recipes/recipe';
 import { SelectItem, MessageService } from 'primeng/api';
-import { RecipeService } from 'src/app/recipes.service';
+import { RecipeService } from '../recipes/recipes.service';
 
 @Component({
   selector: 'app-add-recipe',
@@ -29,7 +29,6 @@ export class AddRecipeComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private recipeService: RecipeService,
-    private changeDetector: ChangeDetectorRef,
     private messageService: MessageService
   ) { }
 
@@ -42,10 +41,10 @@ export class AddRecipeComponent implements OnInit {
 
   setFormPages(): void {
     this.formPages = [
-      { label: 'Basics', value: "Basics"},
+      { label: 'Basics', value: 'Basics'},
       { label: 'Ingredients', value: 'Ingredients'},
       { label: 'Instructions', value: 'Instructions'}
-    ]
+    ];
   }
 
   setRecipeCardInfo(): void {
@@ -91,7 +90,7 @@ export class AddRecipeComponent implements OnInit {
     });
   }
 
-  removeItem(index) {
+  removeItem(index: number) {
     this.grocery_items.removeAt(index);
   }
 
@@ -105,7 +104,7 @@ export class AddRecipeComponent implements OnInit {
       step: ''
     });
   }
-  
+
   removeStep(index) {
     this.directions.removeAt(index);
   }
@@ -114,7 +113,7 @@ export class AddRecipeComponent implements OnInit {
     this.newRecipe = this.addRecipeForm.value;
     this.newRecipe['isAddedToMenu'] = false;
     this.newRecipe['count'] = 0;
-    this.newRecipe['image'] = '/assets/images/default.png'
+    this.newRecipe['image'] = '/assets/images/default.png';
     delete this.newRecipe.selectedPage;
     this.recipeService.addNewRecipeFromScratch(this.newRecipe);
     this.addRecipeForm.reset();
@@ -122,7 +121,7 @@ export class AddRecipeComponent implements OnInit {
 
   showConfirm() {
     this.messageService.clear();
-    this.messageService.add({key: 'c', sticky: true, severity:'info', summary:'Are you sure?', detail:'Confirm to proceed'});
+    this.messageService.add({key: 'c', sticky: true, severity: 'info', summary: 'Are you sure?', detail: 'Confirm to proceed'});
   }
 
   onConfirm() {

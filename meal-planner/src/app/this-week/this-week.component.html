@@ -12,13 +12,7 @@
               </div>
             </p-header>
             <div class='text-left'>
-              <app-recipes-modal 
-              [title]="recipe.title" 
-              [image]="recipe.image" 
-              [grocery_items]="recipe.grocery_items" 
-              [directions]='recipe.directions'
-              [cook_time]='recipe.cook_time'
-              [prep_time]='recipe.prep_time'></app-recipes-modal>
+              <app-recipes-modal [recipe]="recipe"></app-recipes-modal>
             </div>
             <div class='card-body ui-card-content' *ngIf="showInstructions">
               <ul>
