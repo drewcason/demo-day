@@ -12,3 +12,11 @@ h2 {
     background-image: linear-gradient(#eee, #fff);
 }
 
+button {
+    background-color: #000 !important;
+    border-color: #ddd; 
+    :focus {
+        outline-color: #999;
+    }
+}
+

@@ -9,6 +9,14 @@
     div > div.form-container.container-fluid > form > div > button:focus {
         background-color: #000 !important;
     }
+
+    button {
+        background-color: #000 !important;
+        border-color: #ddd; 
+        :focus {
+            outline-color: #999;
+        }
+    }
 }
 
 form {

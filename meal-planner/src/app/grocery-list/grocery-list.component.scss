@@ -6,6 +6,14 @@ ul {
     max-width: 650px
 }
 
+button {
+    background-color: #000 !important;
+    border-color: #ddd; 
+    :focus {
+        outline-color: #999;
+    }
+}
+
 li {
     padding: 1rem;
     &:hover{

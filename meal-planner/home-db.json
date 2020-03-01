@@ -366,7 +366,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": true,
+      "isAddedToMenu": false,
       "breakfast": " ",
       "grocery_items": [
         {
@@ -434,7 +434,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": true,
+      "isAddedToMenu": false,
       "breakfast": " ",
       "grocery_items": [
         {
@@ -612,7 +612,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": true,
+      "isAddedToMenu": false,
       "breakfast": " ",
       "grocery_items": [
         {
@@ -967,7 +967,7 @@
       "cook_time": "5 mins",
       "prep_time": "2 mins",
       "servings": 2,
-      "isAddedToMenu": true,
+      "isAddedToMenu": false,
       "breakfast": " ",
       "grocery_items": [
         {
@@ -1332,309 +1332,6 @@
       "id": 25
     }
   ],
-  "menu": [
-    {
-      "title": "Enchiladas",
-      "image": "/assets/images/enchiladas.jpeg",
-      "protein": "beef chicken",
-      "season": "summer spring fall  winter",
-      "ethnicity": "Mexican",
-      "count": 3,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "isAddedToMenu": false,
-      "breakfast": " ",
-      "grocery_items": [
-        {
-          "ingredient": "ground beef",
-          "amount": "1 pound"
-        },
-        {
-          "ingredient": "onions",
-          "amount": "1"
-        },
-        {
-          "ingredient": "garlic",
-          "amount": "3 cloves"
-        },
-        {
-          "ingredient": "enchilada sauce",
-          "amount": "1 can"
-        },
-        {
-          "ingredient": "salt",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "flour tortillas",
-          "amount": "8"
-        },
-        {
-          "ingredient": "shredded cheddar",
-          "amount": "1 cup"
-        }
-      ],
-      "directions": [
-        {
-          "step": "Heat griddle to 350°F."
-        },
-        {
-          "step": "Coat bread with butter."
-        },
-        {
-          "step": "Place bread on griddle, followed by cheese and other piece of bread."
-        },
-        {
-          "step": "Open can of tomato soup and heat on stove in small pot."
-        }
-      ],
-      "id": 11
-    },
-    {
-      "title": "Orange Chicken",
-      "image": "/assets/images/orangechicken.jpeg",
-      "protein": "chicken",
-      "season": "fall winter",
-      "ethnicity": "Chinese",
-      "count": 4,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "isAddedToMenu": false,
-      "breakfast": " ",
-      "grocery_items": [
-        {
-          "ingredient": "bread",
-          "amount": "4 slices"
-        },
-        {
-          "ingredient": "cheese slices",
-          "amount": "2"
-        },
-        {
-          "ingredient": "butter",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "tomato soup",
-          "amount": "1 can"
-        }
-      ],
-      "directions": [
-        {
-          "step": "Heat griddle to 350°F."
-        },
-        {
-          "step": "Coat bread with butter."
-        },
-        {
-          "step": "Place bread on griddle, followed by cheese and other piece of bread."
-        },
-        {
-          "step": "Open can of tomato soup and heat on stove in small pot."
-        }
-      ],
-      "id": 18
-    },
-    {
-      "title": "Cheeseburger",
-      "image": "/assets/images/burger.jpeg",
-      "protein": "beef",
-      "season": "summer",
-      "ethnicity": "American",
-      "count": 7,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "isAddedToMenu": false,
-      "breakfast": " ",
-      "grocery_items": [
-        {
-          "ingredient": "ground beef",
-          "amount": "1 pound"
-        },
-        {
-          "ingredient": "cheese slices",
-          "amount": "4"
-        },
-        {
-          "ingredient": "onion powder",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "hamburger buns",
-          "amount": "4"
-        },
-        {
-          "ingredient": "salt",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "pepper",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "mayo",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "BBQ sauce",
-          "amount": "2 tsp"
-        }
-      ],
-      "directions": [
-        {
-          "step": "Heat griddle to 450°F."
-        },
-        {
-          "step": "Form 4 equally sized patties and coat generously with onion powder, salt, and pepper"
-        },
-        {
-          "step": "When griddle is smoking hot, place patties on griddle and cook for 6-7 minutes. Flip the patties and cook for 4-5 minutes."
-        },
-        {
-          "step": "Toast buns in toaster if desired."
-        },
-        {
-          "step": "Add cheese for last minute of cooking."
-        },
-        {
-          "step": "If desired, spread thin layer of mayo on bottom bun to prevent it from gettgin soggy. Add BBQ sauce for deliciousness."
-        }
-      ],
-      "id": 7
-    },
-    {
-      "title": "Chicken & Veggies",
-      "image": "/assets/images/chickenandveggies.jpeg",
-      "protein": "chicken",
-      "season": "summer",
-      "ethnicity": "American",
-      "count": 6,
-      "cook_time": "5 mins",
-      "prep_time": "2 mins",
-      "servings": 2,
-      "isAddedToMenu": false,
-      "breakfast": " ",
-      "grocery_items": [
-        {
-          "ingredient": "chicken breasts",
-          "amount": "2"
-        },
-        {
-          "ingredient": "onions",
-          "amount": "1"
-        },
-        {
-          "ingredient": "salt",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "pepper",
-          "amount": "1 tsp"
-        },
-        {
-          "ingredient": "asparagus",
-          "amount": "1 bundle"
-        },
-        {
-          "ingredient": "bell peppers",
-          "amount": "2"
-        }
-      ],
-      "directions": [
-        {
-          "step": "Heat griddle to 350°F."
-        },
-        {
-          "step": "Coat bread with butter."
-        },
-        {
-          "step": "Place bread on griddle, followed by cheese and other piece of bread."
-        },
-        {
-          "step": "Open can of tomato soup and heat on stove in small pot."
-        }
-      ],
-      "id": 8
-    }
-  ],
-  "grocery_list": [
-    {
-      "ingredient": "garlic",
-      "amount": "3 cloves",
-      "id": 3
-    },
-    {
-      "ingredient": "enchilada sauce",
-      "amount": "1 can",
-      "id": 4
-    },
-    {
-      "ingredient": "flour tortillas",
-      "amount": "8",
-      "id": 6
-    },
-    {
-      "ingredient": "bread",
-      "amount": "4 slices",
-      "id": 8
-    },
-    {
-      "ingredient": "cheese slices",
-      "amount": "2",
-      "id": 9
-    },
-    {
-      "ingredient": "butter",
-      "amount": "1 tsp",
-      "id": 10
-    },
-    {
-      "ingredient": "ground beef",
-      "amount": "1 pound",
-      "id": 12
-    },
-    {
-      "ingredient": "BBQ sauce",
-      "amount": "2 tsp",
-      "id": 13
-    },
-    {
-      "ingredient": "hamburger buns",
-      "amount": "4",
-      "id": 14
-    },
-    {
-      "ingredient": "cheese slices",
-      "amount": "4",
-      "id": 15
-    },
-    {
-      "ingredient": "onion powder",
-      "amount": "1 tsp",
-      "id": 16
-    },
-    {
-      "ingredient": "mayo",
-      "amount": "1 tsp",
-      "id": 19
-    },
-    {
-      "ingredient": "chicken breasts",
-      "amount": "2",
-      "id": 20
-    },
-    {
-      "ingredient": "asparagus",
-      "amount": "1 bundle",
-      "id": 24
-    },
-    {
-      "ingredient": "bell peppers",
-      "amount": "2",
-      "id": 25
-    }
-  ]
+  "menu": [],
+  "grocery_list": []
 }
