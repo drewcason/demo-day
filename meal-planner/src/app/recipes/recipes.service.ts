@@ -33,8 +33,7 @@ export class RecipeService {
             .subscribe(
                 (res: Recipe[]) => {
                     this.recipeInfoSource.next(res);
-                }
-            ,
+                },
             error => {
                 this.handleHTTPFailure();
             });
@@ -45,8 +44,7 @@ export class RecipeService {
             .subscribe(
                 (res: Recipe[]) => {
                     this.recipeInfoSource.next(res);
-                }
-            ,
+                },
             error => {
                 this.handleHTTPFailure();
             });
@@ -57,8 +55,7 @@ export class RecipeService {
             .subscribe(
                 (res: Recipe[]) => {
                     this.recipeInfoSource.next(res);
-                }
-            ,
+                },
             error => {
                 this.handleHTTPFailure();
             });

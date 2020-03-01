@@ -3,12 +3,12 @@
     <div class='header-container border-bottom'>
       <h3 class='ui-card-title p-3 m-0'>{{ recipe.title }}</h3>
       <div class='right quick-buttons'>
-        <button class='mr-2' *ngIf="!recipe.isAddedToMenu && !isAdded" 
-                (click)='addToThisWeekMenu(recipe); 
-                        addItemsToGroceryList(recipe.grocery_items);
-                        markAsAddedToMenu(recipe.id)'>
-                        <i class='pi pi-plus'></i></button>
-        <button class='mr-2' *ngIf="recipe.isAddedToMenu || isAdded"><i class='pi pi-check-circle check'></i></button>
+        <button class='mr-2' *ngIf="!recipe.isAddedToMenu && !isAdded" (click)='handleAddRecipeToMenu(recipe)'>
+          <i class='pi pi-plus'></i>
+        </button>
+        <button class='mr-2' *ngIf="recipe.isAddedToMenu || isAdded">
+          <i class='pi pi-check-circle check'></i>
+        </button>
       </div>
     </div>
     <div class='img-container'>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { Recipe } from './recipe';
 import { RecipeService } from './recipes.service';
 import { Subscription } from 'rxjs';
@@ -10,7 +10,7 @@ import { GroceryListService } from '../grocery-list/grocery-list.service';
   templateUrl: './recipes.component.html',
   styleUrls: ['./recipes.component.scss']
 })
-export class RecipesComponent implements OnInit {
+export class RecipesComponent implements OnInit, OnDestroy {
   @Input() recipe: Recipe;
   @Input() showInstructions: boolean;
   menu = [];
@@ -27,6 +27,14 @@ export class RecipesComponent implements OnInit {
     this.subscribeToMenu();
   }
 
+  ngOnDestroy(): void {
+    this.subscriptions.forEach(sub => {
+      if (!sub.closed) {
+        sub.unsubscribe();
+      }
+    });
+  }
+
   subscribeToMenu(): void {
     this.menu = [];
     this.subscriptions.push(
@@ -38,6 +46,12 @@ export class RecipesComponent implements OnInit {
         }
       )
     );
+  }
+
+  handleAddRecipeToMenu(recipe: Recipe) {
+    this.addToThisWeekMenu(recipe);
+    this.addItemsToGroceryList(recipe.grocery_items);
+    this.markAsAddedToMenu(recipe.id);
   }
 
   addToThisWeekMenu(newRecipe: Recipe): void {

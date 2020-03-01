@@ -27,7 +27,7 @@ export class MenuComponent implements OnInit {
     this.subscriptions.push(
       this.menuService.Menu$.subscribe(
         (menuResponse: Recipe[]) => {
-          if ( menuResponse) {
+          if (menuResponse) {
             this.menu = menuResponse;
           }
         }
